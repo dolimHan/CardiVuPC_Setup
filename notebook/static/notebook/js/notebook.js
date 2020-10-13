@@ -459,7 +459,7 @@ define([
                 return i18n.msg._("The Kernel is busy, outputs may be lost.");
             }
             // IE treats null as a string.  Instead just return which will avoid the dialog.
-
+            return;
         };
     };
     

@@ -196,7 +196,7 @@ function Among(s, substring_i, result) {
 	this.result = result;
 	this.method = null;
 	this.instance = null;
-}
+};
 
 function Among$0(s, substring_i, result, method, instance) {
 	this.s_size = s.length;
@@ -205,11 +205,11 @@ function Among$0(s, substring_i, result, method, instance) {
 	this.result = result;
 	this.method = method;
 	this.instance = instance;
-}
+};
 
 $__jsx_extend([Among, Among$0], Object);
 function Stemmer() {
-}
+};
 
 $__jsx_extend([Stemmer], Object);
 function BaseStemmer() {
@@ -223,7 +223,7 @@ function BaseStemmer() {
 	this.limit_backward = 0;
 	this.bra = cursor$0;
 	this.ket = limit$0;
-}
+};
 
 $__jsx_extend([BaseStemmer], Stemmer);
 BaseStemmer.prototype.setCurrent$S = function (value) {
@@ -249,7 +249,7 @@ function BaseStemmer$setCurrent$LBaseStemmer$S($this, value) {
 	$this.limit_backward = 0;
 	$this.bra = cursor$0;
 	$this.ket = limit$0;
-}
+};
 
 BaseStemmer.setCurrent$LBaseStemmer$S = BaseStemmer$setCurrent$LBaseStemmer$S;
 
@@ -260,7 +260,7 @@ BaseStemmer.prototype.getCurrent$ = function () {
 
 function BaseStemmer$getCurrent$LBaseStemmer$($this) {
 	return $this.current;
-}
+};
 
 BaseStemmer.getCurrent$LBaseStemmer$ = BaseStemmer$getCurrent$LBaseStemmer$;
 
@@ -281,7 +281,7 @@ function BaseStemmer$copy_from$LBaseStemmer$LBaseStemmer$($this, other) {
 	$this.limit_backward = other.limit_backward;
 	$this.bra = other.bra;
 	$this.ket = other.ket;
-}
+};
 
 BaseStemmer.copy_from$LBaseStemmer$LBaseStemmer$ = BaseStemmer$copy_from$LBaseStemmer$LBaseStemmer$;
 
@@ -320,7 +320,7 @@ function BaseStemmer$in_grouping$LBaseStemmer$AIII($this, s, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_grouping$LBaseStemmer$AIII = BaseStemmer$in_grouping$LBaseStemmer$AIII;
 
@@ -359,7 +359,7 @@ function BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, s, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_grouping_b$LBaseStemmer$AIII = BaseStemmer$in_grouping_b$LBaseStemmer$AIII;
 
@@ -400,7 +400,7 @@ function BaseStemmer$out_grouping$LBaseStemmer$AIII($this, s, min, max) {
 		return true;
 	}
 	return false;
-}
+};
 
 BaseStemmer.out_grouping$LBaseStemmer$AIII = BaseStemmer$out_grouping$LBaseStemmer$AIII;
 
@@ -441,7 +441,7 @@ function BaseStemmer$out_grouping_b$LBaseStemmer$AIII($this, s, min, max) {
 		return true;
 	}
 	return false;
-}
+};
 
 BaseStemmer.out_grouping_b$LBaseStemmer$AIII = BaseStemmer$out_grouping_b$LBaseStemmer$AIII;
 
@@ -472,7 +472,7 @@ function BaseStemmer$in_range$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_range$LBaseStemmer$II = BaseStemmer$in_range$LBaseStemmer$II;
 
@@ -503,7 +503,7 @@ function BaseStemmer$in_range_b$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_range_b$LBaseStemmer$II = BaseStemmer$in_range_b$LBaseStemmer$II;
 
@@ -534,7 +534,7 @@ function BaseStemmer$out_range$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.out_range$LBaseStemmer$II = BaseStemmer$out_range$LBaseStemmer$II;
 
@@ -565,7 +565,7 @@ function BaseStemmer$out_range_b$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.out_range_b$LBaseStemmer$II = BaseStemmer$out_range_b$LBaseStemmer$II;
 
@@ -592,7 +592,7 @@ function BaseStemmer$eq_s$LBaseStemmer$IS($this, s_size, s) {
 	}
 	$this.cursor = ($this.cursor + s_size) | 0;
 	return true;
-}
+};
 
 BaseStemmer.eq_s$LBaseStemmer$IS = BaseStemmer$eq_s$LBaseStemmer$IS;
 
@@ -619,7 +619,7 @@ function BaseStemmer$eq_s_b$LBaseStemmer$IS($this, s_size, s) {
 	}
 	$this.cursor = ($this.cursor - s_size) | 0;
 	return true;
-}
+};
 
 BaseStemmer.eq_s_b$LBaseStemmer$IS = BaseStemmer$eq_s_b$LBaseStemmer$IS;
 
@@ -630,7 +630,7 @@ BaseStemmer.prototype.eq_v$S = function (s) {
 
 function BaseStemmer$eq_v$LBaseStemmer$S($this, s) {
 	return BaseStemmer$eq_s$LBaseStemmer$IS($this, s.length, s);
-}
+};
 
 BaseStemmer.eq_v$LBaseStemmer$S = BaseStemmer$eq_v$LBaseStemmer$S;
 
@@ -641,7 +641,7 @@ BaseStemmer.prototype.eq_v_b$S = function (s) {
 
 function BaseStemmer$eq_v_b$LBaseStemmer$S($this, s) {
 	return BaseStemmer$eq_s_b$LBaseStemmer$IS($this, s.length, s);
-}
+};
 
 BaseStemmer.eq_v_b$LBaseStemmer$S = BaseStemmer$eq_v_b$LBaseStemmer$S;
 
@@ -800,7 +800,7 @@ function BaseStemmer$find_among$LBaseStemmer$ALAmong$I($this, v, v_size) {
 		}
 	}
 	return -1;
-}
+};
 
 BaseStemmer.find_among$LBaseStemmer$ALAmong$I = BaseStemmer$find_among$LBaseStemmer$ALAmong$I;
 
@@ -959,7 +959,7 @@ function BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, v, v_size) {
 		}
 	}
 	return -1;
-}
+};
 
 BaseStemmer.find_among_b$LBaseStemmer$ALAmong$I = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I;
 
@@ -988,7 +988,7 @@ function BaseStemmer$replace_s$LBaseStemmer$IIS($this, c_bra, c_ket, s) {
 		$this.cursor = c_bra;
 	}
 	return (adjustment | 0);
-}
+};
 
 BaseStemmer.replace_s$LBaseStemmer$IIS = BaseStemmer$replace_s$LBaseStemmer$IIS;
 
@@ -1005,7 +1005,7 @@ function BaseStemmer$slice_check$LBaseStemmer$($this) {
 	var ket$0;
 	var limit$0;
 	return ((bra$0 = $this.bra) < 0 || bra$0 > (ket$0 = $this.ket) || ket$0 > (limit$0 = $this.limit) || limit$0 > $this.current.length ? false : true);
-}
+};
 
 BaseStemmer.slice_check$LBaseStemmer$ = BaseStemmer$slice_check$LBaseStemmer$;
 
@@ -1034,7 +1034,7 @@ function BaseStemmer$slice_from$LBaseStemmer$S($this, s) {
 		result = true;
 	}
 	return result;
-}
+};
 
 BaseStemmer.slice_from$LBaseStemmer$S = BaseStemmer$slice_from$LBaseStemmer$S;
 
@@ -1045,7 +1045,7 @@ BaseStemmer.prototype.slice_del$ = function () {
 
 function BaseStemmer$slice_del$LBaseStemmer$($this) {
 	return BaseStemmer$slice_from$LBaseStemmer$S($this, "");
-}
+};
 
 BaseStemmer.slice_del$LBaseStemmer$ = BaseStemmer$slice_del$LBaseStemmer$;
 
@@ -1070,7 +1070,7 @@ function BaseStemmer$insert$LBaseStemmer$IIS($this, c_bra, c_ket, s) {
 	if (c_bra <= $this.ket) {
 		$this.ket = ($this.ket + adjustment) | 0;
 	}
-}
+};
 
 BaseStemmer.insert$LBaseStemmer$IIS = BaseStemmer$insert$LBaseStemmer$IIS;
 
@@ -1097,7 +1097,7 @@ function BaseStemmer$slice_to$LBaseStemmer$S($this, s) {
 		result = $this.current.slice($this.bra, $this.ket);
 	}
 	return result;
-}
+};
 
 BaseStemmer.slice_to$LBaseStemmer$S = BaseStemmer$slice_to$LBaseStemmer$S;
 
@@ -1108,7 +1108,7 @@ BaseStemmer.prototype.assign_to$S = function (s) {
 
 function BaseStemmer$assign_to$LBaseStemmer$S($this, s) {
 	return $this.current.slice(0, $this.limit);
-}
+};
 
 BaseStemmer.assign_to$LBaseStemmer$S = BaseStemmer$assign_to$LBaseStemmer$S;
 
@@ -1173,7 +1173,7 @@ function NorwegianStemmer() {
 	BaseStemmer.call(this);
 	this.I_x = 0;
 	this.I_p1 = 0;
-}
+};
 
 $__jsx_extend([NorwegianStemmer], BaseStemmer);
 NorwegianStemmer.prototype.copy_from$LNorwegianStemmer$ = function (other) {
@@ -1209,14 +1209,15 @@ golab0:
 	while (true) {
 		v_2 = this.cursor;
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, NorwegianStemmer.g_v, 97, 248)) {
-            break;
-        }
-        this.cursor = v_2;
-        break golab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, NorwegianStemmer.g_v, 97, 248)) {
+				break lab1;
+			}
+			this.cursor = v_2;
+			break golab0;
+		}
 		cursor$1 = this.cursor = v_2;
 		if (cursor$1 >= this.limit) {
 			return false;
@@ -1226,13 +1227,14 @@ golab0:
 golab2:
 	while (true) {
 		lab3 = true;
-	while (lab3 === true) {
-        lab3 = false;
-        if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, NorwegianStemmer.g_v, 97, 248)) {
-            break;
-        }
-        break golab2;
-    }
+	lab3:
+		while (lab3 === true) {
+			lab3 = false;
+			if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, NorwegianStemmer.g_v, 97, 248)) {
+				break lab3;
+			}
+			break golab2;
+		}
 		if (this.cursor >= this.limit) {
 			return false;
 		}
@@ -1240,13 +1242,14 @@ golab2:
 	}
 	this.I_p1 = this.cursor;
 	lab4 = true;
-while (lab4 === true) {
-    lab4 = false;
-    if (! (this.I_p1 < this.I_x)) {
-        break;
-    }
-    this.I_p1 = this.I_x;
-}
+lab4:
+	while (lab4 === true) {
+		lab4 = false;
+		if (! (this.I_p1 < this.I_x)) {
+			break lab4;
+		}
+		this.I_p1 = this.I_x;
+	}
 	return true;
 };
 
@@ -1277,14 +1280,15 @@ golab0:
 	while (true) {
 		v_2 = $this.cursor;
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, NorwegianStemmer.g_v, 97, 248)) {
-            break;
-        }
-        $this.cursor = v_2;
-        break golab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, NorwegianStemmer.g_v, 97, 248)) {
+				break lab1;
+			}
+			$this.cursor = v_2;
+			break golab0;
+		}
 		cursor$1 = $this.cursor = v_2;
 		if (cursor$1 >= $this.limit) {
 			return false;
@@ -1294,13 +1298,14 @@ golab0:
 golab2:
 	while (true) {
 		lab3 = true;
-	while (lab3 === true) {
-        lab3 = false;
-        if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, NorwegianStemmer.g_v, 97, 248)) {
-            break;
-        }
-        break golab2;
-    }
+	lab3:
+		while (lab3 === true) {
+			lab3 = false;
+			if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, NorwegianStemmer.g_v, 97, 248)) {
+				break lab3;
+			}
+			break golab2;
+		}
 		if ($this.cursor >= $this.limit) {
 			return false;
 		}
@@ -1308,15 +1313,16 @@ golab2:
 	}
 	$this.I_p1 = $this.cursor;
 	lab4 = true;
-while (lab4 === true) {
-    lab4 = false;
-    if (! ($this.I_p1 < $this.I_x)) {
-        break;
-    }
-    $this.I_p1 = $this.I_x;
-}
+lab4:
+	while (lab4 === true) {
+		lab4 = false;
+		if (! ($this.I_p1 < $this.I_x)) {
+			break lab4;
+		}
+		$this.I_p1 = $this.I_x;
+	}
 	return true;
-}
+};
 
 NorwegianStemmer.r_mark_regions$LNorwegianStemmer$ = NorwegianStemmer$r_mark_regions$LNorwegianStemmer$;
 
@@ -1361,13 +1367,14 @@ NorwegianStemmer.prototype.r_main_suffix$ = function () {
 			lab0 = false;
 			v_3 = ((this.limit - this.cursor) | 0);
 			lab1 = true;
-		while (lab1 === true) {
-            lab1 = false;
-            if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, NorwegianStemmer.g_s_ending, 98, 122)) {
-                break;
-            }
-            break lab0;
-        }
+		lab1:
+			while (lab1 === true) {
+				lab1 = false;
+				if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, NorwegianStemmer.g_s_ending, 98, 122)) {
+					break lab1;
+				}
+				break lab0;
+			}
 			this.cursor = ((this.limit - v_3) | 0);
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "k")) {
 				return false;
@@ -1432,13 +1439,14 @@ function NorwegianStemmer$r_main_suffix$LNorwegianStemmer$($this) {
 			lab0 = false;
 			v_3 = (($this.limit - $this.cursor) | 0);
 			lab1 = true;
-		while (lab1 === true) {
-            lab1 = false;
-            if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, NorwegianStemmer.g_s_ending, 98, 122)) {
-                break;
-            }
-            break lab0;
-        }
+		lab1:
+			while (lab1 === true) {
+				lab1 = false;
+				if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, NorwegianStemmer.g_s_ending, 98, 122)) {
+					break lab1;
+				}
+				break lab0;
+			}
 			$this.cursor = (($this.limit - v_3) | 0);
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "k")) {
 				return false;
@@ -1458,7 +1466,7 @@ function NorwegianStemmer$r_main_suffix$LNorwegianStemmer$($this) {
 		break;
 	}
 	return true;
-}
+};
 
 NorwegianStemmer.r_main_suffix$LNorwegianStemmer$ = NorwegianStemmer$r_main_suffix$LNorwegianStemmer$;
 
@@ -1534,7 +1542,7 @@ function NorwegianStemmer$r_consonant_pair$LNorwegianStemmer$($this) {
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	$this.bra = $this.cursor;
 	return (! BaseStemmer$slice_from$LBaseStemmer$S($this, "") ? false : true);
-}
+};
 
 NorwegianStemmer.r_consonant_pair$LNorwegianStemmer$ = NorwegianStemmer$r_consonant_pair$LNorwegianStemmer$;
 
@@ -1608,7 +1616,7 @@ function NorwegianStemmer$r_other_suffix$LNorwegianStemmer$($this) {
 		break;
 	}
 	return true;
-}
+};
 
 NorwegianStemmer.r_other_suffix$LNorwegianStemmer$ = NorwegianStemmer$r_other_suffix$LNorwegianStemmer$;
 
@@ -1627,40 +1635,44 @@ NorwegianStemmer.prototype.stem$ = function () {
 	var cursor$2;
 	v_1 = this.cursor;
 	lab0 = true;
-while (lab0 === true) {
-    lab0 = false;
-    if (! NorwegianStemmer$r_mark_regions$LNorwegianStemmer$(this)) {
-        break;
-    }
-}
+lab0:
+	while (lab0 === true) {
+		lab0 = false;
+		if (! NorwegianStemmer$r_mark_regions$LNorwegianStemmer$(this)) {
+			break lab0;
+		}
+	}
 	cursor$0 = this.cursor = v_1;
 	this.limit_backward = cursor$0;
 	cursor$1 = this.cursor = limit$0 = this.limit;
 	v_2 = ((limit$0 - cursor$1) | 0);
 	lab1 = true;
-while (lab1 === true) {
-    lab1 = false;
-    if (! NorwegianStemmer$r_main_suffix$LNorwegianStemmer$(this)) {
-        break;
-    }
-}
+lab1:
+	while (lab1 === true) {
+		lab1 = false;
+		if (! NorwegianStemmer$r_main_suffix$LNorwegianStemmer$(this)) {
+			break lab1;
+		}
+	}
 	cursor$2 = this.cursor = (((limit$1 = this.limit) - v_2) | 0);
 	v_3 = ((limit$1 - cursor$2) | 0);
 	lab2 = true;
-while (lab2 === true) {
-    lab2 = false;
-    if (! NorwegianStemmer$r_consonant_pair$LNorwegianStemmer$(this)) {
-        break;
-    }
-}
+lab2:
+	while (lab2 === true) {
+		lab2 = false;
+		if (! NorwegianStemmer$r_consonant_pair$LNorwegianStemmer$(this)) {
+			break lab2;
+		}
+	}
 	this.cursor = ((this.limit - v_3) | 0);
 	lab3 = true;
-while (lab3 === true) {
-    lab3 = false;
-    if (! NorwegianStemmer$r_other_suffix$LNorwegianStemmer$(this)) {
-        break;
-    }
-}
+lab3:
+	while (lab3 === true) {
+		lab3 = false;
+		if (! NorwegianStemmer$r_other_suffix$LNorwegianStemmer$(this)) {
+			break lab3;
+		}
+	}
 	this.cursor = this.limit_backward;
 	return true;
 };
@@ -1675,7 +1687,7 @@ NorwegianStemmer.prototype.equals = NorwegianStemmer.prototype.equals$X;
 
 function NorwegianStemmer$equals$LNorwegianStemmer$X($this, o) {
 	return o instanceof NorwegianStemmer;
-}
+};
 
 NorwegianStemmer.equals$LNorwegianStemmer$X = NorwegianStemmer$equals$LNorwegianStemmer$X;
 
@@ -1709,7 +1721,7 @@ function NorwegianStemmer$hashCode$LNorwegianStemmer$($this) {
 		hash = hash & hash;
 	}
 	return (hash | 0);
-}
+};
 
 NorwegianStemmer.hashCode$LNorwegianStemmer$ = NorwegianStemmer$hashCode$LNorwegianStemmer$;
 

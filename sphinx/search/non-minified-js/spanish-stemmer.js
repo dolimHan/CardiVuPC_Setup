@@ -196,7 +196,7 @@ function Among(s, substring_i, result) {
 	this.result = result;
 	this.method = null;
 	this.instance = null;
-}
+};
 
 function Among$0(s, substring_i, result, method, instance) {
 	this.s_size = s.length;
@@ -205,11 +205,11 @@ function Among$0(s, substring_i, result, method, instance) {
 	this.result = result;
 	this.method = method;
 	this.instance = instance;
-}
+};
 
 $__jsx_extend([Among, Among$0], Object);
 function Stemmer() {
-}
+};
 
 $__jsx_extend([Stemmer], Object);
 function BaseStemmer() {
@@ -223,7 +223,7 @@ function BaseStemmer() {
 	this.limit_backward = 0;
 	this.bra = cursor$0;
 	this.ket = limit$0;
-}
+};
 
 $__jsx_extend([BaseStemmer], Stemmer);
 BaseStemmer.prototype.setCurrent$S = function (value) {
@@ -249,7 +249,7 @@ function BaseStemmer$setCurrent$LBaseStemmer$S($this, value) {
 	$this.limit_backward = 0;
 	$this.bra = cursor$0;
 	$this.ket = limit$0;
-}
+};
 
 BaseStemmer.setCurrent$LBaseStemmer$S = BaseStemmer$setCurrent$LBaseStemmer$S;
 
@@ -260,7 +260,7 @@ BaseStemmer.prototype.getCurrent$ = function () {
 
 function BaseStemmer$getCurrent$LBaseStemmer$($this) {
 	return $this.current;
-}
+};
 
 BaseStemmer.getCurrent$LBaseStemmer$ = BaseStemmer$getCurrent$LBaseStemmer$;
 
@@ -281,7 +281,7 @@ function BaseStemmer$copy_from$LBaseStemmer$LBaseStemmer$($this, other) {
 	$this.limit_backward = other.limit_backward;
 	$this.bra = other.bra;
 	$this.ket = other.ket;
-}
+};
 
 BaseStemmer.copy_from$LBaseStemmer$LBaseStemmer$ = BaseStemmer$copy_from$LBaseStemmer$LBaseStemmer$;
 
@@ -320,7 +320,7 @@ function BaseStemmer$in_grouping$LBaseStemmer$AIII($this, s, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_grouping$LBaseStemmer$AIII = BaseStemmer$in_grouping$LBaseStemmer$AIII;
 
@@ -359,7 +359,7 @@ function BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, s, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_grouping_b$LBaseStemmer$AIII = BaseStemmer$in_grouping_b$LBaseStemmer$AIII;
 
@@ -400,7 +400,7 @@ function BaseStemmer$out_grouping$LBaseStemmer$AIII($this, s, min, max) {
 		return true;
 	}
 	return false;
-}
+};
 
 BaseStemmer.out_grouping$LBaseStemmer$AIII = BaseStemmer$out_grouping$LBaseStemmer$AIII;
 
@@ -441,7 +441,7 @@ function BaseStemmer$out_grouping_b$LBaseStemmer$AIII($this, s, min, max) {
 		return true;
 	}
 	return false;
-}
+};
 
 BaseStemmer.out_grouping_b$LBaseStemmer$AIII = BaseStemmer$out_grouping_b$LBaseStemmer$AIII;
 
@@ -472,7 +472,7 @@ function BaseStemmer$in_range$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_range$LBaseStemmer$II = BaseStemmer$in_range$LBaseStemmer$II;
 
@@ -503,7 +503,7 @@ function BaseStemmer$in_range_b$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_range_b$LBaseStemmer$II = BaseStemmer$in_range_b$LBaseStemmer$II;
 
@@ -534,7 +534,7 @@ function BaseStemmer$out_range$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.out_range$LBaseStemmer$II = BaseStemmer$out_range$LBaseStemmer$II;
 
@@ -565,7 +565,7 @@ function BaseStemmer$out_range_b$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.out_range_b$LBaseStemmer$II = BaseStemmer$out_range_b$LBaseStemmer$II;
 
@@ -592,7 +592,7 @@ function BaseStemmer$eq_s$LBaseStemmer$IS($this, s_size, s) {
 	}
 	$this.cursor = ($this.cursor + s_size) | 0;
 	return true;
-}
+};
 
 BaseStemmer.eq_s$LBaseStemmer$IS = BaseStemmer$eq_s$LBaseStemmer$IS;
 
@@ -619,7 +619,7 @@ function BaseStemmer$eq_s_b$LBaseStemmer$IS($this, s_size, s) {
 	}
 	$this.cursor = ($this.cursor - s_size) | 0;
 	return true;
-}
+};
 
 BaseStemmer.eq_s_b$LBaseStemmer$IS = BaseStemmer$eq_s_b$LBaseStemmer$IS;
 
@@ -630,7 +630,7 @@ BaseStemmer.prototype.eq_v$S = function (s) {
 
 function BaseStemmer$eq_v$LBaseStemmer$S($this, s) {
 	return BaseStemmer$eq_s$LBaseStemmer$IS($this, s.length, s);
-}
+};
 
 BaseStemmer.eq_v$LBaseStemmer$S = BaseStemmer$eq_v$LBaseStemmer$S;
 
@@ -641,7 +641,7 @@ BaseStemmer.prototype.eq_v_b$S = function (s) {
 
 function BaseStemmer$eq_v_b$LBaseStemmer$S($this, s) {
 	return BaseStemmer$eq_s_b$LBaseStemmer$IS($this, s.length, s);
-}
+};
 
 BaseStemmer.eq_v_b$LBaseStemmer$S = BaseStemmer$eq_v_b$LBaseStemmer$S;
 
@@ -800,7 +800,7 @@ function BaseStemmer$find_among$LBaseStemmer$ALAmong$I($this, v, v_size) {
 		}
 	}
 	return -1;
-}
+};
 
 BaseStemmer.find_among$LBaseStemmer$ALAmong$I = BaseStemmer$find_among$LBaseStemmer$ALAmong$I;
 
@@ -959,7 +959,7 @@ function BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, v, v_size) {
 		}
 	}
 	return -1;
-}
+};
 
 BaseStemmer.find_among_b$LBaseStemmer$ALAmong$I = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I;
 
@@ -988,7 +988,7 @@ function BaseStemmer$replace_s$LBaseStemmer$IIS($this, c_bra, c_ket, s) {
 		$this.cursor = c_bra;
 	}
 	return (adjustment | 0);
-}
+};
 
 BaseStemmer.replace_s$LBaseStemmer$IIS = BaseStemmer$replace_s$LBaseStemmer$IIS;
 
@@ -1005,7 +1005,7 @@ function BaseStemmer$slice_check$LBaseStemmer$($this) {
 	var ket$0;
 	var limit$0;
 	return ((bra$0 = $this.bra) < 0 || bra$0 > (ket$0 = $this.ket) || ket$0 > (limit$0 = $this.limit) || limit$0 > $this.current.length ? false : true);
-}
+};
 
 BaseStemmer.slice_check$LBaseStemmer$ = BaseStemmer$slice_check$LBaseStemmer$;
 
@@ -1034,7 +1034,7 @@ function BaseStemmer$slice_from$LBaseStemmer$S($this, s) {
 		result = true;
 	}
 	return result;
-}
+};
 
 BaseStemmer.slice_from$LBaseStemmer$S = BaseStemmer$slice_from$LBaseStemmer$S;
 
@@ -1045,7 +1045,7 @@ BaseStemmer.prototype.slice_del$ = function () {
 
 function BaseStemmer$slice_del$LBaseStemmer$($this) {
 	return BaseStemmer$slice_from$LBaseStemmer$S($this, "");
-}
+};
 
 BaseStemmer.slice_del$LBaseStemmer$ = BaseStemmer$slice_del$LBaseStemmer$;
 
@@ -1070,7 +1070,7 @@ function BaseStemmer$insert$LBaseStemmer$IIS($this, c_bra, c_ket, s) {
 	if (c_bra <= $this.ket) {
 		$this.ket = ($this.ket + adjustment) | 0;
 	}
-}
+};
 
 BaseStemmer.insert$LBaseStemmer$IIS = BaseStemmer$insert$LBaseStemmer$IIS;
 
@@ -1097,7 +1097,7 @@ function BaseStemmer$slice_to$LBaseStemmer$S($this, s) {
 		result = $this.current.slice($this.bra, $this.ket);
 	}
 	return result;
-}
+};
 
 BaseStemmer.slice_to$LBaseStemmer$S = BaseStemmer$slice_to$LBaseStemmer$S;
 
@@ -1108,7 +1108,7 @@ BaseStemmer.prototype.assign_to$S = function (s) {
 
 function BaseStemmer$assign_to$LBaseStemmer$S($this, s) {
 	return $this.current.slice(0, $this.limit);
-}
+};
 
 BaseStemmer.assign_to$LBaseStemmer$S = BaseStemmer$assign_to$LBaseStemmer$S;
 
@@ -1174,7 +1174,7 @@ function SpanishStemmer() {
 	this.I_p2 = 0;
 	this.I_p1 = 0;
 	this.I_pV = 0;
-}
+};
 
 $__jsx_extend([SpanishStemmer], BaseStemmer);
 SpanishStemmer.prototype.copy_from$LSpanishStemmer$ = function (other) {
@@ -1228,7 +1228,7 @@ lab0:
 			while (lab2 === true) {
 				lab2 = false;
 				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-					break;
+					break lab2;
 				}
 				lab3 = true;
 			lab3:
@@ -1240,18 +1240,19 @@ lab0:
 					while (lab4 === true) {
 						lab4 = false;
 						if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-							break;
+							break lab4;
 						}
 					golab5:
 						while (true) {
 							lab6 = true;
-						while (lab6 === true) {
-                            lab6 = false;
-                            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-                                break;
-                            }
-                            break golab5;
-                        }
+						lab6:
+							while (lab6 === true) {
+								lab6 = false;
+								if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
+									break lab6;
+								}
+								break golab5;
+							}
 							if (this.cursor >= this.limit) {
 								break lab4;
 							}
@@ -1266,13 +1267,14 @@ lab0:
 				golab7:
 					while (true) {
 						lab8 = true;
-					while (lab8 === true) {
-                        lab8 = false;
-                        if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-                            break;
-                        }
-                        break golab7;
-                    }
+					lab8:
+						while (lab8 === true) {
+							lab8 = false;
+							if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
+								break lab8;
+							}
+							break golab7;
+						}
 						if (this.cursor >= this.limit) {
 							break lab2;
 						}
@@ -1295,18 +1297,19 @@ lab0:
 				while (lab10 === true) {
 					lab10 = false;
 					if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-						break;
+						break lab10;
 					}
 				golab11:
 					while (true) {
 						lab12 = true;
-					while (lab12 === true) {
-                        lab12 = false;
-                        if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-                            break;
-                        }
-                        break golab11;
-                    }
+					lab12:
+						while (lab12 === true) {
+							lab12 = false;
+							if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
+								break lab12;
+							}
+							break golab11;
+						}
 						if (this.cursor >= this.limit) {
 							break lab10;
 						}
@@ -1335,13 +1338,14 @@ lab13:
 	golab14:
 		while (true) {
 			lab15 = true;
-		while (lab15 === true) {
-            lab15 = false;
-            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-                break;
-            }
-            break golab14;
-        }
+		lab15:
+			while (lab15 === true) {
+				lab15 = false;
+				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
+					break lab15;
+				}
+				break golab14;
+			}
 			if (this.cursor >= this.limit) {
 				break lab13;
 			}
@@ -1350,13 +1354,14 @@ lab13:
 	golab16:
 		while (true) {
 			lab17 = true;
-		while (lab17 === true) {
-            lab17 = false;
-            if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-                break;
-            }
-            break golab16;
-        }
+		lab17:
+			while (lab17 === true) {
+				lab17 = false;
+				if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
+					break lab17;
+				}
+				break golab16;
+			}
 			if (this.cursor >= this.limit) {
 				break lab13;
 			}
@@ -1366,13 +1371,14 @@ lab13:
 	golab18:
 		while (true) {
 			lab19 = true;
-		while (lab19 === true) {
-            lab19 = false;
-            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-                break;
-            }
-            break golab18;
-        }
+		lab19:
+			while (lab19 === true) {
+				lab19 = false;
+				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
+					break lab19;
+				}
+				break golab18;
+			}
 			if (this.cursor >= this.limit) {
 				break lab13;
 			}
@@ -1381,13 +1387,14 @@ lab13:
 	golab20:
 		while (true) {
 			lab21 = true;
-		while (lab21 === true) {
-            lab21 = false;
-            if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
-                break;
-            }
-            break golab20;
-        }
+		lab21:
+			while (lab21 === true) {
+				lab21 = false;
+				if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, SpanishStemmer.g_v, 97, 252)) {
+					break lab21;
+				}
+				break golab20;
+			}
 			if (this.cursor >= this.limit) {
 				break lab13;
 			}
@@ -1443,7 +1450,7 @@ lab0:
 			while (lab2 === true) {
 				lab2 = false;
 				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-					break;
+					break lab2;
 				}
 				lab3 = true;
 			lab3:
@@ -1455,18 +1462,19 @@ lab0:
 					while (lab4 === true) {
 						lab4 = false;
 						if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-							break;
+							break lab4;
 						}
 					golab5:
 						while (true) {
 							lab6 = true;
-						while (lab6 === true) {
-                            lab6 = false;
-                            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-                                break;
-                            }
-                            break golab5;
-                        }
+						lab6:
+							while (lab6 === true) {
+								lab6 = false;
+								if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
+									break lab6;
+								}
+								break golab5;
+							}
 							if ($this.cursor >= $this.limit) {
 								break lab4;
 							}
@@ -1481,13 +1489,14 @@ lab0:
 				golab7:
 					while (true) {
 						lab8 = true;
-					while (lab8 === true) {
-                        lab8 = false;
-                        if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-                            break;
-                        }
-                        break golab7;
-                    }
+					lab8:
+						while (lab8 === true) {
+							lab8 = false;
+							if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
+								break lab8;
+							}
+							break golab7;
+						}
 						if ($this.cursor >= $this.limit) {
 							break lab2;
 						}
@@ -1510,18 +1519,19 @@ lab0:
 				while (lab10 === true) {
 					lab10 = false;
 					if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-						break;
+						break lab10;
 					}
 				golab11:
 					while (true) {
 						lab12 = true;
-					while (lab12 === true) {
-                        lab12 = false;
-                        if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-                            break;
-                        }
-                        break golab11;
-                    }
+					lab12:
+						while (lab12 === true) {
+							lab12 = false;
+							if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
+								break lab12;
+							}
+							break golab11;
+						}
 						if ($this.cursor >= $this.limit) {
 							break lab10;
 						}
@@ -1550,13 +1560,14 @@ lab13:
 	golab14:
 		while (true) {
 			lab15 = true;
-		while (lab15 === true) {
-            lab15 = false;
-            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-                break;
-            }
-            break golab14;
-        }
+		lab15:
+			while (lab15 === true) {
+				lab15 = false;
+				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
+					break lab15;
+				}
+				break golab14;
+			}
 			if ($this.cursor >= $this.limit) {
 				break lab13;
 			}
@@ -1565,13 +1576,14 @@ lab13:
 	golab16:
 		while (true) {
 			lab17 = true;
-		while (lab17 === true) {
-            lab17 = false;
-            if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-                break;
-            }
-            break golab16;
-        }
+		lab17:
+			while (lab17 === true) {
+				lab17 = false;
+				if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
+					break lab17;
+				}
+				break golab16;
+			}
 			if ($this.cursor >= $this.limit) {
 				break lab13;
 			}
@@ -1581,13 +1593,14 @@ lab13:
 	golab18:
 		while (true) {
 			lab19 = true;
-		while (lab19 === true) {
-            lab19 = false;
-            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-                break;
-            }
-            break golab18;
-        }
+		lab19:
+			while (lab19 === true) {
+				lab19 = false;
+				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
+					break lab19;
+				}
+				break golab18;
+			}
 			if ($this.cursor >= $this.limit) {
 				break lab13;
 			}
@@ -1596,13 +1609,14 @@ lab13:
 	golab20:
 		while (true) {
 			lab21 = true;
-		while (lab21 === true) {
-            lab21 = false;
-            if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
-                break;
-            }
-            break golab20;
-        }
+		lab21:
+			while (lab21 === true) {
+				lab21 = false;
+				if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, SpanishStemmer.g_v, 97, 252)) {
+					break lab21;
+				}
+				break golab20;
+			}
 			if ($this.cursor >= $this.limit) {
 				break lab13;
 			}
@@ -1612,7 +1626,7 @@ lab13:
 	}
 	$this.cursor = v_8;
 	return true;
-}
+};
 
 SpanishStemmer.r_mark_regions$LSpanishStemmer$ = SpanishStemmer$r_mark_regions$LSpanishStemmer$;
 
@@ -1631,7 +1645,7 @@ replab0:
 			this.bra = this.cursor;
 			among_var = BaseStemmer$find_among$LBaseStemmer$ALAmong$I(this, SpanishStemmer.a_0, 6);
 			if (among_var === 0) {
-				break;
+				break lab1;
 			}
 			this.ket = this.cursor;
 			switch (among_var) {
@@ -1672,7 +1686,7 @@ replab0:
 			continue replab0;
 		}
 		this.cursor = v_1;
-		break;
+		break replab0;
 	}
 	return true;
 };
@@ -1694,7 +1708,7 @@ replab0:
 			$this.bra = $this.cursor;
 			among_var = BaseStemmer$find_among$LBaseStemmer$ALAmong$I($this, SpanishStemmer.a_0, 6);
 			if (among_var === 0) {
-				break;
+				break lab1;
 			}
 			$this.ket = $this.cursor;
 			switch (among_var) {
@@ -1735,10 +1749,10 @@ replab0:
 			continue replab0;
 		}
 		$this.cursor = v_1;
-		break;
+		break replab0;
 	}
 	return true;
-}
+};
 
 SpanishStemmer.r_postlude$LSpanishStemmer$ = SpanishStemmer$r_postlude$LSpanishStemmer$;
 
@@ -1750,7 +1764,7 @@ SpanishStemmer.prototype.r_RV = SpanishStemmer.prototype.r_RV$;
 
 function SpanishStemmer$r_RV$LSpanishStemmer$($this) {
 	return (! ($this.I_pV <= $this.cursor) ? false : true);
-}
+};
 
 SpanishStemmer.r_RV$LSpanishStemmer$ = SpanishStemmer$r_RV$LSpanishStemmer$;
 
@@ -1762,7 +1776,7 @@ SpanishStemmer.prototype.r_R1 = SpanishStemmer.prototype.r_R1$;
 
 function SpanishStemmer$r_R1$LSpanishStemmer$($this) {
 	return (! ($this.I_p1 <= $this.cursor) ? false : true);
-}
+};
 
 SpanishStemmer.r_R1$LSpanishStemmer$ = SpanishStemmer$r_R1$LSpanishStemmer$;
 
@@ -1774,7 +1788,7 @@ SpanishStemmer.prototype.r_R2 = SpanishStemmer.prototype.r_R2$;
 
 function SpanishStemmer$r_R2$LSpanishStemmer$($this) {
 	return (! ($this.I_p2 <= $this.cursor) ? false : true);
-}
+};
 
 SpanishStemmer.r_R2$LSpanishStemmer$ = SpanishStemmer$r_R2$LSpanishStemmer$;
 
@@ -1906,7 +1920,7 @@ function SpanishStemmer$r_attached_pronoun$LSpanishStemmer$($this) {
 		break;
 	}
 	return true;
-}
+};
 
 SpanishStemmer.r_attached_pronoun$LSpanishStemmer$ = SpanishStemmer$r_attached_pronoun$LSpanishStemmer$;
 
@@ -1952,22 +1966,23 @@ SpanishStemmer.prototype.r_standard_suffix$ = function () {
 		}
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab0 = true;
-	while (lab0 === true) {
-        lab0 = false;
-        this.ket = this.cursor;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 2, "ic")) {
-            this.cursor = ((this.limit - v_1) | 0);
-            break;
-        }
-        this.bra = cursor$0 = this.cursor;
-        if (! (! (this.I_p2 <= cursor$0) ? false : true)) {
-            this.cursor = ((this.limit - v_1) | 0);
-            break;
-        }
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-    }
+	lab0:
+		while (lab0 === true) {
+			lab0 = false;
+			this.ket = this.cursor;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 2, "ic")) {
+				this.cursor = ((this.limit - v_1) | 0);
+				break lab0;
+			}
+			this.bra = cursor$0 = this.cursor;
+			if (! (! (this.I_p2 <= cursor$0) ? false : true)) {
+				this.cursor = ((this.limit - v_1) | 0);
+				break lab0;
+			}
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+		}
 		break;
 	case 3:
 		if (! (! (this.I_p2 <= this.cursor) ? false : true)) {
@@ -2009,12 +2024,12 @@ SpanishStemmer.prototype.r_standard_suffix$ = function () {
 			among_var = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, SpanishStemmer.a_3, 4);
 			if (among_var === 0) {
 				this.cursor = ((this.limit - v_2) | 0);
-				break;
+				break lab1;
 			}
 			this.bra = cursor$1 = this.cursor;
 			if (! (! (this.I_p2 <= cursor$1) ? false : true)) {
 				this.cursor = ((this.limit - v_2) | 0);
-				break;
+				break lab1;
 			}
 			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
 				return false;
@@ -2057,7 +2072,7 @@ SpanishStemmer.prototype.r_standard_suffix$ = function () {
 			among_var = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, SpanishStemmer.a_4, 3);
 			if (among_var === 0) {
 				this.cursor = ((this.limit - v_3) | 0);
-				break;
+				break lab2;
 			}
 			this.bra = this.cursor;
 			switch (among_var) {
@@ -2092,7 +2107,7 @@ SpanishStemmer.prototype.r_standard_suffix$ = function () {
 			among_var = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, SpanishStemmer.a_5, 3);
 			if (among_var === 0) {
 				this.cursor = ((this.limit - v_4) | 0);
-				break;
+				break lab3;
 			}
 			this.bra = this.cursor;
 			switch (among_var) {
@@ -2120,22 +2135,23 @@ SpanishStemmer.prototype.r_standard_suffix$ = function () {
 		}
 		v_5 = ((this.limit - this.cursor) | 0);
 		lab4 = true;
-	while (lab4 === true) {
-        lab4 = false;
-        this.ket = this.cursor;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 2, "at")) {
-            this.cursor = ((this.limit - v_5) | 0);
-            break;
-        }
-        this.bra = cursor$3 = this.cursor;
-        if (! (! (this.I_p2 <= cursor$3) ? false : true)) {
-            this.cursor = ((this.limit - v_5) | 0);
-            break;
-        }
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-    }
+	lab4:
+		while (lab4 === true) {
+			lab4 = false;
+			this.ket = this.cursor;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 2, "at")) {
+				this.cursor = ((this.limit - v_5) | 0);
+				break lab4;
+			}
+			this.bra = cursor$3 = this.cursor;
+			if (! (! (this.I_p2 <= cursor$3) ? false : true)) {
+				this.cursor = ((this.limit - v_5) | 0);
+				break lab4;
+			}
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+		}
 		break;
 	}
 	return true;
@@ -2185,22 +2201,23 @@ function SpanishStemmer$r_standard_suffix$LSpanishStemmer$($this) {
 		}
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab0 = true;
-	while (lab0 === true) {
-        lab0 = false;
-        $this.ket = $this.cursor;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 2, "ic")) {
-            $this.cursor = (($this.limit - v_1) | 0);
-            break;
-        }
-        $this.bra = cursor$0 = $this.cursor;
-        if (! (! ($this.I_p2 <= cursor$0) ? false : true)) {
-            $this.cursor = (($this.limit - v_1) | 0);
-            break;
-        }
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-    }
+	lab0:
+		while (lab0 === true) {
+			lab0 = false;
+			$this.ket = $this.cursor;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 2, "ic")) {
+				$this.cursor = (($this.limit - v_1) | 0);
+				break lab0;
+			}
+			$this.bra = cursor$0 = $this.cursor;
+			if (! (! ($this.I_p2 <= cursor$0) ? false : true)) {
+				$this.cursor = (($this.limit - v_1) | 0);
+				break lab0;
+			}
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+		}
 		break;
 	case 3:
 		if (! (! ($this.I_p2 <= $this.cursor) ? false : true)) {
@@ -2242,12 +2259,12 @@ function SpanishStemmer$r_standard_suffix$LSpanishStemmer$($this) {
 			among_var = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, SpanishStemmer.a_3, 4);
 			if (among_var === 0) {
 				$this.cursor = (($this.limit - v_2) | 0);
-				break;
+				break lab1;
 			}
 			$this.bra = cursor$1 = $this.cursor;
 			if (! (! ($this.I_p2 <= cursor$1) ? false : true)) {
 				$this.cursor = (($this.limit - v_2) | 0);
-				break;
+				break lab1;
 			}
 			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
 				return false;
@@ -2290,7 +2307,7 @@ function SpanishStemmer$r_standard_suffix$LSpanishStemmer$($this) {
 			among_var = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, SpanishStemmer.a_4, 3);
 			if (among_var === 0) {
 				$this.cursor = (($this.limit - v_3) | 0);
-				break;
+				break lab2;
 			}
 			$this.bra = $this.cursor;
 			switch (among_var) {
@@ -2325,7 +2342,7 @@ function SpanishStemmer$r_standard_suffix$LSpanishStemmer$($this) {
 			among_var = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, SpanishStemmer.a_5, 3);
 			if (among_var === 0) {
 				$this.cursor = (($this.limit - v_4) | 0);
-				break;
+				break lab3;
 			}
 			$this.bra = $this.cursor;
 			switch (among_var) {
@@ -2353,26 +2370,27 @@ function SpanishStemmer$r_standard_suffix$LSpanishStemmer$($this) {
 		}
 		v_5 = (($this.limit - $this.cursor) | 0);
 		lab4 = true;
-	while (lab4 === true) {
-        lab4 = false;
-        $this.ket = $this.cursor;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 2, "at")) {
-            $this.cursor = (($this.limit - v_5) | 0);
-            break;
-        }
-        $this.bra = cursor$3 = $this.cursor;
-        if (! (! ($this.I_p2 <= cursor$3) ? false : true)) {
-            $this.cursor = (($this.limit - v_5) | 0);
-            break;
-        }
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-    }
+	lab4:
+		while (lab4 === true) {
+			lab4 = false;
+			$this.ket = $this.cursor;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 2, "at")) {
+				$this.cursor = (($this.limit - v_5) | 0);
+				break lab4;
+			}
+			$this.bra = cursor$3 = $this.cursor;
+			if (! (! ($this.I_p2 <= cursor$3) ? false : true)) {
+				$this.cursor = (($this.limit - v_5) | 0);
+				break lab4;
+			}
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+		}
 		break;
 	}
 	return true;
-}
+};
 
 SpanishStemmer.r_standard_suffix$LSpanishStemmer$ = SpanishStemmer$r_standard_suffix$LSpanishStemmer$;
 
@@ -2452,7 +2470,7 @@ function SpanishStemmer$r_y_verb_suffix$LSpanishStemmer$($this) {
 		break;
 	}
 	return true;
-}
+};
 
 SpanishStemmer.r_y_verb_suffix$LSpanishStemmer$ = SpanishStemmer$r_y_verb_suffix$LSpanishStemmer$;
 
@@ -2488,19 +2506,20 @@ SpanishStemmer.prototype.r_verb_suffix$ = function () {
 	case 1:
 		v_3 = ((this.limit - this.cursor) | 0);
 		lab0 = true;
-	while (lab0 === true) {
-        lab0 = false;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "u")) {
-            this.cursor = ((this.limit - v_3) | 0);
-            break;
-        }
-        v_4 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "g")) {
-            this.cursor = ((this.limit - v_3) | 0);
-            break;
-        }
-        this.cursor = ((this.limit - v_4) | 0);
-    }
+	lab0:
+		while (lab0 === true) {
+			lab0 = false;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "u")) {
+				this.cursor = ((this.limit - v_3) | 0);
+				break lab0;
+			}
+			v_4 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "g")) {
+				this.cursor = ((this.limit - v_3) | 0);
+				break lab0;
+			}
+			this.cursor = ((this.limit - v_4) | 0);
+		}
 		this.bra = this.cursor;
 		if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
 			return false;
@@ -2549,19 +2568,20 @@ function SpanishStemmer$r_verb_suffix$LSpanishStemmer$($this) {
 	case 1:
 		v_3 = (($this.limit - $this.cursor) | 0);
 		lab0 = true;
-	while (lab0 === true) {
-        lab0 = false;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "u")) {
-            $this.cursor = (($this.limit - v_3) | 0);
-            break;
-        }
-        v_4 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "g")) {
-            $this.cursor = (($this.limit - v_3) | 0);
-            break;
-        }
-        $this.cursor = (($this.limit - v_4) | 0);
-    }
+	lab0:
+		while (lab0 === true) {
+			lab0 = false;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "u")) {
+				$this.cursor = (($this.limit - v_3) | 0);
+				break lab0;
+			}
+			v_4 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "g")) {
+				$this.cursor = (($this.limit - v_3) | 0);
+				break lab0;
+			}
+			$this.cursor = (($this.limit - v_4) | 0);
+		}
 		$this.bra = $this.cursor;
 		if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
 			return false;
@@ -2574,7 +2594,7 @@ function SpanishStemmer$r_verb_suffix$LSpanishStemmer$($this) {
 		break;
 	}
 	return true;
-}
+};
 
 SpanishStemmer.r_verb_suffix$LSpanishStemmer$ = SpanishStemmer$r_verb_suffix$LSpanishStemmer$;
 
@@ -2611,28 +2631,29 @@ SpanishStemmer.prototype.r_residual_suffix$ = function () {
 		}
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab0 = true;
-	while (lab0 === true) {
-        lab0 = false;
-        this.ket = this.cursor;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "u")) {
-            this.cursor = ((this.limit - v_1) | 0);
-            break;
-        }
-        this.bra = cursor$0 = this.cursor;
-        v_2 = ((this.limit - cursor$0) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "g")) {
-            this.cursor = ((this.limit - v_1) | 0);
-            break;
-        }
-        cursor$1 = this.cursor = ((this.limit - v_2) | 0);
-        if (! (! (this.I_pV <= cursor$1) ? false : true)) {
-            this.cursor = ((this.limit - v_1) | 0);
-            break;
-        }
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-    }
+	lab0:
+		while (lab0 === true) {
+			lab0 = false;
+			this.ket = this.cursor;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "u")) {
+				this.cursor = ((this.limit - v_1) | 0);
+				break lab0;
+			}
+			this.bra = cursor$0 = this.cursor;
+			v_2 = ((this.limit - cursor$0) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "g")) {
+				this.cursor = ((this.limit - v_1) | 0);
+				break lab0;
+			}
+			cursor$1 = this.cursor = ((this.limit - v_2) | 0);
+			if (! (! (this.I_pV <= cursor$1) ? false : true)) {
+				this.cursor = ((this.limit - v_1) | 0);
+				break lab0;
+			}
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+		}
 		break;
 	}
 	return true;
@@ -2673,32 +2694,33 @@ function SpanishStemmer$r_residual_suffix$LSpanishStemmer$($this) {
 		}
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab0 = true;
-	while (lab0 === true) {
-        lab0 = false;
-        $this.ket = $this.cursor;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "u")) {
-            $this.cursor = (($this.limit - v_1) | 0);
-            break;
-        }
-        $this.bra = cursor$0 = $this.cursor;
-        v_2 = (($this.limit - cursor$0) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "g")) {
-            $this.cursor = (($this.limit - v_1) | 0);
-            break;
-        }
-        cursor$1 = $this.cursor = (($this.limit - v_2) | 0);
-        if (! (! ($this.I_pV <= cursor$1) ? false : true)) {
-            $this.cursor = (($this.limit - v_1) | 0);
-            break;
-        }
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-    }
+	lab0:
+		while (lab0 === true) {
+			lab0 = false;
+			$this.ket = $this.cursor;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "u")) {
+				$this.cursor = (($this.limit - v_1) | 0);
+				break lab0;
+			}
+			$this.bra = cursor$0 = $this.cursor;
+			v_2 = (($this.limit - cursor$0) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "g")) {
+				$this.cursor = (($this.limit - v_1) | 0);
+				break lab0;
+			}
+			cursor$1 = $this.cursor = (($this.limit - v_2) | 0);
+			if (! (! ($this.I_pV <= cursor$1) ? false : true)) {
+				$this.cursor = (($this.limit - v_1) | 0);
+				break lab0;
+			}
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+		}
 		break;
 	}
 	return true;
-}
+};
 
 SpanishStemmer.r_residual_suffix$LSpanishStemmer$ = SpanishStemmer$r_residual_suffix$LSpanishStemmer$;
 
@@ -2724,23 +2746,25 @@ SpanishStemmer.prototype.stem$ = function () {
 	var cursor$3;
 	v_1 = this.cursor;
 	lab0 = true;
-while (lab0 === true) {
-    lab0 = false;
-    if (! SpanishStemmer$r_mark_regions$LSpanishStemmer$(this)) {
-        break;
-    }
-}
+lab0:
+	while (lab0 === true) {
+		lab0 = false;
+		if (! SpanishStemmer$r_mark_regions$LSpanishStemmer$(this)) {
+			break lab0;
+		}
+	}
 	cursor$0 = this.cursor = v_1;
 	this.limit_backward = cursor$0;
 	cursor$1 = this.cursor = limit$0 = this.limit;
 	v_2 = ((limit$0 - cursor$1) | 0);
 	lab1 = true;
-while (lab1 === true) {
-    lab1 = false;
-    if (! SpanishStemmer$r_attached_pronoun$LSpanishStemmer$(this)) {
-        break;
-    }
-}
+lab1:
+	while (lab1 === true) {
+		lab1 = false;
+		if (! SpanishStemmer$r_attached_pronoun$LSpanishStemmer$(this)) {
+			break lab1;
+		}
+	}
 	cursor$2 = this.cursor = (((limit$1 = this.limit) - v_2) | 0);
 	v_3 = ((limit$1 - cursor$2) | 0);
 	lab2 = true;
@@ -2753,22 +2777,24 @@ lab2:
 			lab3 = false;
 			v_4 = ((this.limit - this.cursor) | 0);
 			lab4 = true;
-		while (lab4 === true) {
-            lab4 = false;
-            if (! SpanishStemmer$r_standard_suffix$LSpanishStemmer$(this)) {
-                break;
-            }
-            break lab3;
-        }
+		lab4:
+			while (lab4 === true) {
+				lab4 = false;
+				if (! SpanishStemmer$r_standard_suffix$LSpanishStemmer$(this)) {
+					break lab4;
+				}
+				break lab3;
+			}
 			this.cursor = ((this.limit - v_4) | 0);
 			lab5 = true;
-		while (lab5 === true) {
-            lab5 = false;
-            if (! SpanishStemmer$r_y_verb_suffix$LSpanishStemmer$(this)) {
-                break;
-            }
-            break lab3;
-        }
+		lab5:
+			while (lab5 === true) {
+				lab5 = false;
+				if (! SpanishStemmer$r_y_verb_suffix$LSpanishStemmer$(this)) {
+					break lab5;
+				}
+				break lab3;
+			}
 			this.cursor = ((this.limit - v_4) | 0);
 			if (! SpanishStemmer$r_verb_suffix$LSpanishStemmer$(this)) {
 				break lab2;
@@ -2777,21 +2803,23 @@ lab2:
 	}
 	this.cursor = ((this.limit - v_3) | 0);
 	lab6 = true;
-while (lab6 === true) {
-    lab6 = false;
-    if (! SpanishStemmer$r_residual_suffix$LSpanishStemmer$(this)) {
-        break;
-    }
-}
+lab6:
+	while (lab6 === true) {
+		lab6 = false;
+		if (! SpanishStemmer$r_residual_suffix$LSpanishStemmer$(this)) {
+			break lab6;
+		}
+	}
 	cursor$3 = this.cursor = this.limit_backward;
 	v_6 = cursor$3;
 	lab7 = true;
-while (lab7 === true) {
-    lab7 = false;
-    if (! SpanishStemmer$r_postlude$LSpanishStemmer$(this)) {
-        break;
-    }
-}
+lab7:
+	while (lab7 === true) {
+		lab7 = false;
+		if (! SpanishStemmer$r_postlude$LSpanishStemmer$(this)) {
+			break lab7;
+		}
+	}
 	this.cursor = v_6;
 	return true;
 };
@@ -2806,7 +2834,7 @@ SpanishStemmer.prototype.equals = SpanishStemmer.prototype.equals$X;
 
 function SpanishStemmer$equals$LSpanishStemmer$X($this, o) {
 	return o instanceof SpanishStemmer;
-}
+};
 
 SpanishStemmer.equals$LSpanishStemmer$X = SpanishStemmer$equals$LSpanishStemmer$X;
 
@@ -2840,7 +2868,7 @@ function SpanishStemmer$hashCode$LSpanishStemmer$($this) {
 		hash = hash & hash;
 	}
 	return (hash | 0);
-}
+};
 
 SpanishStemmer.hashCode$LSpanishStemmer$ = SpanishStemmer$hashCode$LSpanishStemmer$;
 

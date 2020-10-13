@@ -196,7 +196,7 @@ function Among(s, substring_i, result) {
 	this.result = result;
 	this.method = null;
 	this.instance = null;
-}
+};
 
 function Among$0(s, substring_i, result, method, instance) {
 	this.s_size = s.length;
@@ -205,11 +205,11 @@ function Among$0(s, substring_i, result, method, instance) {
 	this.result = result;
 	this.method = method;
 	this.instance = instance;
-}
+};
 
 $__jsx_extend([Among, Among$0], Object);
 function Stemmer() {
-}
+};
 
 $__jsx_extend([Stemmer], Object);
 function BaseStemmer() {
@@ -223,7 +223,7 @@ function BaseStemmer() {
 	this.limit_backward = 0;
 	this.bra = cursor$0;
 	this.ket = limit$0;
-}
+};
 
 $__jsx_extend([BaseStemmer], Stemmer);
 BaseStemmer.prototype.setCurrent$S = function (value) {
@@ -249,7 +249,7 @@ function BaseStemmer$setCurrent$LBaseStemmer$S($this, value) {
 	$this.limit_backward = 0;
 	$this.bra = cursor$0;
 	$this.ket = limit$0;
-}
+};
 
 BaseStemmer.setCurrent$LBaseStemmer$S = BaseStemmer$setCurrent$LBaseStemmer$S;
 
@@ -260,7 +260,7 @@ BaseStemmer.prototype.getCurrent$ = function () {
 
 function BaseStemmer$getCurrent$LBaseStemmer$($this) {
 	return $this.current;
-}
+};
 
 BaseStemmer.getCurrent$LBaseStemmer$ = BaseStemmer$getCurrent$LBaseStemmer$;
 
@@ -281,7 +281,7 @@ function BaseStemmer$copy_from$LBaseStemmer$LBaseStemmer$($this, other) {
 	$this.limit_backward = other.limit_backward;
 	$this.bra = other.bra;
 	$this.ket = other.ket;
-}
+};
 
 BaseStemmer.copy_from$LBaseStemmer$LBaseStemmer$ = BaseStemmer$copy_from$LBaseStemmer$LBaseStemmer$;
 
@@ -320,7 +320,7 @@ function BaseStemmer$in_grouping$LBaseStemmer$AIII($this, s, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_grouping$LBaseStemmer$AIII = BaseStemmer$in_grouping$LBaseStemmer$AIII;
 
@@ -359,7 +359,7 @@ function BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, s, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_grouping_b$LBaseStemmer$AIII = BaseStemmer$in_grouping_b$LBaseStemmer$AIII;
 
@@ -400,7 +400,7 @@ function BaseStemmer$out_grouping$LBaseStemmer$AIII($this, s, min, max) {
 		return true;
 	}
 	return false;
-}
+};
 
 BaseStemmer.out_grouping$LBaseStemmer$AIII = BaseStemmer$out_grouping$LBaseStemmer$AIII;
 
@@ -441,7 +441,7 @@ function BaseStemmer$out_grouping_b$LBaseStemmer$AIII($this, s, min, max) {
 		return true;
 	}
 	return false;
-}
+};
 
 BaseStemmer.out_grouping_b$LBaseStemmer$AIII = BaseStemmer$out_grouping_b$LBaseStemmer$AIII;
 
@@ -472,7 +472,7 @@ function BaseStemmer$in_range$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_range$LBaseStemmer$II = BaseStemmer$in_range$LBaseStemmer$II;
 
@@ -503,7 +503,7 @@ function BaseStemmer$in_range_b$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_range_b$LBaseStemmer$II = BaseStemmer$in_range_b$LBaseStemmer$II;
 
@@ -534,7 +534,7 @@ function BaseStemmer$out_range$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.out_range$LBaseStemmer$II = BaseStemmer$out_range$LBaseStemmer$II;
 
@@ -565,7 +565,7 @@ function BaseStemmer$out_range_b$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.out_range_b$LBaseStemmer$II = BaseStemmer$out_range_b$LBaseStemmer$II;
 
@@ -592,7 +592,7 @@ function BaseStemmer$eq_s$LBaseStemmer$IS($this, s_size, s) {
 	}
 	$this.cursor = ($this.cursor + s_size) | 0;
 	return true;
-}
+};
 
 BaseStemmer.eq_s$LBaseStemmer$IS = BaseStemmer$eq_s$LBaseStemmer$IS;
 
@@ -619,7 +619,7 @@ function BaseStemmer$eq_s_b$LBaseStemmer$IS($this, s_size, s) {
 	}
 	$this.cursor = ($this.cursor - s_size) | 0;
 	return true;
-}
+};
 
 BaseStemmer.eq_s_b$LBaseStemmer$IS = BaseStemmer$eq_s_b$LBaseStemmer$IS;
 
@@ -630,7 +630,7 @@ BaseStemmer.prototype.eq_v$S = function (s) {
 
 function BaseStemmer$eq_v$LBaseStemmer$S($this, s) {
 	return BaseStemmer$eq_s$LBaseStemmer$IS($this, s.length, s);
-}
+};
 
 BaseStemmer.eq_v$LBaseStemmer$S = BaseStemmer$eq_v$LBaseStemmer$S;
 
@@ -641,7 +641,7 @@ BaseStemmer.prototype.eq_v_b$S = function (s) {
 
 function BaseStemmer$eq_v_b$LBaseStemmer$S($this, s) {
 	return BaseStemmer$eq_s_b$LBaseStemmer$IS($this, s.length, s);
-}
+};
 
 BaseStemmer.eq_v_b$LBaseStemmer$S = BaseStemmer$eq_v_b$LBaseStemmer$S;
 
@@ -800,7 +800,7 @@ function BaseStemmer$find_among$LBaseStemmer$ALAmong$I($this, v, v_size) {
 		}
 	}
 	return -1;
-}
+};
 
 BaseStemmer.find_among$LBaseStemmer$ALAmong$I = BaseStemmer$find_among$LBaseStemmer$ALAmong$I;
 
@@ -959,7 +959,7 @@ function BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, v, v_size) {
 		}
 	}
 	return -1;
-}
+};
 
 BaseStemmer.find_among_b$LBaseStemmer$ALAmong$I = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I;
 
@@ -988,7 +988,7 @@ function BaseStemmer$replace_s$LBaseStemmer$IIS($this, c_bra, c_ket, s) {
 		$this.cursor = c_bra;
 	}
 	return (adjustment | 0);
-}
+};
 
 BaseStemmer.replace_s$LBaseStemmer$IIS = BaseStemmer$replace_s$LBaseStemmer$IIS;
 
@@ -1005,7 +1005,7 @@ function BaseStemmer$slice_check$LBaseStemmer$($this) {
 	var ket$0;
 	var limit$0;
 	return ((bra$0 = $this.bra) < 0 || bra$0 > (ket$0 = $this.ket) || ket$0 > (limit$0 = $this.limit) || limit$0 > $this.current.length ? false : true);
-}
+};
 
 BaseStemmer.slice_check$LBaseStemmer$ = BaseStemmer$slice_check$LBaseStemmer$;
 
@@ -1034,7 +1034,7 @@ function BaseStemmer$slice_from$LBaseStemmer$S($this, s) {
 		result = true;
 	}
 	return result;
-}
+};
 
 BaseStemmer.slice_from$LBaseStemmer$S = BaseStemmer$slice_from$LBaseStemmer$S;
 
@@ -1045,7 +1045,7 @@ BaseStemmer.prototype.slice_del$ = function () {
 
 function BaseStemmer$slice_del$LBaseStemmer$($this) {
 	return BaseStemmer$slice_from$LBaseStemmer$S($this, "");
-}
+};
 
 BaseStemmer.slice_del$LBaseStemmer$ = BaseStemmer$slice_del$LBaseStemmer$;
 
@@ -1070,7 +1070,7 @@ function BaseStemmer$insert$LBaseStemmer$IIS($this, c_bra, c_ket, s) {
 	if (c_bra <= $this.ket) {
 		$this.ket = ($this.ket + adjustment) | 0;
 	}
-}
+};
 
 BaseStemmer.insert$LBaseStemmer$IIS = BaseStemmer$insert$LBaseStemmer$IIS;
 
@@ -1097,7 +1097,7 @@ function BaseStemmer$slice_to$LBaseStemmer$S($this, s) {
 		result = $this.current.slice($this.bra, $this.ket);
 	}
 	return result;
-}
+};
 
 BaseStemmer.slice_to$LBaseStemmer$S = BaseStemmer$slice_to$LBaseStemmer$S;
 
@@ -1108,7 +1108,7 @@ BaseStemmer.prototype.assign_to$S = function (s) {
 
 function BaseStemmer$assign_to$LBaseStemmer$S($this, s) {
 	return $this.current.slice(0, $this.limit);
-}
+};
 
 BaseStemmer.assign_to$LBaseStemmer$S = BaseStemmer$assign_to$LBaseStemmer$S;
 
@@ -1173,7 +1173,7 @@ function TurkishStemmer() {
 	BaseStemmer.call(this);
 	this.B_continue_stemming_noun_suffixes = false;
 	this.I_strlen = 0;
-}
+};
 
 $__jsx_extend([TurkishStemmer], BaseStemmer);
 TurkishStemmer.prototype.copy_from$LTurkishStemmer$ = function (other) {
@@ -1228,14 +1228,15 @@ golab0:
 	while (true) {
 		v_2 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        this.cursor = ((this.limit - v_2) | 0);
-        break golab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			this.cursor = ((this.limit - v_2) | 0);
+			break golab0;
+		}
 		cursor$0 = this.cursor = ((this.limit - v_2) | 0);
 		if (cursor$0 <= this.limit_backward) {
 			return false;
@@ -1252,20 +1253,21 @@ lab2:
 		while (lab3 === true) {
 			lab3 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "a")) {
-				break;
+				break lab3;
 			}
 		golab4:
 			while (true) {
 				v_4 = ((this.limit - this.cursor) | 0);
 				lab5 = true;
-			while (lab5 === true) {
-                lab5 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel1, 97, 305)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_4) | 0);
-                break golab4;
-            }
+			lab5:
+				while (lab5 === true) {
+					lab5 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel1, 97, 305)) {
+						break lab5;
+					}
+					this.cursor = ((this.limit - v_4) | 0);
+					break golab4;
+				}
 				cursor$1 = this.cursor = ((this.limit - v_4) | 0);
 				if (cursor$1 <= this.limit_backward) {
 					break lab3;
@@ -1280,20 +1282,21 @@ lab2:
 		while (lab6 === true) {
 			lab6 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "e")) {
-				break;
+				break lab6;
 			}
 		golab7:
 			while (true) {
 				v_5 = ((this.limit - this.cursor) | 0);
 				lab8 = true;
-			while (lab8 === true) {
-                lab8 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel2, 101, 252)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_5) | 0);
-                break golab7;
-            }
+			lab8:
+				while (lab8 === true) {
+					lab8 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel2, 101, 252)) {
+						break lab8;
+					}
+					this.cursor = ((this.limit - v_5) | 0);
+					break golab7;
+				}
 				cursor$2 = this.cursor = ((this.limit - v_5) | 0);
 				if (cursor$2 <= this.limit_backward) {
 					break lab6;
@@ -1308,20 +1311,21 @@ lab2:
 		while (lab9 === true) {
 			lab9 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "\u0131")) {
-				break;
+				break lab9;
 			}
 		golab10:
 			while (true) {
 				v_6 = ((this.limit - this.cursor) | 0);
 				lab11 = true;
-			while (lab11 === true) {
-                lab11 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel3, 97, 305)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_6) | 0);
-                break golab10;
-            }
+			lab11:
+				while (lab11 === true) {
+					lab11 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel3, 97, 305)) {
+						break lab11;
+					}
+					this.cursor = ((this.limit - v_6) | 0);
+					break golab10;
+				}
 				cursor$3 = this.cursor = ((this.limit - v_6) | 0);
 				if (cursor$3 <= this.limit_backward) {
 					break lab9;
@@ -1336,20 +1340,21 @@ lab2:
 		while (lab12 === true) {
 			lab12 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "i")) {
-				break;
+				break lab12;
 			}
 		golab13:
 			while (true) {
 				v_7 = ((this.limit - this.cursor) | 0);
 				lab14 = true;
-			while (lab14 === true) {
-                lab14 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel4, 101, 105)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_7) | 0);
-                break golab13;
-            }
+			lab14:
+				while (lab14 === true) {
+					lab14 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel4, 101, 105)) {
+						break lab14;
+					}
+					this.cursor = ((this.limit - v_7) | 0);
+					break golab13;
+				}
 				cursor$4 = this.cursor = ((this.limit - v_7) | 0);
 				if (cursor$4 <= this.limit_backward) {
 					break lab12;
@@ -1364,20 +1369,21 @@ lab2:
 		while (lab15 === true) {
 			lab15 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "o")) {
-				break;
+				break lab15;
 			}
 		golab16:
 			while (true) {
 				v_8 = ((this.limit - this.cursor) | 0);
 				lab17 = true;
-			while (lab17 === true) {
-                lab17 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel5, 111, 117)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_8) | 0);
-                break golab16;
-            }
+			lab17:
+				while (lab17 === true) {
+					lab17 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel5, 111, 117)) {
+						break lab17;
+					}
+					this.cursor = ((this.limit - v_8) | 0);
+					break golab16;
+				}
 				cursor$5 = this.cursor = ((this.limit - v_8) | 0);
 				if (cursor$5 <= this.limit_backward) {
 					break lab15;
@@ -1392,20 +1398,21 @@ lab2:
 		while (lab18 === true) {
 			lab18 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "\u00F6")) {
-				break;
+				break lab18;
 			}
 		golab19:
 			while (true) {
 				v_9 = ((this.limit - this.cursor) | 0);
 				lab20 = true;
-			while (lab20 === true) {
-                lab20 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel6, 246, 252)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_9) | 0);
-                break golab19;
-            }
+			lab20:
+				while (lab20 === true) {
+					lab20 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel6, 246, 252)) {
+						break lab20;
+					}
+					this.cursor = ((this.limit - v_9) | 0);
+					break golab19;
+				}
 				cursor$6 = this.cursor = ((this.limit - v_9) | 0);
 				if (cursor$6 <= this.limit_backward) {
 					break lab18;
@@ -1420,20 +1427,21 @@ lab2:
 		while (lab21 === true) {
 			lab21 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "u")) {
-				break;
+				break lab21;
 			}
 		golab22:
 			while (true) {
 				v_10 = ((this.limit - this.cursor) | 0);
 				lab23 = true;
-			while (lab23 === true) {
-                lab23 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel5, 111, 117)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_10) | 0);
-                break golab22;
-            }
+			lab23:
+				while (lab23 === true) {
+					lab23 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel5, 111, 117)) {
+						break lab23;
+					}
+					this.cursor = ((this.limit - v_10) | 0);
+					break golab22;
+				}
 				cursor$7 = this.cursor = ((this.limit - v_10) | 0);
 				if (cursor$7 <= this.limit_backward) {
 					break lab21;
@@ -1450,14 +1458,15 @@ lab2:
 		while (true) {
 			v_11 = ((this.limit - this.cursor) | 0);
 			lab25 = true;
-		while (lab25 === true) {
-            lab25 = false;
-            if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel6, 246, 252)) {
-                break;
-            }
-            this.cursor = ((this.limit - v_11) | 0);
-            break golab24;
-        }
+		lab25:
+			while (lab25 === true) {
+				lab25 = false;
+				if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel6, 246, 252)) {
+					break lab25;
+				}
+				this.cursor = ((this.limit - v_11) | 0);
+				break golab24;
+			}
 			cursor$8 = this.cursor = ((this.limit - v_11) | 0);
 			if (cursor$8 <= this.limit_backward) {
 				return false;
@@ -1515,14 +1524,15 @@ golab0:
 	while (true) {
 		v_2 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_2) | 0);
-        break golab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			$this.cursor = (($this.limit - v_2) | 0);
+			break golab0;
+		}
 		cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
 		if (cursor$0 <= $this.limit_backward) {
 			return false;
@@ -1539,20 +1549,21 @@ lab2:
 		while (lab3 === true) {
 			lab3 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "a")) {
-				break;
+				break lab3;
 			}
 		golab4:
 			while (true) {
 				v_4 = (($this.limit - $this.cursor) | 0);
 				lab5 = true;
-			while (lab5 === true) {
-                lab5 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel1, 97, 305)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_4) | 0);
-                break golab4;
-            }
+			lab5:
+				while (lab5 === true) {
+					lab5 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel1, 97, 305)) {
+						break lab5;
+					}
+					$this.cursor = (($this.limit - v_4) | 0);
+					break golab4;
+				}
 				cursor$1 = $this.cursor = (($this.limit - v_4) | 0);
 				if (cursor$1 <= $this.limit_backward) {
 					break lab3;
@@ -1567,20 +1578,21 @@ lab2:
 		while (lab6 === true) {
 			lab6 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "e")) {
-				break;
+				break lab6;
 			}
 		golab7:
 			while (true) {
 				v_5 = (($this.limit - $this.cursor) | 0);
 				lab8 = true;
-			while (lab8 === true) {
-                lab8 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel2, 101, 252)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_5) | 0);
-                break golab7;
-            }
+			lab8:
+				while (lab8 === true) {
+					lab8 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel2, 101, 252)) {
+						break lab8;
+					}
+					$this.cursor = (($this.limit - v_5) | 0);
+					break golab7;
+				}
 				cursor$2 = $this.cursor = (($this.limit - v_5) | 0);
 				if (cursor$2 <= $this.limit_backward) {
 					break lab6;
@@ -1595,20 +1607,21 @@ lab2:
 		while (lab9 === true) {
 			lab9 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "\u0131")) {
-				break;
+				break lab9;
 			}
 		golab10:
 			while (true) {
 				v_6 = (($this.limit - $this.cursor) | 0);
 				lab11 = true;
-			while (lab11 === true) {
-                lab11 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel3, 97, 305)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_6) | 0);
-                break golab10;
-            }
+			lab11:
+				while (lab11 === true) {
+					lab11 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel3, 97, 305)) {
+						break lab11;
+					}
+					$this.cursor = (($this.limit - v_6) | 0);
+					break golab10;
+				}
 				cursor$3 = $this.cursor = (($this.limit - v_6) | 0);
 				if (cursor$3 <= $this.limit_backward) {
 					break lab9;
@@ -1623,20 +1636,21 @@ lab2:
 		while (lab12 === true) {
 			lab12 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "i")) {
-				break;
+				break lab12;
 			}
 		golab13:
 			while (true) {
 				v_7 = (($this.limit - $this.cursor) | 0);
 				lab14 = true;
-			while (lab14 === true) {
-                lab14 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel4, 101, 105)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_7) | 0);
-                break golab13;
-            }
+			lab14:
+				while (lab14 === true) {
+					lab14 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel4, 101, 105)) {
+						break lab14;
+					}
+					$this.cursor = (($this.limit - v_7) | 0);
+					break golab13;
+				}
 				cursor$4 = $this.cursor = (($this.limit - v_7) | 0);
 				if (cursor$4 <= $this.limit_backward) {
 					break lab12;
@@ -1651,20 +1665,21 @@ lab2:
 		while (lab15 === true) {
 			lab15 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "o")) {
-				break;
+				break lab15;
 			}
 		golab16:
 			while (true) {
 				v_8 = (($this.limit - $this.cursor) | 0);
 				lab17 = true;
-			while (lab17 === true) {
-                lab17 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel5, 111, 117)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_8) | 0);
-                break golab16;
-            }
+			lab17:
+				while (lab17 === true) {
+					lab17 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel5, 111, 117)) {
+						break lab17;
+					}
+					$this.cursor = (($this.limit - v_8) | 0);
+					break golab16;
+				}
 				cursor$5 = $this.cursor = (($this.limit - v_8) | 0);
 				if (cursor$5 <= $this.limit_backward) {
 					break lab15;
@@ -1679,20 +1694,21 @@ lab2:
 		while (lab18 === true) {
 			lab18 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "\u00F6")) {
-				break;
+				break lab18;
 			}
 		golab19:
 			while (true) {
 				v_9 = (($this.limit - $this.cursor) | 0);
 				lab20 = true;
-			while (lab20 === true) {
-                lab20 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel6, 246, 252)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_9) | 0);
-                break golab19;
-            }
+			lab20:
+				while (lab20 === true) {
+					lab20 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel6, 246, 252)) {
+						break lab20;
+					}
+					$this.cursor = (($this.limit - v_9) | 0);
+					break golab19;
+				}
 				cursor$6 = $this.cursor = (($this.limit - v_9) | 0);
 				if (cursor$6 <= $this.limit_backward) {
 					break lab18;
@@ -1707,20 +1723,21 @@ lab2:
 		while (lab21 === true) {
 			lab21 = false;
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "u")) {
-				break;
+				break lab21;
 			}
 		golab22:
 			while (true) {
 				v_10 = (($this.limit - $this.cursor) | 0);
 				lab23 = true;
-			while (lab23 === true) {
-                lab23 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel5, 111, 117)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_10) | 0);
-                break golab22;
-            }
+			lab23:
+				while (lab23 === true) {
+					lab23 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel5, 111, 117)) {
+						break lab23;
+					}
+					$this.cursor = (($this.limit - v_10) | 0);
+					break golab22;
+				}
 				cursor$7 = $this.cursor = (($this.limit - v_10) | 0);
 				if (cursor$7 <= $this.limit_backward) {
 					break lab21;
@@ -1737,14 +1754,15 @@ lab2:
 		while (true) {
 			v_11 = (($this.limit - $this.cursor) | 0);
 			lab25 = true;
-		while (lab25 === true) {
-            lab25 = false;
-            if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel6, 246, 252)) {
-                break;
-            }
-            $this.cursor = (($this.limit - v_11) | 0);
-            break golab24;
-        }
+		lab25:
+			while (lab25 === true) {
+				lab25 = false;
+				if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel6, 246, 252)) {
+					break lab25;
+				}
+				$this.cursor = (($this.limit - v_11) | 0);
+				break golab24;
+			}
 			cursor$8 = $this.cursor = (($this.limit - v_11) | 0);
 			if (cursor$8 <= $this.limit_backward) {
 				return false;
@@ -1754,7 +1772,7 @@ lab2:
 	}
 	$this.cursor = (($this.limit - v_1) | 0);
 	return true;
-}
+};
 
 TurkishStemmer.r_check_vowel_harmony$LTurkishStemmer$ = TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$;
 
@@ -1780,36 +1798,38 @@ lab0:
 		lab0 = false;
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        v_2 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "n")) {
-            break;
-        }
-        cursor$0 = this.cursor = ((this.limit - v_2) | 0);
-        if (cursor$0 <= this.limit_backward) {
-            break;
-        }
-        ($__jsx_postinc_t = this.cursor, this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
-        v_3 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        this.cursor = ((this.limit - v_3) | 0);
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			v_2 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "n")) {
+				break lab1;
+			}
+			cursor$0 = this.cursor = ((this.limit - v_2) | 0);
+			if (cursor$0 <= this.limit_backward) {
+				break lab1;
+			}
+			($__jsx_postinc_t = this.cursor, this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
+			v_3 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			this.cursor = ((this.limit - v_3) | 0);
+			break lab0;
+		}
 		cursor$1 = this.cursor = (((limit$0 = this.limit) - v_1) | 0);
 		v_4 = ((limit$0 - cursor$1) | 0);
 		lab2 = true;
-	while (lab2 === true) {
-        lab2 = false;
-        v_5 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "n")) {
-            break;
-        }
-        this.cursor = ((this.limit - v_5) | 0);
-        return false;
-    }
+	lab2:
+		while (lab2 === true) {
+			lab2 = false;
+			v_5 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "n")) {
+				break lab2;
+			}
+			this.cursor = ((this.limit - v_5) | 0);
+			return false;
+		}
 		cursor$2 = this.cursor = (((limit$1 = this.limit) - v_4) | 0);
 		v_6 = ((limit$1 - cursor$2) | 0);
 		if (cursor$2 <= this.limit_backward) {
@@ -1848,36 +1868,38 @@ lab0:
 		lab0 = false;
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        v_2 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "n")) {
-            break;
-        }
-        cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
-        if (cursor$0 <= $this.limit_backward) {
-            break;
-        }
-        ($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
-        v_3 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_3) | 0);
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			v_2 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "n")) {
+				break lab1;
+			}
+			cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
+			if (cursor$0 <= $this.limit_backward) {
+				break lab1;
+			}
+			($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
+			v_3 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			$this.cursor = (($this.limit - v_3) | 0);
+			break lab0;
+		}
 		cursor$1 = $this.cursor = (((limit$0 = $this.limit) - v_1) | 0);
 		v_4 = ((limit$0 - cursor$1) | 0);
 		lab2 = true;
-	while (lab2 === true) {
-        lab2 = false;
-        v_5 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "n")) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_5) | 0);
-        return false;
-    }
+	lab2:
+		while (lab2 === true) {
+			lab2 = false;
+			v_5 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "n")) {
+				break lab2;
+			}
+			$this.cursor = (($this.limit - v_5) | 0);
+			return false;
+		}
 		cursor$2 = $this.cursor = (((limit$1 = $this.limit) - v_4) | 0);
 		v_6 = ((limit$1 - cursor$2) | 0);
 		if (cursor$2 <= $this.limit_backward) {
@@ -1890,7 +1912,7 @@ lab0:
 		$this.cursor = (($this.limit - v_6) | 0);
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$ = TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$;
 
@@ -1916,36 +1938,38 @@ lab0:
 		lab0 = false;
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        v_2 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "s")) {
-            break;
-        }
-        cursor$0 = this.cursor = ((this.limit - v_2) | 0);
-        if (cursor$0 <= this.limit_backward) {
-            break;
-        }
-        ($__jsx_postinc_t = this.cursor, this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
-        v_3 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        this.cursor = ((this.limit - v_3) | 0);
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			v_2 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "s")) {
+				break lab1;
+			}
+			cursor$0 = this.cursor = ((this.limit - v_2) | 0);
+			if (cursor$0 <= this.limit_backward) {
+				break lab1;
+			}
+			($__jsx_postinc_t = this.cursor, this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
+			v_3 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			this.cursor = ((this.limit - v_3) | 0);
+			break lab0;
+		}
 		cursor$1 = this.cursor = (((limit$0 = this.limit) - v_1) | 0);
 		v_4 = ((limit$0 - cursor$1) | 0);
 		lab2 = true;
-	while (lab2 === true) {
-        lab2 = false;
-        v_5 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "s")) {
-            break;
-        }
-        this.cursor = ((this.limit - v_5) | 0);
-        return false;
-    }
+	lab2:
+		while (lab2 === true) {
+			lab2 = false;
+			v_5 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "s")) {
+				break lab2;
+			}
+			this.cursor = ((this.limit - v_5) | 0);
+			return false;
+		}
 		cursor$2 = this.cursor = (((limit$1 = this.limit) - v_4) | 0);
 		v_6 = ((limit$1 - cursor$2) | 0);
 		if (cursor$2 <= this.limit_backward) {
@@ -1984,36 +2008,38 @@ lab0:
 		lab0 = false;
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        v_2 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "s")) {
-            break;
-        }
-        cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
-        if (cursor$0 <= $this.limit_backward) {
-            break;
-        }
-        ($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
-        v_3 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_3) | 0);
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			v_2 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "s")) {
+				break lab1;
+			}
+			cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
+			if (cursor$0 <= $this.limit_backward) {
+				break lab1;
+			}
+			($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
+			v_3 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			$this.cursor = (($this.limit - v_3) | 0);
+			break lab0;
+		}
 		cursor$1 = $this.cursor = (((limit$0 = $this.limit) - v_1) | 0);
 		v_4 = ((limit$0 - cursor$1) | 0);
 		lab2 = true;
-	while (lab2 === true) {
-        lab2 = false;
-        v_5 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "s")) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_5) | 0);
-        return false;
-    }
+	lab2:
+		while (lab2 === true) {
+			lab2 = false;
+			v_5 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "s")) {
+				break lab2;
+			}
+			$this.cursor = (($this.limit - v_5) | 0);
+			return false;
+		}
 		cursor$2 = $this.cursor = (((limit$1 = $this.limit) - v_4) | 0);
 		v_6 = ((limit$1 - cursor$2) | 0);
 		if (cursor$2 <= $this.limit_backward) {
@@ -2026,7 +2052,7 @@ lab0:
 		$this.cursor = (($this.limit - v_6) | 0);
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$ = TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$;
 
@@ -2052,36 +2078,38 @@ lab0:
 		lab0 = false;
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        v_2 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "y")) {
-            break;
-        }
-        cursor$0 = this.cursor = ((this.limit - v_2) | 0);
-        if (cursor$0 <= this.limit_backward) {
-            break;
-        }
-        ($__jsx_postinc_t = this.cursor, this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
-        v_3 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        this.cursor = ((this.limit - v_3) | 0);
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			v_2 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "y")) {
+				break lab1;
+			}
+			cursor$0 = this.cursor = ((this.limit - v_2) | 0);
+			if (cursor$0 <= this.limit_backward) {
+				break lab1;
+			}
+			($__jsx_postinc_t = this.cursor, this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
+			v_3 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			this.cursor = ((this.limit - v_3) | 0);
+			break lab0;
+		}
 		cursor$1 = this.cursor = (((limit$0 = this.limit) - v_1) | 0);
 		v_4 = ((limit$0 - cursor$1) | 0);
 		lab2 = true;
-	while (lab2 === true) {
-        lab2 = false;
-        v_5 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "y")) {
-            break;
-        }
-        this.cursor = ((this.limit - v_5) | 0);
-        return false;
-    }
+	lab2:
+		while (lab2 === true) {
+			lab2 = false;
+			v_5 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "y")) {
+				break lab2;
+			}
+			this.cursor = ((this.limit - v_5) | 0);
+			return false;
+		}
 		cursor$2 = this.cursor = (((limit$1 = this.limit) - v_4) | 0);
 		v_6 = ((limit$1 - cursor$2) | 0);
 		if (cursor$2 <= this.limit_backward) {
@@ -2120,36 +2148,38 @@ lab0:
 		lab0 = false;
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        v_2 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "y")) {
-            break;
-        }
-        cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
-        if (cursor$0 <= $this.limit_backward) {
-            break;
-        }
-        ($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
-        v_3 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_3) | 0);
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			v_2 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "y")) {
+				break lab1;
+			}
+			cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
+			if (cursor$0 <= $this.limit_backward) {
+				break lab1;
+			}
+			($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
+			v_3 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			$this.cursor = (($this.limit - v_3) | 0);
+			break lab0;
+		}
 		cursor$1 = $this.cursor = (((limit$0 = $this.limit) - v_1) | 0);
 		v_4 = ((limit$0 - cursor$1) | 0);
 		lab2 = true;
-	while (lab2 === true) {
-        lab2 = false;
-        v_5 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "y")) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_5) | 0);
-        return false;
-    }
+	lab2:
+		while (lab2 === true) {
+			lab2 = false;
+			v_5 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "y")) {
+				break lab2;
+			}
+			$this.cursor = (($this.limit - v_5) | 0);
+			return false;
+		}
 		cursor$2 = $this.cursor = (((limit$1 = $this.limit) - v_4) | 0);
 		v_6 = ((limit$1 - cursor$2) | 0);
 		if (cursor$2 <= $this.limit_backward) {
@@ -2162,7 +2192,7 @@ lab0:
 		$this.cursor = (($this.limit - v_6) | 0);
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$ = TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$;
 
@@ -2188,36 +2218,38 @@ lab0:
 		lab0 = false;
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        v_2 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305)) {
-            break;
-        }
-        cursor$0 = this.cursor = ((this.limit - v_2) | 0);
-        if (cursor$0 <= this.limit_backward) {
-            break;
-        }
-        ($__jsx_postinc_t = this.cursor, this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
-        v_3 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$out_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        this.cursor = ((this.limit - v_3) | 0);
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			v_2 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305)) {
+				break lab1;
+			}
+			cursor$0 = this.cursor = ((this.limit - v_2) | 0);
+			if (cursor$0 <= this.limit_backward) {
+				break lab1;
+			}
+			($__jsx_postinc_t = this.cursor, this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
+			v_3 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$out_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			this.cursor = ((this.limit - v_3) | 0);
+			break lab0;
+		}
 		cursor$1 = this.cursor = (((limit$0 = this.limit) - v_1) | 0);
 		v_4 = ((limit$0 - cursor$1) | 0);
 		lab2 = true;
-	while (lab2 === true) {
-        lab2 = false;
-        v_5 = ((this.limit - this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305)) {
-            break;
-        }
-        this.cursor = ((this.limit - v_5) | 0);
-        return false;
-    }
+	lab2:
+		while (lab2 === true) {
+			lab2 = false;
+			v_5 = ((this.limit - this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305)) {
+				break lab2;
+			}
+			this.cursor = ((this.limit - v_5) | 0);
+			return false;
+		}
 		cursor$2 = this.cursor = (((limit$1 = this.limit) - v_4) | 0);
 		v_6 = ((limit$1 - cursor$2) | 0);
 		if (cursor$2 <= this.limit_backward) {
@@ -2256,36 +2288,38 @@ lab0:
 		lab0 = false;
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        v_2 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305)) {
-            break;
-        }
-        cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
-        if (cursor$0 <= $this.limit_backward) {
-            break;
-        }
-        ($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
-        v_3 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$out_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_3) | 0);
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			v_2 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305)) {
+				break lab1;
+			}
+			cursor$0 = $this.cursor = (($this.limit - v_2) | 0);
+			if (cursor$0 <= $this.limit_backward) {
+				break lab1;
+			}
+			($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
+			v_3 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$out_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+				break lab1;
+			}
+			$this.cursor = (($this.limit - v_3) | 0);
+			break lab0;
+		}
 		cursor$1 = $this.cursor = (((limit$0 = $this.limit) - v_1) | 0);
 		v_4 = ((limit$0 - cursor$1) | 0);
 		lab2 = true;
-	while (lab2 === true) {
-        lab2 = false;
-        v_5 = (($this.limit - $this.cursor) | 0);
-        if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305)) {
-            break;
-        }
-        $this.cursor = (($this.limit - v_5) | 0);
-        return false;
-    }
+	lab2:
+		while (lab2 === true) {
+			lab2 = false;
+			v_5 = (($this.limit - $this.cursor) | 0);
+			if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305)) {
+				break lab2;
+			}
+			$this.cursor = (($this.limit - v_5) | 0);
+			return false;
+		}
 		cursor$2 = $this.cursor = (((limit$1 = $this.limit) - v_4) | 0);
 		v_6 = ((limit$1 - cursor$2) | 0);
 		if (cursor$2 <= $this.limit_backward) {
@@ -2298,7 +2332,7 @@ lab0:
 		$this.cursor = (($this.limit - v_6) | 0);
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$ = TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$;
 
@@ -2310,7 +2344,7 @@ TurkishStemmer.prototype.r_mark_possessives = TurkishStemmer.prototype.r_mark_po
 
 function TurkishStemmer$r_mark_possessives$LTurkishStemmer$($this) {
 	return (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_possessives$LTurkishStemmer$ = TurkishStemmer$r_mark_possessives$LTurkishStemmer$;
 
@@ -2322,7 +2356,7 @@ TurkishStemmer.prototype.r_mark_sU = TurkishStemmer.prototype.r_mark_sU$;
 
 function TurkishStemmer$r_mark_sU$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_sU$LTurkishStemmer$ = TurkishStemmer$r_mark_sU$LTurkishStemmer$;
 
@@ -2334,7 +2368,7 @@ TurkishStemmer.prototype.r_mark_lArI = TurkishStemmer.prototype.r_mark_lArI$;
 
 function TurkishStemmer$r_mark_lArI$LTurkishStemmer$($this) {
 	return (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_lArI$LTurkishStemmer$ = TurkishStemmer$r_mark_lArI$LTurkishStemmer$;
 
@@ -2346,7 +2380,7 @@ TurkishStemmer.prototype.r_mark_yU = TurkishStemmer.prototype.r_mark_yU$;
 
 function TurkishStemmer$r_mark_yU$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_yU$LTurkishStemmer$ = TurkishStemmer$r_mark_yU$LTurkishStemmer$;
 
@@ -2358,7 +2392,7 @@ TurkishStemmer.prototype.r_mark_nU = TurkishStemmer.prototype.r_mark_nU$;
 
 function TurkishStemmer$r_mark_nU$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_2, 4) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_nU$LTurkishStemmer$ = TurkishStemmer$r_mark_nU$LTurkishStemmer$;
 
@@ -2370,7 +2404,7 @@ TurkishStemmer.prototype.r_mark_nUn = TurkishStemmer.prototype.r_mark_nUn$;
 
 function TurkishStemmer$r_mark_nUn$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_nUn$LTurkishStemmer$ = TurkishStemmer$r_mark_nUn$LTurkishStemmer$;
 
@@ -2382,7 +2416,7 @@ TurkishStemmer.prototype.r_mark_yA = TurkishStemmer.prototype.r_mark_yA$;
 
 function TurkishStemmer$r_mark_yA$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_4, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_yA$LTurkishStemmer$ = TurkishStemmer$r_mark_yA$LTurkishStemmer$;
 
@@ -2394,7 +2428,7 @@ TurkishStemmer.prototype.r_mark_nA = TurkishStemmer.prototype.r_mark_nA$;
 
 function TurkishStemmer$r_mark_nA$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_5, 2) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_nA$LTurkishStemmer$ = TurkishStemmer$r_mark_nA$LTurkishStemmer$;
 
@@ -2406,7 +2440,7 @@ TurkishStemmer.prototype.r_mark_DA = TurkishStemmer.prototype.r_mark_DA$;
 
 function TurkishStemmer$r_mark_DA$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_6, 4) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_DA$LTurkishStemmer$ = TurkishStemmer$r_mark_DA$LTurkishStemmer$;
 
@@ -2418,7 +2452,7 @@ TurkishStemmer.prototype.r_mark_ndA = TurkishStemmer.prototype.r_mark_ndA$;
 
 function TurkishStemmer$r_mark_ndA$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_7, 2) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_ndA$LTurkishStemmer$ = TurkishStemmer$r_mark_ndA$LTurkishStemmer$;
 
@@ -2430,7 +2464,7 @@ TurkishStemmer.prototype.r_mark_DAn = TurkishStemmer.prototype.r_mark_DAn$;
 
 function TurkishStemmer$r_mark_DAn$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_8, 4) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_DAn$LTurkishStemmer$ = TurkishStemmer$r_mark_DAn$LTurkishStemmer$;
 
@@ -2442,7 +2476,7 @@ TurkishStemmer.prototype.r_mark_ndAn = TurkishStemmer.prototype.r_mark_ndAn$;
 
 function TurkishStemmer$r_mark_ndAn$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_9, 2) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_ndAn$LTurkishStemmer$ = TurkishStemmer$r_mark_ndAn$LTurkishStemmer$;
 
@@ -2454,7 +2488,7 @@ TurkishStemmer.prototype.r_mark_ylA = TurkishStemmer.prototype.r_mark_ylA$;
 
 function TurkishStemmer$r_mark_ylA$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_10, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_ylA$LTurkishStemmer$ = TurkishStemmer$r_mark_ylA$LTurkishStemmer$;
 
@@ -2466,7 +2500,7 @@ TurkishStemmer.prototype.r_mark_ki = TurkishStemmer.prototype.r_mark_ki$;
 
 function TurkishStemmer$r_mark_ki$LTurkishStemmer$($this) {
 	return (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 2, "ki") ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_ki$LTurkishStemmer$ = TurkishStemmer$r_mark_ki$LTurkishStemmer$;
 
@@ -2478,7 +2512,7 @@ TurkishStemmer.prototype.r_mark_ncA = TurkishStemmer.prototype.r_mark_ncA$;
 
 function TurkishStemmer$r_mark_ncA$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_11, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_ncA$LTurkishStemmer$ = TurkishStemmer$r_mark_ncA$LTurkishStemmer$;
 
@@ -2490,7 +2524,7 @@ TurkishStemmer.prototype.r_mark_yUm = TurkishStemmer.prototype.r_mark_yUm$;
 
 function TurkishStemmer$r_mark_yUm$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_yUm$LTurkishStemmer$ = TurkishStemmer$r_mark_yUm$LTurkishStemmer$;
 
@@ -2502,7 +2536,7 @@ TurkishStemmer.prototype.r_mark_sUn = TurkishStemmer.prototype.r_mark_sUn$;
 
 function TurkishStemmer$r_mark_sUn$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_13, 4) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_sUn$LTurkishStemmer$ = TurkishStemmer$r_mark_sUn$LTurkishStemmer$;
 
@@ -2514,7 +2548,7 @@ TurkishStemmer.prototype.r_mark_yUz = TurkishStemmer.prototype.r_mark_yUz$;
 
 function TurkishStemmer$r_mark_yUz$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_yUz$LTurkishStemmer$ = TurkishStemmer$r_mark_yUz$LTurkishStemmer$;
 
@@ -2526,7 +2560,7 @@ TurkishStemmer.prototype.r_mark_sUnUz = TurkishStemmer.prototype.r_mark_sUnUz$;
 
 function TurkishStemmer$r_mark_sUnUz$LTurkishStemmer$($this) {
 	return (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_15, 4) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_sUnUz$LTurkishStemmer$ = TurkishStemmer$r_mark_sUnUz$LTurkishStemmer$;
 
@@ -2538,7 +2572,7 @@ TurkishStemmer.prototype.r_mark_lAr = TurkishStemmer.prototype.r_mark_lAr$;
 
 function TurkishStemmer$r_mark_lAr$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_lAr$LTurkishStemmer$ = TurkishStemmer$r_mark_lAr$LTurkishStemmer$;
 
@@ -2550,7 +2584,7 @@ TurkishStemmer.prototype.r_mark_nUz = TurkishStemmer.prototype.r_mark_nUz$;
 
 function TurkishStemmer$r_mark_nUz$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_17, 4) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_nUz$LTurkishStemmer$ = TurkishStemmer$r_mark_nUz$LTurkishStemmer$;
 
@@ -2562,7 +2596,7 @@ TurkishStemmer.prototype.r_mark_DUr = TurkishStemmer.prototype.r_mark_DUr$;
 
 function TurkishStemmer$r_mark_DUr$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_18, 8) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_DUr$LTurkishStemmer$ = TurkishStemmer$r_mark_DUr$LTurkishStemmer$;
 
@@ -2574,7 +2608,7 @@ TurkishStemmer.prototype.r_mark_cAsInA = TurkishStemmer.prototype.r_mark_cAsInA$
 
 function TurkishStemmer$r_mark_cAsInA$LTurkishStemmer$($this) {
 	return (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_19, 2) === 0 ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_cAsInA$LTurkishStemmer$ = TurkishStemmer$r_mark_cAsInA$LTurkishStemmer$;
 
@@ -2586,7 +2620,7 @@ TurkishStemmer.prototype.r_mark_yDU = TurkishStemmer.prototype.r_mark_yDU$;
 
 function TurkishStemmer$r_mark_yDU$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_yDU$LTurkishStemmer$ = TurkishStemmer$r_mark_yDU$LTurkishStemmer$;
 
@@ -2598,7 +2632,7 @@ TurkishStemmer.prototype.r_mark_ysA = TurkishStemmer.prototype.r_mark_ysA$;
 
 function TurkishStemmer$r_mark_ysA$LTurkishStemmer$($this) {
 	return (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_ysA$LTurkishStemmer$ = TurkishStemmer$r_mark_ysA$LTurkishStemmer$;
 
@@ -2610,7 +2644,7 @@ TurkishStemmer.prototype.r_mark_ymUs_ = TurkishStemmer.prototype.r_mark_ymUs_$;
 
 function TurkishStemmer$r_mark_ymUs_$LTurkishStemmer$($this) {
 	return (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_ymUs_$LTurkishStemmer$ = TurkishStemmer$r_mark_ymUs_$LTurkishStemmer$;
 
@@ -2622,7 +2656,7 @@ TurkishStemmer.prototype.r_mark_yken = TurkishStemmer.prototype.r_mark_yken$;
 
 function TurkishStemmer$r_mark_yken$LTurkishStemmer$($this) {
 	return (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 3, "ken") ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true);
-}
+};
 
 TurkishStemmer.r_mark_yken$LTurkishStemmer$ = TurkishStemmer$r_mark_yken$LTurkishStemmer$;
 
@@ -2689,31 +2723,34 @@ lab0:
 				lab2 = false;
 				v_2 = ((this.limit - this.cursor) | 0);
 				lab3 = true;
-			while (lab3 === true) {
-                lab3 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                break lab2;
-            }
+			lab3:
+				while (lab3 === true) {
+					lab3 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab3;
+					}
+					break lab2;
+				}
 				this.cursor = ((this.limit - v_2) | 0);
 				lab4 = true;
-			while (lab4 === true) {
-                lab4 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                break lab2;
-            }
+			lab4:
+				while (lab4 === true) {
+					lab4 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab4;
+					}
+					break lab2;
+				}
 				this.cursor = ((this.limit - v_2) | 0);
 				lab5 = true;
-			while (lab5 === true) {
-                lab5 = false;
-                if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                break lab2;
-            }
+			lab5:
+				while (lab5 === true) {
+					lab5 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab5;
+					}
+					break lab2;
+				}
 				this.cursor = ((this.limit - v_2) | 0);
 				if (! (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 3, "ken") ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
 					break lab1;
@@ -2723,132 +2760,142 @@ lab0:
 		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab6 = true;
-	while (lab6 === true) {
-        lab6 = false;
-        if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_19, 2) === 0 ? false : true)) {
-            break;
-        }
-        lab7 = true;
-    lab7:
-        while (lab7 === true) {
-            lab7 = false;
-            v_3 = ((this.limit - this.cursor) | 0);
-            lab8 = true;
-        while (lab8 === true) {
-lab8 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
-break;
-}
-break lab7;
-}
-            this.cursor = ((this.limit - v_3) | 0);
-            lab9 = true;
-        while (lab9 === true) {
-lab9 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-break;
-}
-break lab7;
-}
-            this.cursor = ((this.limit - v_3) | 0);
-            lab10 = true;
-        while (lab10 === true) {
-lab10 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-break lab7;
-}
-            this.cursor = ((this.limit - v_3) | 0);
-            lab11 = true;
-        while (lab11 === true) {
-lab11 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
-break;
-}
-break lab7;
-}
-            this.cursor = ((this.limit - v_3) | 0);
-            lab12 = true;
-        while (lab12 === true) {
-lab12 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-break lab7;
-}
-            this.cursor = ((this.limit - v_3) | 0);
-        }
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-            break;
-        }
-        break lab0;
-    }
+	lab6:
+		while (lab6 === true) {
+			lab6 = false;
+			if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_19, 2) === 0 ? false : true)) {
+				break lab6;
+			}
+			lab7 = true;
+		lab7:
+			while (lab7 === true) {
+				lab7 = false;
+				v_3 = ((this.limit - this.cursor) | 0);
+				lab8 = true;
+			lab8:
+				while (lab8 === true) {
+					lab8 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
+						break lab8;
+					}
+					break lab7;
+				}
+				this.cursor = ((this.limit - v_3) | 0);
+				lab9 = true;
+			lab9:
+				while (lab9 === true) {
+					lab9 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+						break lab9;
+					}
+					break lab7;
+				}
+				this.cursor = ((this.limit - v_3) | 0);
+				lab10 = true;
+			lab10:
+				while (lab10 === true) {
+					lab10 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab10;
+					}
+					break lab7;
+				}
+				this.cursor = ((this.limit - v_3) | 0);
+				lab11 = true;
+			lab11:
+				while (lab11 === true) {
+					lab11 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
+						break lab11;
+					}
+					break lab7;
+				}
+				this.cursor = ((this.limit - v_3) | 0);
+				lab12 = true;
+			lab12:
+				while (lab12 === true) {
+					lab12 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab12;
+					}
+					break lab7;
+				}
+				this.cursor = ((this.limit - v_3) | 0);
+			}
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+				break lab6;
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab13 = true;
-	while (lab13 === true) {
-        lab13 = false;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-            break;
-        }
-        this.bra = this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-        v_4 = ((this.limit - this.cursor) | 0);
-        lab14 = true;
-    lab14:
-        while (lab14 === true) {
-            lab14 = false;
-            this.ket = this.cursor;
-            lab15 = true;
-        lab15:
-            while (lab15 === true) {
-                lab15 = false;
-                v_5 = ((this.limit - this.cursor) | 0);
-                lab16 = true;
-            while (lab16 === true) {
-lab16 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_18, 8) === 0 ? false : true)) {
-break;
-}
-break lab15;
-}
-                this.cursor = ((this.limit - v_5) | 0);
-                lab17 = true;
-            while (lab17 === true) {
-lab17 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-break lab15;
-}
-                this.cursor = ((this.limit - v_5) | 0);
-                lab18 = true;
-            while (lab18 === true) {
-lab18 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-break lab15;
-}
-                this.cursor = ((this.limit - v_5) | 0);
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    this.cursor = ((this.limit - v_4) | 0);
-                    break lab14;
-                }
-            }
-        }
-        this.B_continue_stemming_noun_suffixes = false;
-        break lab0;
-    }
+	lab13:
+		while (lab13 === true) {
+			lab13 = false;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+				break lab13;
+			}
+			this.bra = this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+			v_4 = ((this.limit - this.cursor) | 0);
+			lab14 = true;
+		lab14:
+			while (lab14 === true) {
+				lab14 = false;
+				this.ket = this.cursor;
+				lab15 = true;
+			lab15:
+				while (lab15 === true) {
+					lab15 = false;
+					v_5 = ((this.limit - this.cursor) | 0);
+					lab16 = true;
+				lab16:
+					while (lab16 === true) {
+						lab16 = false;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_18, 8) === 0 ? false : true)) {
+							break lab16;
+						}
+						break lab15;
+					}
+					this.cursor = ((this.limit - v_5) | 0);
+					lab17 = true;
+				lab17:
+					while (lab17 === true) {
+						lab17 = false;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+							break lab17;
+						}
+						break lab15;
+					}
+					this.cursor = ((this.limit - v_5) | 0);
+					lab18 = true;
+				lab18:
+					while (lab18 === true) {
+						lab18 = false;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+							break lab18;
+						}
+						break lab15;
+					}
+					this.cursor = ((this.limit - v_5) | 0);
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						this.cursor = ((this.limit - v_4) | 0);
+						break lab14;
+					}
+				}
+			}
+			this.B_continue_stemming_noun_suffixes = false;
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab19 = true;
 	lab19:
 		while (lab19 === true) {
 			lab19 = false;
 			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_17, 4) === 0 ? false : true)) {
-				break;
+				break lab19;
 			}
 			lab20 = true;
 		lab20:
@@ -2856,13 +2903,14 @@ break lab15;
 				lab20 = false;
 				v_6 = ((this.limit - this.cursor) | 0);
 				lab21 = true;
-			while (lab21 === true) {
-                lab21 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                break lab20;
-            }
+			lab21:
+				while (lab21 === true) {
+					lab21 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab21;
+					}
+					break lab20;
+				}
 				this.cursor = ((this.limit - v_6) | 0);
 				if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
 					break lab19;
@@ -2881,31 +2929,34 @@ break lab15;
 				lab23 = false;
 				v_7 = ((this.limit - this.cursor) | 0);
 				lab24 = true;
-			while (lab24 === true) {
-                lab24 = false;
-                if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
-                    break;
-                }
-                break lab23;
-            }
+			lab24:
+				while (lab24 === true) {
+					lab24 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
+						break lab24;
+					}
+					break lab23;
+				}
 				this.cursor = ((this.limit - v_7) | 0);
 				lab25 = true;
-			while (lab25 === true) {
-                lab25 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                break lab23;
-            }
+			lab25:
+				while (lab25 === true) {
+					lab25 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab25;
+					}
+					break lab23;
+				}
 				this.cursor = ((this.limit - v_7) | 0);
 				lab26 = true;
-			while (lab26 === true) {
-                lab26 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
-                    break;
-                }
-                break lab23;
-            }
+			lab26:
+				while (lab26 === true) {
+					lab26 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
+						break lab26;
+					}
+					break lab23;
+				}
 				this.cursor = ((this.limit - v_7) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
 					break lab22;
@@ -2917,14 +2968,15 @@ break lab15;
 			}
 			v_8 = ((this.limit - this.cursor) | 0);
 			lab27 = true;
-		while (lab27 === true) {
-            lab27 = false;
-            this.ket = this.cursor;
-            if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-                this.cursor = ((this.limit - v_8) | 0);
-                break;
-            }
-        }
+		lab27:
+			while (lab27 === true) {
+				lab27 = false;
+				this.ket = this.cursor;
+				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+					this.cursor = ((this.limit - v_8) | 0);
+					break lab27;
+				}
+			}
 			break lab0;
 		}
 		this.cursor = ((this.limit - v_1) | 0);
@@ -2937,65 +2989,71 @@ break lab15;
 		}
 		v_9 = ((this.limit - this.cursor) | 0);
 		lab28 = true;
-	while (lab28 === true) {
-        lab28 = false;
-        this.ket = this.cursor;
-        lab29 = true;
-    lab29:
-        while (lab29 === true) {
-            lab29 = false;
-            v_10 = ((this.limit - this.cursor) | 0);
-            lab30 = true;
-        while (lab30 === true) {
-lab30 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
-break;
-}
-break lab29;
-}
-            this.cursor = ((this.limit - v_10) | 0);
-            lab31 = true;
-        while (lab31 === true) {
-lab31 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-break;
-}
-break lab29;
-}
-            this.cursor = ((this.limit - v_10) | 0);
-            lab32 = true;
-        while (lab32 === true) {
-lab32 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-break lab29;
-}
-            this.cursor = ((this.limit - v_10) | 0);
-            lab33 = true;
-        while (lab33 === true) {
-lab33 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
-break;
-}
-break lab29;
-}
-            this.cursor = ((this.limit - v_10) | 0);
-            lab34 = true;
-        while (lab34 === true) {
-lab34 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-break lab29;
-}
-            this.cursor = ((this.limit - v_10) | 0);
-        }
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-            this.cursor = ((this.limit - v_9) | 0);
-            break;
-        }
-    }
+	lab28:
+		while (lab28 === true) {
+			lab28 = false;
+			this.ket = this.cursor;
+			lab29 = true;
+		lab29:
+			while (lab29 === true) {
+				lab29 = false;
+				v_10 = ((this.limit - this.cursor) | 0);
+				lab30 = true;
+			lab30:
+				while (lab30 === true) {
+					lab30 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
+						break lab30;
+					}
+					break lab29;
+				}
+				this.cursor = ((this.limit - v_10) | 0);
+				lab31 = true;
+			lab31:
+				while (lab31 === true) {
+					lab31 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+						break lab31;
+					}
+					break lab29;
+				}
+				this.cursor = ((this.limit - v_10) | 0);
+				lab32 = true;
+			lab32:
+				while (lab32 === true) {
+					lab32 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab32;
+					}
+					break lab29;
+				}
+				this.cursor = ((this.limit - v_10) | 0);
+				lab33 = true;
+			lab33:
+				while (lab33 === true) {
+					lab33 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
+						break lab33;
+					}
+					break lab29;
+				}
+				this.cursor = ((this.limit - v_10) | 0);
+				lab34 = true;
+			lab34:
+				while (lab34 === true) {
+					lab34 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab34;
+					}
+					break lab29;
+				}
+				this.cursor = ((this.limit - v_10) | 0);
+			}
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+				this.cursor = ((this.limit - v_9) | 0);
+				break lab28;
+			}
+		}
 	}
 	this.bra = this.cursor;
 	return (! BaseStemmer$slice_from$LBaseStemmer$S(this, "") ? false : true);
@@ -3066,31 +3124,34 @@ lab0:
 				lab2 = false;
 				v_2 = (($this.limit - $this.cursor) | 0);
 				lab3 = true;
-			while (lab3 === true) {
-                lab3 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                break lab2;
-            }
+			lab3:
+				while (lab3 === true) {
+					lab3 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab3;
+					}
+					break lab2;
+				}
 				$this.cursor = (($this.limit - v_2) | 0);
 				lab4 = true;
-			while (lab4 === true) {
-                lab4 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                break lab2;
-            }
+			lab4:
+				while (lab4 === true) {
+					lab4 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab4;
+					}
+					break lab2;
+				}
 				$this.cursor = (($this.limit - v_2) | 0);
 				lab5 = true;
-			while (lab5 === true) {
-                lab5 = false;
-                if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                break lab2;
-            }
+			lab5:
+				while (lab5 === true) {
+					lab5 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab5;
+					}
+					break lab2;
+				}
 				$this.cursor = (($this.limit - v_2) | 0);
 				if (! (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 3, "ken") ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
 					break lab1;
@@ -3100,132 +3161,142 @@ lab0:
 		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab6 = true;
-	while (lab6 === true) {
-        lab6 = false;
-        if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_19, 2) === 0 ? false : true)) {
-            break;
-        }
-        lab7 = true;
-    lab7:
-        while (lab7 === true) {
-            lab7 = false;
-            v_3 = (($this.limit - $this.cursor) | 0);
-            lab8 = true;
-        while (lab8 === true) {
-lab8 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
-break;
-}
-break lab7;
-}
-            $this.cursor = (($this.limit - v_3) | 0);
-            lab9 = true;
-        while (lab9 === true) {
-lab9 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-break;
-}
-break lab7;
-}
-            $this.cursor = (($this.limit - v_3) | 0);
-            lab10 = true;
-        while (lab10 === true) {
-lab10 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-break lab7;
-}
-            $this.cursor = (($this.limit - v_3) | 0);
-            lab11 = true;
-        while (lab11 === true) {
-lab11 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
-break;
-}
-break lab7;
-}
-            $this.cursor = (($this.limit - v_3) | 0);
-            lab12 = true;
-        while (lab12 === true) {
-lab12 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-break lab7;
-}
-            $this.cursor = (($this.limit - v_3) | 0);
-        }
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-            break;
-        }
-        break lab0;
-    }
+	lab6:
+		while (lab6 === true) {
+			lab6 = false;
+			if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_19, 2) === 0 ? false : true)) {
+				break lab6;
+			}
+			lab7 = true;
+		lab7:
+			while (lab7 === true) {
+				lab7 = false;
+				v_3 = (($this.limit - $this.cursor) | 0);
+				lab8 = true;
+			lab8:
+				while (lab8 === true) {
+					lab8 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
+						break lab8;
+					}
+					break lab7;
+				}
+				$this.cursor = (($this.limit - v_3) | 0);
+				lab9 = true;
+			lab9:
+				while (lab9 === true) {
+					lab9 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+						break lab9;
+					}
+					break lab7;
+				}
+				$this.cursor = (($this.limit - v_3) | 0);
+				lab10 = true;
+			lab10:
+				while (lab10 === true) {
+					lab10 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab10;
+					}
+					break lab7;
+				}
+				$this.cursor = (($this.limit - v_3) | 0);
+				lab11 = true;
+			lab11:
+				while (lab11 === true) {
+					lab11 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
+						break lab11;
+					}
+					break lab7;
+				}
+				$this.cursor = (($this.limit - v_3) | 0);
+				lab12 = true;
+			lab12:
+				while (lab12 === true) {
+					lab12 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab12;
+					}
+					break lab7;
+				}
+				$this.cursor = (($this.limit - v_3) | 0);
+			}
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+				break lab6;
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab13 = true;
-	while (lab13 === true) {
-        lab13 = false;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-            break;
-        }
-        $this.bra = $this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-        v_4 = (($this.limit - $this.cursor) | 0);
-        lab14 = true;
-    lab14:
-        while (lab14 === true) {
-            lab14 = false;
-            $this.ket = $this.cursor;
-            lab15 = true;
-        lab15:
-            while (lab15 === true) {
-                lab15 = false;
-                v_5 = (($this.limit - $this.cursor) | 0);
-                lab16 = true;
-            while (lab16 === true) {
-lab16 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_18, 8) === 0 ? false : true)) {
-break;
-}
-break lab15;
-}
-                $this.cursor = (($this.limit - v_5) | 0);
-                lab17 = true;
-            while (lab17 === true) {
-lab17 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-break lab15;
-}
-                $this.cursor = (($this.limit - v_5) | 0);
-                lab18 = true;
-            while (lab18 === true) {
-lab18 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-break lab15;
-}
-                $this.cursor = (($this.limit - v_5) | 0);
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    $this.cursor = (($this.limit - v_4) | 0);
-                    break lab14;
-                }
-            }
-        }
-        $this.B_continue_stemming_noun_suffixes = false;
-        break lab0;
-    }
+	lab13:
+		while (lab13 === true) {
+			lab13 = false;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+				break lab13;
+			}
+			$this.bra = $this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+			v_4 = (($this.limit - $this.cursor) | 0);
+			lab14 = true;
+		lab14:
+			while (lab14 === true) {
+				lab14 = false;
+				$this.ket = $this.cursor;
+				lab15 = true;
+			lab15:
+				while (lab15 === true) {
+					lab15 = false;
+					v_5 = (($this.limit - $this.cursor) | 0);
+					lab16 = true;
+				lab16:
+					while (lab16 === true) {
+						lab16 = false;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_18, 8) === 0 ? false : true)) {
+							break lab16;
+						}
+						break lab15;
+					}
+					$this.cursor = (($this.limit - v_5) | 0);
+					lab17 = true;
+				lab17:
+					while (lab17 === true) {
+						lab17 = false;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+							break lab17;
+						}
+						break lab15;
+					}
+					$this.cursor = (($this.limit - v_5) | 0);
+					lab18 = true;
+				lab18:
+					while (lab18 === true) {
+						lab18 = false;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+							break lab18;
+						}
+						break lab15;
+					}
+					$this.cursor = (($this.limit - v_5) | 0);
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						$this.cursor = (($this.limit - v_4) | 0);
+						break lab14;
+					}
+				}
+			}
+			$this.B_continue_stemming_noun_suffixes = false;
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab19 = true;
 	lab19:
 		while (lab19 === true) {
 			lab19 = false;
 			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_17, 4) === 0 ? false : true)) {
-				break;
+				break lab19;
 			}
 			lab20 = true;
 		lab20:
@@ -3233,13 +3304,14 @@ break lab15;
 				lab20 = false;
 				v_6 = (($this.limit - $this.cursor) | 0);
 				lab21 = true;
-			while (lab21 === true) {
-                lab21 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                break lab20;
-            }
+			lab21:
+				while (lab21 === true) {
+					lab21 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_20, 32) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab21;
+					}
+					break lab20;
+				}
 				$this.cursor = (($this.limit - v_6) | 0);
 				if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_21, 8) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
 					break lab19;
@@ -3258,31 +3330,34 @@ break lab15;
 				lab23 = false;
 				v_7 = (($this.limit - $this.cursor) | 0);
 				lab24 = true;
-			while (lab24 === true) {
-                lab24 = false;
-                if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
-                    break;
-                }
-                break lab23;
-            }
+			lab24:
+				while (lab24 === true) {
+					lab24 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
+						break lab24;
+					}
+					break lab23;
+				}
 				$this.cursor = (($this.limit - v_7) | 0);
 				lab25 = true;
-			while (lab25 === true) {
-                lab25 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                break lab23;
-            }
+			lab25:
+				while (lab25 === true) {
+					lab25 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab25;
+					}
+					break lab23;
+				}
 				$this.cursor = (($this.limit - v_7) | 0);
 				lab26 = true;
-			while (lab26 === true) {
-                lab26 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
-                    break;
-                }
-                break lab23;
-            }
+			lab26:
+				while (lab26 === true) {
+					lab26 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
+						break lab26;
+					}
+					break lab23;
+				}
 				$this.cursor = (($this.limit - v_7) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
 					break lab22;
@@ -3294,14 +3369,15 @@ break lab15;
 			}
 			v_8 = (($this.limit - $this.cursor) | 0);
 			lab27 = true;
-		while (lab27 === true) {
-            lab27 = false;
-            $this.ket = $this.cursor;
-            if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-                $this.cursor = (($this.limit - v_8) | 0);
-                break;
-            }
-        }
+		lab27:
+			while (lab27 === true) {
+				lab27 = false;
+				$this.ket = $this.cursor;
+				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+					$this.cursor = (($this.limit - v_8) | 0);
+					break lab27;
+				}
+			}
 			break lab0;
 		}
 		$this.cursor = (($this.limit - v_1) | 0);
@@ -3314,69 +3390,75 @@ break lab15;
 		}
 		v_9 = (($this.limit - $this.cursor) | 0);
 		lab28 = true;
-	while (lab28 === true) {
-        lab28 = false;
-        $this.ket = $this.cursor;
-        lab29 = true;
-    lab29:
-        while (lab29 === true) {
-            lab29 = false;
-            v_10 = (($this.limit - $this.cursor) | 0);
-            lab30 = true;
-        while (lab30 === true) {
-lab30 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
-break;
-}
-break lab29;
-}
-            $this.cursor = (($this.limit - v_10) | 0);
-            lab31 = true;
-        while (lab31 === true) {
-lab31 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-break;
-}
-break lab29;
-}
-            $this.cursor = (($this.limit - v_10) | 0);
-            lab32 = true;
-        while (lab32 === true) {
-lab32 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-break lab29;
-}
-            $this.cursor = (($this.limit - v_10) | 0);
-            lab33 = true;
-        while (lab33 === true) {
-lab33 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
-break;
-}
-break lab29;
-}
-            $this.cursor = (($this.limit - v_10) | 0);
-            lab34 = true;
-        while (lab34 === true) {
-lab34 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-break lab29;
-}
-            $this.cursor = (($this.limit - v_10) | 0);
-        }
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-            $this.cursor = (($this.limit - v_9) | 0);
-            break;
-        }
-    }
+	lab28:
+		while (lab28 === true) {
+			lab28 = false;
+			$this.ket = $this.cursor;
+			lab29 = true;
+		lab29:
+			while (lab29 === true) {
+				lab29 = false;
+				v_10 = (($this.limit - $this.cursor) | 0);
+				lab30 = true;
+			lab30:
+				while (lab30 === true) {
+					lab30 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_15, 4) === 0 ? false : true)) {
+						break lab30;
+					}
+					break lab29;
+				}
+				$this.cursor = (($this.limit - v_10) | 0);
+				lab31 = true;
+			lab31:
+				while (lab31 === true) {
+					lab31 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+						break lab31;
+					}
+					break lab29;
+				}
+				$this.cursor = (($this.limit - v_10) | 0);
+				lab32 = true;
+			lab32:
+				while (lab32 === true) {
+					lab32 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_12, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab32;
+					}
+					break lab29;
+				}
+				$this.cursor = (($this.limit - v_10) | 0);
+				lab33 = true;
+			lab33:
+				while (lab33 === true) {
+					lab33 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_13, 4) === 0 ? false : true)) {
+						break lab33;
+					}
+					break lab29;
+				}
+				$this.cursor = (($this.limit - v_10) | 0);
+				lab34 = true;
+			lab34:
+				while (lab34 === true) {
+					lab34 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_14, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab34;
+					}
+					break lab29;
+				}
+				$this.cursor = (($this.limit - v_10) | 0);
+			}
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_22, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+				$this.cursor = (($this.limit - v_9) | 0);
+				break lab28;
+			}
+		}
 	}
 	$this.bra = $this.cursor;
 	return (! BaseStemmer$slice_from$LBaseStemmer$S($this, "") ? false : true);
-}
+};
 
 TurkishStemmer.r_stem_nominal_verb_suffixes$LTurkishStemmer$ = TurkishStemmer$r_stem_nominal_verb_suffixes$LTurkishStemmer$;
 
@@ -3421,169 +3503,177 @@ lab0:
 		lab0 = false;
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_6, 4) === 0 ? false : true)) {
-            break;
-        }
-        this.bra = this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-        v_2 = ((this.limit - this.cursor) | 0);
-        lab2 = true;
-    lab2:
-        while (lab2 === true) {
-            lab2 = false;
-            this.ket = this.cursor;
-            lab3 = true;
-        lab3:
-            while (lab3 === true) {
-                lab3 = false;
-                v_3 = ((this.limit - this.cursor) | 0);
-                lab4 = true;
-            while (lab4 === true) {
-lab4 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-v_4 = ((this.limit - this.cursor) | 0);
-lab5 = true;
-while (lab5 === true) {
-lab5 = false;
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_4) | 0);
-break;
-}
-}
-break lab3;
-}
-                this.cursor = ((this.limit - v_3) | 0);
-                if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
-                    this.cursor = ((this.limit - v_2) | 0);
-                    break lab2;
-                }
-                this.bra = this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                    return false;
-                }
-                v_5 = ((this.limit - this.cursor) | 0);
-                lab6 = true;
-            while (lab6 === true) {
-lab6 = false;
-this.ket = this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-this.cursor = ((this.limit - v_5) | 0);
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_5) | 0);
-break;
-}
-}
-            }
-        }
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_6, 4) === 0 ? false : true)) {
+				break lab1;
+			}
+			this.bra = this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+			v_2 = ((this.limit - this.cursor) | 0);
+			lab2 = true;
+		lab2:
+			while (lab2 === true) {
+				lab2 = false;
+				this.ket = this.cursor;
+				lab3 = true;
+			lab3:
+				while (lab3 === true) {
+					lab3 = false;
+					v_3 = ((this.limit - this.cursor) | 0);
+					lab4 = true;
+				lab4:
+					while (lab4 === true) {
+						lab4 = false;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							break lab4;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						v_4 = ((this.limit - this.cursor) | 0);
+						lab5 = true;
+					lab5:
+						while (lab5 === true) {
+							lab5 = false;
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+								this.cursor = ((this.limit - v_4) | 0);
+								break lab5;
+							}
+						}
+						break lab3;
+					}
+					this.cursor = ((this.limit - v_3) | 0);
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
+						this.cursor = ((this.limit - v_2) | 0);
+						break lab2;
+					}
+					this.bra = this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+						return false;
+					}
+					v_5 = ((this.limit - this.cursor) | 0);
+					lab6 = true;
+				lab6:
+					while (lab6 === true) {
+						lab6 = false;
+						this.ket = this.cursor;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							this.cursor = ((this.limit - v_5) | 0);
+							break lab6;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+							this.cursor = ((this.limit - v_5) | 0);
+							break lab6;
+						}
+					}
+				}
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab7 = true;
-	while (lab7 === true) {
-        lab7 = false;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$(this) ? false : true)) {
-            break;
-        }
-        this.bra = this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-        v_6 = ((this.limit - this.cursor) | 0);
-        lab8 = true;
-    lab8:
-        while (lab8 === true) {
-            lab8 = false;
-            this.ket = this.cursor;
-            lab9 = true;
-        lab9:
-            while (lab9 === true) {
-                lab9 = false;
-                v_7 = ((this.limit - this.cursor) | 0);
-                lab10 = true;
-            while (lab10 === true) {
-lab10 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-break lab9;
-}
-                this.cursor = ((this.limit - v_7) | 0);
-                lab11 = true;
-            lab11:
-                while (lab11 === true) {
-                    lab11 = false;
-                    this.ket = this.cursor;
-                    lab12 = true;
-                lab12:
-                    while (lab12 === true) {
-                        lab12 = false;
-                        v_8 = ((this.limit - this.cursor) | 0);
-                        lab13 = true;
-                    while (lab13 === true) {
-lab13 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-break lab12;
-}
-                        this.cursor = ((this.limit - v_8) | 0);
-                        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
-                            break lab11;
-                        }
-                    }
-                    this.bra = this.cursor;
-                    if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                        return false;
-                    }
-                    v_9 = ((this.limit - this.cursor) | 0);
-                    lab14 = true;
-                while (lab14 === true) {
-lab14 = false;
-this.ket = this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-this.cursor = ((this.limit - v_9) | 0);
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_9) | 0);
-break;
-}
-}
-                    break lab9;
-                }
-                this.cursor = ((this.limit - v_7) | 0);
-                if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-                    this.cursor = ((this.limit - v_6) | 0);
-                    break lab8;
-                }
-            }
-        }
-        break lab0;
-    }
+	lab7:
+		while (lab7 === true) {
+			lab7 = false;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$(this) ? false : true)) {
+				break lab7;
+			}
+			this.bra = this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+			v_6 = ((this.limit - this.cursor) | 0);
+			lab8 = true;
+		lab8:
+			while (lab8 === true) {
+				lab8 = false;
+				this.ket = this.cursor;
+				lab9 = true;
+			lab9:
+				while (lab9 === true) {
+					lab9 = false;
+					v_7 = ((this.limit - this.cursor) | 0);
+					lab10 = true;
+				lab10:
+					while (lab10 === true) {
+						lab10 = false;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+							break lab10;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						break lab9;
+					}
+					this.cursor = ((this.limit - v_7) | 0);
+					lab11 = true;
+				lab11:
+					while (lab11 === true) {
+						lab11 = false;
+						this.ket = this.cursor;
+						lab12 = true;
+					lab12:
+						while (lab12 === true) {
+							lab12 = false;
+							v_8 = ((this.limit - this.cursor) | 0);
+							lab13 = true;
+						lab13:
+							while (lab13 === true) {
+								lab13 = false;
+								if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
+									break lab13;
+								}
+								break lab12;
+							}
+							this.cursor = ((this.limit - v_8) | 0);
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
+								break lab11;
+							}
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						v_9 = ((this.limit - this.cursor) | 0);
+						lab14 = true;
+					lab14:
+						while (lab14 === true) {
+							lab14 = false;
+							this.ket = this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								this.cursor = ((this.limit - v_9) | 0);
+								break lab14;
+							}
+							this.bra = this.cursor;
+							if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+								return false;
+							}
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+								this.cursor = ((this.limit - v_9) | 0);
+								break lab14;
+							}
+						}
+						break lab9;
+					}
+					this.cursor = ((this.limit - v_7) | 0);
+					if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+						this.cursor = ((this.limit - v_6) | 0);
+						break lab8;
+					}
+				}
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_7, 2) === 0 ? false : true)) {
 			return false;
@@ -3594,48 +3684,51 @@ break;
 			lab15 = false;
 			v_10 = ((this.limit - this.cursor) | 0);
 			lab16 = true;
-		while (lab16 === true) {
-            lab16 = false;
-            if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-                break;
-            }
-            this.bra = this.cursor;
-            if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                return false;
-            }
-            break lab15;
-        }
+		lab16:
+			while (lab16 === true) {
+				lab16 = false;
+				if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+					break lab16;
+				}
+				this.bra = this.cursor;
+				if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+					return false;
+				}
+				break lab15;
+			}
 			this.cursor = ((this.limit - v_10) | 0);
 			lab17 = true;
-		while (lab17 === true) {
-            lab17 = false;
-            if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
-                break;
-            }
-            this.bra = this.cursor;
-            if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                return false;
-            }
-            v_11 = ((this.limit - this.cursor) | 0);
-            lab18 = true;
-        while (lab18 === true) {
-lab18 = false;
-this.ket = this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-this.cursor = ((this.limit - v_11) | 0);
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_11) | 0);
-break;
-}
-}
-            break lab15;
-        }
+		lab17:
+			while (lab17 === true) {
+				lab17 = false;
+				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
+					break lab17;
+				}
+				this.bra = this.cursor;
+				if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+					return false;
+				}
+				v_11 = ((this.limit - this.cursor) | 0);
+				lab18 = true;
+			lab18:
+				while (lab18 === true) {
+					lab18 = false;
+					this.ket = this.cursor;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+						this.cursor = ((this.limit - v_11) | 0);
+						break lab18;
+					}
+					this.bra = this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+						return false;
+					}
+					if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+						this.cursor = ((this.limit - v_11) | 0);
+						break lab18;
+					}
+				}
+				break lab15;
+			}
 			this.cursor = ((this.limit - v_10) | 0);
 			if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
 				return false;
@@ -3688,169 +3781,177 @@ lab0:
 		lab0 = false;
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_6, 4) === 0 ? false : true)) {
-            break;
-        }
-        $this.bra = $this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-        v_2 = (($this.limit - $this.cursor) | 0);
-        lab2 = true;
-    lab2:
-        while (lab2 === true) {
-            lab2 = false;
-            $this.ket = $this.cursor;
-            lab3 = true;
-        lab3:
-            while (lab3 === true) {
-                lab3 = false;
-                v_3 = (($this.limit - $this.cursor) | 0);
-                lab4 = true;
-            while (lab4 === true) {
-lab4 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-v_4 = (($this.limit - $this.cursor) | 0);
-lab5 = true;
-while (lab5 === true) {
-lab5 = false;
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_4) | 0);
-break;
-}
-}
-break lab3;
-}
-                $this.cursor = (($this.limit - v_3) | 0);
-                if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
-                    $this.cursor = (($this.limit - v_2) | 0);
-                    break lab2;
-                }
-                $this.bra = $this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                    return false;
-                }
-                v_5 = (($this.limit - $this.cursor) | 0);
-                lab6 = true;
-            while (lab6 === true) {
-lab6 = false;
-$this.ket = $this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-$this.cursor = (($this.limit - v_5) | 0);
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_5) | 0);
-break;
-}
-}
-            }
-        }
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_6, 4) === 0 ? false : true)) {
+				break lab1;
+			}
+			$this.bra = $this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+			v_2 = (($this.limit - $this.cursor) | 0);
+			lab2 = true;
+		lab2:
+			while (lab2 === true) {
+				lab2 = false;
+				$this.ket = $this.cursor;
+				lab3 = true;
+			lab3:
+				while (lab3 === true) {
+					lab3 = false;
+					v_3 = (($this.limit - $this.cursor) | 0);
+					lab4 = true;
+				lab4:
+					while (lab4 === true) {
+						lab4 = false;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							break lab4;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						v_4 = (($this.limit - $this.cursor) | 0);
+						lab5 = true;
+					lab5:
+						while (lab5 === true) {
+							lab5 = false;
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+								$this.cursor = (($this.limit - v_4) | 0);
+								break lab5;
+							}
+						}
+						break lab3;
+					}
+					$this.cursor = (($this.limit - v_3) | 0);
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
+						$this.cursor = (($this.limit - v_2) | 0);
+						break lab2;
+					}
+					$this.bra = $this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+						return false;
+					}
+					v_5 = (($this.limit - $this.cursor) | 0);
+					lab6 = true;
+				lab6:
+					while (lab6 === true) {
+						lab6 = false;
+						$this.ket = $this.cursor;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							$this.cursor = (($this.limit - v_5) | 0);
+							break lab6;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+							$this.cursor = (($this.limit - v_5) | 0);
+							break lab6;
+						}
+					}
+				}
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab7 = true;
-	while (lab7 === true) {
-        lab7 = false;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$($this) ? false : true)) {
-            break;
-        }
-        $this.bra = $this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-        v_6 = (($this.limit - $this.cursor) | 0);
-        lab8 = true;
-    lab8:
-        while (lab8 === true) {
-            lab8 = false;
-            $this.ket = $this.cursor;
-            lab9 = true;
-        lab9:
-            while (lab9 === true) {
-                lab9 = false;
-                v_7 = (($this.limit - $this.cursor) | 0);
-                lab10 = true;
-            while (lab10 === true) {
-lab10 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-break lab9;
-}
-                $this.cursor = (($this.limit - v_7) | 0);
-                lab11 = true;
-            lab11:
-                while (lab11 === true) {
-                    lab11 = false;
-                    $this.ket = $this.cursor;
-                    lab12 = true;
-                lab12:
-                    while (lab12 === true) {
-                        lab12 = false;
-                        v_8 = (($this.limit - $this.cursor) | 0);
-                        lab13 = true;
-                    while (lab13 === true) {
-lab13 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-break lab12;
-}
-                        $this.cursor = (($this.limit - v_8) | 0);
-                        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
-                            break lab11;
-                        }
-                    }
-                    $this.bra = $this.cursor;
-                    if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                        return false;
-                    }
-                    v_9 = (($this.limit - $this.cursor) | 0);
-                    lab14 = true;
-                while (lab14 === true) {
-lab14 = false;
-$this.ket = $this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-$this.cursor = (($this.limit - v_9) | 0);
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_9) | 0);
-break;
-}
-}
-                    break lab9;
-                }
-                $this.cursor = (($this.limit - v_7) | 0);
-                if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-                    $this.cursor = (($this.limit - v_6) | 0);
-                    break lab8;
-                }
-            }
-        }
-        break lab0;
-    }
+	lab7:
+		while (lab7 === true) {
+			lab7 = false;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$($this) ? false : true)) {
+				break lab7;
+			}
+			$this.bra = $this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+			v_6 = (($this.limit - $this.cursor) | 0);
+			lab8 = true;
+		lab8:
+			while (lab8 === true) {
+				lab8 = false;
+				$this.ket = $this.cursor;
+				lab9 = true;
+			lab9:
+				while (lab9 === true) {
+					lab9 = false;
+					v_7 = (($this.limit - $this.cursor) | 0);
+					lab10 = true;
+				lab10:
+					while (lab10 === true) {
+						lab10 = false;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+							break lab10;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						break lab9;
+					}
+					$this.cursor = (($this.limit - v_7) | 0);
+					lab11 = true;
+				lab11:
+					while (lab11 === true) {
+						lab11 = false;
+						$this.ket = $this.cursor;
+						lab12 = true;
+					lab12:
+						while (lab12 === true) {
+							lab12 = false;
+							v_8 = (($this.limit - $this.cursor) | 0);
+							lab13 = true;
+						lab13:
+							while (lab13 === true) {
+								lab13 = false;
+								if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
+									break lab13;
+								}
+								break lab12;
+							}
+							$this.cursor = (($this.limit - v_8) | 0);
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
+								break lab11;
+							}
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						v_9 = (($this.limit - $this.cursor) | 0);
+						lab14 = true;
+					lab14:
+						while (lab14 === true) {
+							lab14 = false;
+							$this.ket = $this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								$this.cursor = (($this.limit - v_9) | 0);
+								break lab14;
+							}
+							$this.bra = $this.cursor;
+							if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+								return false;
+							}
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+								$this.cursor = (($this.limit - v_9) | 0);
+								break lab14;
+							}
+						}
+						break lab9;
+					}
+					$this.cursor = (($this.limit - v_7) | 0);
+					if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+						$this.cursor = (($this.limit - v_6) | 0);
+						break lab8;
+					}
+				}
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_7, 2) === 0 ? false : true)) {
 			return false;
@@ -3861,48 +3962,51 @@ break;
 			lab15 = false;
 			v_10 = (($this.limit - $this.cursor) | 0);
 			lab16 = true;
-		while (lab16 === true) {
-            lab16 = false;
-            if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-                break;
-            }
-            $this.bra = $this.cursor;
-            if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                return false;
-            }
-            break lab15;
-        }
+		lab16:
+			while (lab16 === true) {
+				lab16 = false;
+				if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+					break lab16;
+				}
+				$this.bra = $this.cursor;
+				if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+					return false;
+				}
+				break lab15;
+			}
 			$this.cursor = (($this.limit - v_10) | 0);
 			lab17 = true;
-		while (lab17 === true) {
-            lab17 = false;
-            if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
-                break;
-            }
-            $this.bra = $this.cursor;
-            if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                return false;
-            }
-            v_11 = (($this.limit - $this.cursor) | 0);
-            lab18 = true;
-        while (lab18 === true) {
-lab18 = false;
-$this.ket = $this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-$this.cursor = (($this.limit - v_11) | 0);
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_11) | 0);
-break;
-}
-}
-            break lab15;
-        }
+		lab17:
+			while (lab17 === true) {
+				lab17 = false;
+				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
+					break lab17;
+				}
+				$this.bra = $this.cursor;
+				if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+					return false;
+				}
+				v_11 = (($this.limit - $this.cursor) | 0);
+				lab18 = true;
+			lab18:
+				while (lab18 === true) {
+					lab18 = false;
+					$this.ket = $this.cursor;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+						$this.cursor = (($this.limit - v_11) | 0);
+						break lab18;
+					}
+					$this.bra = $this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+						return false;
+					}
+					if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+						$this.cursor = (($this.limit - v_11) | 0);
+						break lab18;
+					}
+				}
+				break lab15;
+			}
 			$this.cursor = (($this.limit - v_10) | 0);
 			if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
 				return false;
@@ -3910,7 +4014,7 @@ break;
 		}
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_stem_suffix_chain_before_ki$LTurkishStemmer$ = TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$;
 
@@ -4004,128 +4108,134 @@ lab0:
 		lab0 = false;
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        this.ket = this.cursor;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-            break;
-        }
-        this.bra = this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-        v_2 = ((this.limit - this.cursor) | 0);
-        lab2 = true;
-    while (lab2 === true) {
-lab2 = false;
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_2) | 0);
-break;
-}
-}
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			this.ket = this.cursor;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+				break lab1;
+			}
+			this.bra = this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+			v_2 = ((this.limit - this.cursor) | 0);
+			lab2 = true;
+		lab2:
+			while (lab2 === true) {
+				lab2 = false;
+				if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+					this.cursor = ((this.limit - v_2) | 0);
+					break lab2;
+				}
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab3 = true;
-	while (lab3 === true) {
-        lab3 = false;
-        this.ket = this.cursor;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_11, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$(this) ? false : true)) {
-            break;
-        }
-        this.bra = this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-        v_3 = ((this.limit - this.cursor) | 0);
-        lab4 = true;
-    lab4:
-        while (lab4 === true) {
-            lab4 = false;
-            lab5 = true;
-        lab5:
-            while (lab5 === true) {
-                lab5 = false;
-                v_4 = ((this.limit - this.cursor) | 0);
-                lab6 = true;
-            while (lab6 === true) {
-lab6 = false;
-this.ket = this.cursor;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-break lab5;
-}
-                this.cursor = ((this.limit - v_4) | 0);
-                lab7 = true;
-            lab7:
-                while (lab7 === true) {
-                    lab7 = false;
-                    this.ket = this.cursor;
-                    lab8 = true;
-                lab8:
-                    while (lab8 === true) {
-                        lab8 = false;
-                        v_5 = ((this.limit - this.cursor) | 0);
-                        lab9 = true;
-                    while (lab9 === true) {
-lab9 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-break lab8;
-}
-                        this.cursor = ((this.limit - v_5) | 0);
-                        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
-                            break lab7;
-                        }
-                    }
-                    this.bra = this.cursor;
-                    if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                        return false;
-                    }
-                    v_6 = ((this.limit - this.cursor) | 0);
-                    lab10 = true;
-                while (lab10 === true) {
-lab10 = false;
-this.ket = this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-this.cursor = ((this.limit - v_6) | 0);
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_6) | 0);
-break;
-}
-}
-                    break lab5;
-                }
-                cursor$0 = this.cursor = ((this.limit - v_4) | 0);
-                this.ket = cursor$0;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-                    this.cursor = ((this.limit - v_3) | 0);
-                    break lab4;
-                }
-                this.bra = this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                    return false;
-                }
-                if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-                    this.cursor = ((this.limit - v_3) | 0);
-                    break lab4;
-                }
-            }
-        }
-        break lab0;
-    }
+	lab3:
+		while (lab3 === true) {
+			lab3 = false;
+			this.ket = this.cursor;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_11, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$(this) ? false : true)) {
+				break lab3;
+			}
+			this.bra = this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+			v_3 = ((this.limit - this.cursor) | 0);
+			lab4 = true;
+		lab4:
+			while (lab4 === true) {
+				lab4 = false;
+				lab5 = true;
+			lab5:
+				while (lab5 === true) {
+					lab5 = false;
+					v_4 = ((this.limit - this.cursor) | 0);
+					lab6 = true;
+				lab6:
+					while (lab6 === true) {
+						lab6 = false;
+						this.ket = this.cursor;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+							break lab6;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						break lab5;
+					}
+					this.cursor = ((this.limit - v_4) | 0);
+					lab7 = true;
+				lab7:
+					while (lab7 === true) {
+						lab7 = false;
+						this.ket = this.cursor;
+						lab8 = true;
+					lab8:
+						while (lab8 === true) {
+							lab8 = false;
+							v_5 = ((this.limit - this.cursor) | 0);
+							lab9 = true;
+						lab9:
+							while (lab9 === true) {
+								lab9 = false;
+								if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
+									break lab9;
+								}
+								break lab8;
+							}
+							this.cursor = ((this.limit - v_5) | 0);
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
+								break lab7;
+							}
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						v_6 = ((this.limit - this.cursor) | 0);
+						lab10 = true;
+					lab10:
+						while (lab10 === true) {
+							lab10 = false;
+							this.ket = this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								this.cursor = ((this.limit - v_6) | 0);
+								break lab10;
+							}
+							this.bra = this.cursor;
+							if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+								return false;
+							}
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+								this.cursor = ((this.limit - v_6) | 0);
+								break lab10;
+							}
+						}
+						break lab5;
+					}
+					cursor$0 = this.cursor = ((this.limit - v_4) | 0);
+					this.ket = cursor$0;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+						this.cursor = ((this.limit - v_3) | 0);
+						break lab4;
+					}
+					this.bra = this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+						return false;
+					}
+					if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+						this.cursor = ((this.limit - v_3) | 0);
+						break lab4;
+					}
+				}
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab11 = true;
 	lab11:
@@ -4138,13 +4248,14 @@ break;
 				lab12 = false;
 				v_7 = ((this.limit - this.cursor) | 0);
 				lab13 = true;
-			while (lab13 === true) {
-                lab13 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_7, 2) === 0 ? false : true)) {
-                    break;
-                }
-                break lab12;
-            }
+			lab13:
+				while (lab13 === true) {
+					lab13 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_7, 2) === 0 ? false : true)) {
+						break lab13;
+					}
+					break lab12;
+				}
 				this.cursor = ((this.limit - v_7) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_5, 2) === 0 ? false : true)) {
 					break lab11;
@@ -4156,48 +4267,51 @@ break;
 				lab14 = false;
 				v_8 = ((this.limit - this.cursor) | 0);
 				lab15 = true;
-			while (lab15 === true) {
-                lab15 = false;
-                if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-                    break;
-                }
-                this.bra = this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                    return false;
-                }
-                break lab14;
-            }
+			lab15:
+				while (lab15 === true) {
+					lab15 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+						break lab15;
+					}
+					this.bra = this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+						return false;
+					}
+					break lab14;
+				}
 				this.cursor = ((this.limit - v_8) | 0);
 				lab16 = true;
-			while (lab16 === true) {
-                lab16 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                this.bra = this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                    return false;
-                }
-                v_9 = ((this.limit - this.cursor) | 0);
-                lab17 = true;
-            while (lab17 === true) {
-lab17 = false;
-this.ket = this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-this.cursor = ((this.limit - v_9) | 0);
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_9) | 0);
-break;
-}
-}
-                break lab14;
-            }
+			lab16:
+				while (lab16 === true) {
+					lab16 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab16;
+					}
+					this.bra = this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+						return false;
+					}
+					v_9 = ((this.limit - this.cursor) | 0);
+					lab17 = true;
+				lab17:
+					while (lab17 === true) {
+						lab17 = false;
+						this.ket = this.cursor;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							this.cursor = ((this.limit - v_9) | 0);
+							break lab17;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+							this.cursor = ((this.limit - v_9) | 0);
+							break lab17;
+						}
+					}
+					break lab14;
+				}
 				this.cursor = ((this.limit - v_8) | 0);
 				if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
 					break lab11;
@@ -4217,13 +4331,14 @@ break;
 				lab19 = false;
 				v_10 = ((this.limit - this.cursor) | 0);
 				lab20 = true;
-			while (lab20 === true) {
-                lab20 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_9, 2) === 0 ? false : true)) {
-                    break;
-                }
-                break lab19;
-            }
+			lab20:
+				while (lab20 === true) {
+					lab20 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_9, 2) === 0 ? false : true)) {
+						break lab20;
+					}
+					break lab19;
+				}
 				this.cursor = ((this.limit - v_10) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_2, 4) === 0 ? false : true)) {
 					break lab18;
@@ -4235,35 +4350,37 @@ break;
 				lab21 = false;
 				v_11 = ((this.limit - this.cursor) | 0);
 				lab22 = true;
-			while (lab22 === true) {
-                lab22 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                this.bra = this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                    return false;
-                }
-                v_12 = ((this.limit - this.cursor) | 0);
-                lab23 = true;
-            while (lab23 === true) {
-lab23 = false;
-this.ket = this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-this.cursor = ((this.limit - v_12) | 0);
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_12) | 0);
-break;
-}
-}
-                break lab21;
-            }
+			lab22:
+				while (lab22 === true) {
+					lab22 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab22;
+					}
+					this.bra = this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+						return false;
+					}
+					v_12 = ((this.limit - this.cursor) | 0);
+					lab23 = true;
+				lab23:
+					while (lab23 === true) {
+						lab23 = false;
+						this.ket = this.cursor;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							this.cursor = ((this.limit - v_12) | 0);
+							break lab23;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+							this.cursor = ((this.limit - v_12) | 0);
+							break lab23;
+						}
+					}
+					break lab21;
+				}
 				this.cursor = ((this.limit - v_11) | 0);
 				if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
 					break lab18;
@@ -4273,88 +4390,93 @@ break;
 		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab24 = true;
-	while (lab24 === true) {
-        lab24 = false;
-        this.ket = this.cursor;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_8, 4) === 0 ? false : true)) {
-            break;
-        }
-        this.bra = this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-        v_13 = ((this.limit - this.cursor) | 0);
-        lab25 = true;
-    lab25:
-        while (lab25 === true) {
-            lab25 = false;
-            this.ket = this.cursor;
-            lab26 = true;
-        lab26:
-            while (lab26 === true) {
-                lab26 = false;
-                v_14 = ((this.limit - this.cursor) | 0);
-                lab27 = true;
-            while (lab27 === true) {
-lab27 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-v_15 = ((this.limit - this.cursor) | 0);
-lab28 = true;
-while (lab28 === true) {
-lab28 = false;
-this.ket = this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-this.cursor = ((this.limit - v_15) | 0);
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_15) | 0);
-break;
-}
-}
-break lab26;
-}
-                this.cursor = ((this.limit - v_14) | 0);
-                lab29 = true;
-            while (lab29 === true) {
-lab29 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-break;
-}
-this.bra = this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-return false;
-}
-v_16 = ((this.limit - this.cursor) | 0);
-lab30 = true;
-while (lab30 === true) {
-lab30 = false;
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-this.cursor = ((this.limit - v_16) | 0);
-break;
-}
-}
-break lab26;
-}
-                this.cursor = ((this.limit - v_14) | 0);
-                if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-                    this.cursor = ((this.limit - v_13) | 0);
-                    break lab25;
-                }
-            }
-        }
-        break lab0;
-    }
+	lab24:
+		while (lab24 === true) {
+			lab24 = false;
+			this.ket = this.cursor;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_8, 4) === 0 ? false : true)) {
+				break lab24;
+			}
+			this.bra = this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+			v_13 = ((this.limit - this.cursor) | 0);
+			lab25 = true;
+		lab25:
+			while (lab25 === true) {
+				lab25 = false;
+				this.ket = this.cursor;
+				lab26 = true;
+			lab26:
+				while (lab26 === true) {
+					lab26 = false;
+					v_14 = ((this.limit - this.cursor) | 0);
+					lab27 = true;
+				lab27:
+					while (lab27 === true) {
+						lab27 = false;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
+							break lab27;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						v_15 = ((this.limit - this.cursor) | 0);
+						lab28 = true;
+					lab28:
+						while (lab28 === true) {
+							lab28 = false;
+							this.ket = this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								this.cursor = ((this.limit - v_15) | 0);
+								break lab28;
+							}
+							this.bra = this.cursor;
+							if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+								return false;
+							}
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+								this.cursor = ((this.limit - v_15) | 0);
+								break lab28;
+							}
+						}
+						break lab26;
+					}
+					this.cursor = ((this.limit - v_14) | 0);
+					lab29 = true;
+				lab29:
+					while (lab29 === true) {
+						lab29 = false;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							break lab29;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						v_16 = ((this.limit - this.cursor) | 0);
+						lab30 = true;
+					lab30:
+						while (lab30 === true) {
+							lab30 = false;
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+								this.cursor = ((this.limit - v_16) | 0);
+								break lab30;
+							}
+						}
+						break lab26;
+					}
+					this.cursor = ((this.limit - v_14) | 0);
+					if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+						this.cursor = ((this.limit - v_13) | 0);
+						break lab25;
+					}
+				}
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab31 = true;
 	lab31:
@@ -4367,13 +4489,14 @@ break lab26;
 				lab32 = false;
 				v_17 = ((this.limit - this.cursor) | 0);
 				lab33 = true;
-			while (lab33 === true) {
-                lab33 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                break lab32;
-            }
+			lab33:
+				while (lab33 === true) {
+					lab33 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab33;
+					}
+					break lab32;
+				}
 				this.cursor = ((this.limit - v_17) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_10, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
 					break lab31;
@@ -4394,21 +4517,22 @@ break lab26;
 					lab35 = false;
 					v_19 = ((this.limit - this.cursor) | 0);
 					lab36 = true;
-				while (lab36 === true) {
-                    lab36 = false;
-                    this.ket = this.cursor;
-                    if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-                        break;
-                    }
-                    this.bra = this.cursor;
-                    if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                        return false;
-                    }
-                    if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-                        break;
-                    }
-                    break lab35;
-                }
+				lab36:
+					while (lab36 === true) {
+						lab36 = false;
+						this.ket = this.cursor;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							break lab36;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+							break lab36;
+						}
+						break lab35;
+					}
 					this.cursor = ((this.limit - v_19) | 0);
 					lab37 = true;
 				lab37:
@@ -4421,13 +4545,14 @@ break lab26;
 							lab38 = false;
 							v_20 = ((this.limit - this.cursor) | 0);
 							lab39 = true;
-						while (lab39 === true) {
-                            lab39 = false;
-                            if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
-                                break;
-                            }
-                            break lab38;
-                        }
+						lab39:
+							while (lab39 === true) {
+								lab39 = false;
+								if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
+									break lab39;
+								}
+								break lab38;
+							}
 							this.cursor = ((this.limit - v_20) | 0);
 							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
 								break lab37;
@@ -4439,22 +4564,23 @@ break lab26;
 						}
 						v_21 = ((this.limit - this.cursor) | 0);
 						lab40 = true;
-					while (lab40 === true) {
-                        lab40 = false;
-                        this.ket = this.cursor;
-                        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-                            this.cursor = ((this.limit - v_21) | 0);
-                            break;
-                        }
-                        this.bra = this.cursor;
-                        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                            return false;
-                        }
-                        if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-                            this.cursor = ((this.limit - v_21) | 0);
-                            break;
-                        }
-                    }
+					lab40:
+						while (lab40 === true) {
+							lab40 = false;
+							this.ket = this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								this.cursor = ((this.limit - v_21) | 0);
+								break lab40;
+							}
+							this.bra = this.cursor;
+							if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+								return false;
+							}
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+								this.cursor = ((this.limit - v_21) | 0);
+								break lab40;
+							}
+						}
 						break lab35;
 					}
 					this.cursor = ((this.limit - v_19) | 0);
@@ -4468,27 +4594,29 @@ break lab26;
 		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab41 = true;
-	while (lab41 === true) {
-        lab41 = false;
-        this.ket = this.cursor;
-        if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-            break;
-        }
-        this.bra = this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-        break lab0;
-    }
+	lab41:
+		while (lab41 === true) {
+			lab41 = false;
+			this.ket = this.cursor;
+			if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+				break lab41;
+			}
+			this.bra = this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab42 = true;
-	while (lab42 === true) {
-        lab42 = false;
-        if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-            break;
-        }
-        break lab0;
-    }
+	lab42:
+		while (lab42 === true) {
+			lab42 = false;
+			if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+				break lab42;
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		lab43 = true;
 	lab43:
@@ -4501,22 +4629,24 @@ break lab26;
 				lab44 = false;
 				v_22 = ((this.limit - this.cursor) | 0);
 				lab45 = true;
-			while (lab45 === true) {
-                lab45 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_6, 4) === 0 ? false : true)) {
-                    break;
-                }
-                break lab44;
-            }
+			lab45:
+				while (lab45 === true) {
+					lab45 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_6, 4) === 0 ? false : true)) {
+						break lab45;
+					}
+					break lab44;
+				}
 				this.cursor = ((this.limit - v_22) | 0);
 				lab46 = true;
-			while (lab46 === true) {
-                lab46 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
-                    break;
-                }
-                break lab44;
-            }
+			lab46:
+				while (lab46 === true) {
+					lab46 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
+						break lab46;
+					}
+					break lab44;
+				}
 				this.cursor = ((this.limit - v_22) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_4, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$(this) ? false : true)) {
 					break lab43;
@@ -4538,27 +4668,29 @@ break lab26;
 					lab48 = false;
 					v_24 = ((this.limit - this.cursor) | 0);
 					lab49 = true;
-				while (lab49 === true) {
-                    lab49 = false;
-                    if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
-                        break;
-                    }
-                    this.bra = this.cursor;
-                    if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-                        return false;
-                    }
-                    v_25 = ((this.limit - this.cursor) | 0);
-                    lab50 = true;
-                while (lab50 === true) {
-lab50 = false;
-this.ket = this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-this.cursor = ((this.limit - v_25) | 0);
-break;
-}
-}
-                    break lab48;
-                }
+				lab49:
+					while (lab49 === true) {
+						lab49 = false;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
+							break lab49;
+						}
+						this.bra = this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+							return false;
+						}
+						v_25 = ((this.limit - this.cursor) | 0);
+						lab50 = true;
+					lab50:
+						while (lab50 === true) {
+							lab50 = false;
+							this.ket = this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								this.cursor = ((this.limit - v_25) | 0);
+								break lab50;
+							}
+						}
+						break lab48;
+					}
 					this.cursor = ((this.limit - v_24) | 0);
 					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
 						this.cursor = ((this.limit - v_23) | 0);
@@ -4572,7 +4704,7 @@ break;
 				this.ket = this.cursor;
 				if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
 					this.cursor = ((this.limit - v_23) | 0);
-					break;
+					break lab47;
 				}
 			}
 			break lab0;
@@ -4585,13 +4717,14 @@ break;
 			lab51 = false;
 			v_26 = ((this.limit - this.cursor) | 0);
 			lab52 = true;
-		while (lab52 === true) {
-            lab52 = false;
-            if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
-                break;
-            }
-            break lab51;
-        }
+		lab52:
+			while (lab52 === true) {
+				lab52 = false;
+				if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$(this) ? false : true)) {
+					break lab52;
+				}
+				break lab51;
+			}
 			this.cursor = ((this.limit - v_26) | 0);
 			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$(this) ? false : true)) {
 				return false;
@@ -4603,22 +4736,23 @@ break;
 		}
 		v_27 = ((this.limit - this.cursor) | 0);
 		lab53 = true;
-	while (lab53 === true) {
-        lab53 = false;
-        this.ket = this.cursor;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-            this.cursor = ((this.limit - v_27) | 0);
-            break;
-        }
-        this.bra = this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
-            return false;
-        }
-        if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
-            this.cursor = ((this.limit - v_27) | 0);
-            break;
-        }
-    }
+	lab53:
+		while (lab53 === true) {
+			lab53 = false;
+			this.ket = this.cursor;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$(this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+				this.cursor = ((this.limit - v_27) | 0);
+				break lab53;
+			}
+			this.bra = this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "")) {
+				return false;
+			}
+			if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$(this)) {
+				this.cursor = ((this.limit - v_27) | 0);
+				break lab53;
+			}
+		}
 	}
 	return true;
 };
@@ -4715,128 +4849,134 @@ lab0:
 		lab0 = false;
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        $this.ket = $this.cursor;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-            break;
-        }
-        $this.bra = $this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-        v_2 = (($this.limit - $this.cursor) | 0);
-        lab2 = true;
-    while (lab2 === true) {
-lab2 = false;
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_2) | 0);
-break;
-}
-}
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			$this.ket = $this.cursor;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+				break lab1;
+			}
+			$this.bra = $this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+			v_2 = (($this.limit - $this.cursor) | 0);
+			lab2 = true;
+		lab2:
+			while (lab2 === true) {
+				lab2 = false;
+				if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+					$this.cursor = (($this.limit - v_2) | 0);
+					break lab2;
+				}
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab3 = true;
-	while (lab3 === true) {
-        lab3 = false;
-        $this.ket = $this.cursor;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_11, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$($this) ? false : true)) {
-            break;
-        }
-        $this.bra = $this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-        v_3 = (($this.limit - $this.cursor) | 0);
-        lab4 = true;
-    lab4:
-        while (lab4 === true) {
-            lab4 = false;
-            lab5 = true;
-        lab5:
-            while (lab5 === true) {
-                lab5 = false;
-                v_4 = (($this.limit - $this.cursor) | 0);
-                lab6 = true;
-            while (lab6 === true) {
-lab6 = false;
-$this.ket = $this.cursor;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-break lab5;
-}
-                $this.cursor = (($this.limit - v_4) | 0);
-                lab7 = true;
-            lab7:
-                while (lab7 === true) {
-                    lab7 = false;
-                    $this.ket = $this.cursor;
-                    lab8 = true;
-                lab8:
-                    while (lab8 === true) {
-                        lab8 = false;
-                        v_5 = (($this.limit - $this.cursor) | 0);
-                        lab9 = true;
-                    while (lab9 === true) {
-lab9 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-break lab8;
-}
-                        $this.cursor = (($this.limit - v_5) | 0);
-                        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
-                            break lab7;
-                        }
-                    }
-                    $this.bra = $this.cursor;
-                    if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                        return false;
-                    }
-                    v_6 = (($this.limit - $this.cursor) | 0);
-                    lab10 = true;
-                while (lab10 === true) {
-lab10 = false;
-$this.ket = $this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-$this.cursor = (($this.limit - v_6) | 0);
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_6) | 0);
-break;
-}
-}
-                    break lab5;
-                }
-                cursor$0 = $this.cursor = (($this.limit - v_4) | 0);
-                $this.ket = cursor$0;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-                    $this.cursor = (($this.limit - v_3) | 0);
-                    break lab4;
-                }
-                $this.bra = $this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                    return false;
-                }
-                if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-                    $this.cursor = (($this.limit - v_3) | 0);
-                    break lab4;
-                }
-            }
-        }
-        break lab0;
-    }
+	lab3:
+		while (lab3 === true) {
+			lab3 = false;
+			$this.ket = $this.cursor;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_11, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$($this) ? false : true)) {
+				break lab3;
+			}
+			$this.bra = $this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+			v_3 = (($this.limit - $this.cursor) | 0);
+			lab4 = true;
+		lab4:
+			while (lab4 === true) {
+				lab4 = false;
+				lab5 = true;
+			lab5:
+				while (lab5 === true) {
+					lab5 = false;
+					v_4 = (($this.limit - $this.cursor) | 0);
+					lab6 = true;
+				lab6:
+					while (lab6 === true) {
+						lab6 = false;
+						$this.ket = $this.cursor;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+							break lab6;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						break lab5;
+					}
+					$this.cursor = (($this.limit - v_4) | 0);
+					lab7 = true;
+				lab7:
+					while (lab7 === true) {
+						lab7 = false;
+						$this.ket = $this.cursor;
+						lab8 = true;
+					lab8:
+						while (lab8 === true) {
+							lab8 = false;
+							v_5 = (($this.limit - $this.cursor) | 0);
+							lab9 = true;
+						lab9:
+							while (lab9 === true) {
+								lab9 = false;
+								if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
+									break lab9;
+								}
+								break lab8;
+							}
+							$this.cursor = (($this.limit - v_5) | 0);
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
+								break lab7;
+							}
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						v_6 = (($this.limit - $this.cursor) | 0);
+						lab10 = true;
+					lab10:
+						while (lab10 === true) {
+							lab10 = false;
+							$this.ket = $this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								$this.cursor = (($this.limit - v_6) | 0);
+								break lab10;
+							}
+							$this.bra = $this.cursor;
+							if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+								return false;
+							}
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+								$this.cursor = (($this.limit - v_6) | 0);
+								break lab10;
+							}
+						}
+						break lab5;
+					}
+					cursor$0 = $this.cursor = (($this.limit - v_4) | 0);
+					$this.ket = cursor$0;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+						$this.cursor = (($this.limit - v_3) | 0);
+						break lab4;
+					}
+					$this.bra = $this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+						return false;
+					}
+					if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+						$this.cursor = (($this.limit - v_3) | 0);
+						break lab4;
+					}
+				}
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab11 = true;
 	lab11:
@@ -4849,13 +4989,14 @@ break;
 				lab12 = false;
 				v_7 = (($this.limit - $this.cursor) | 0);
 				lab13 = true;
-			while (lab13 === true) {
-                lab13 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_7, 2) === 0 ? false : true)) {
-                    break;
-                }
-                break lab12;
-            }
+			lab13:
+				while (lab13 === true) {
+					lab13 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_7, 2) === 0 ? false : true)) {
+						break lab13;
+					}
+					break lab12;
+				}
 				$this.cursor = (($this.limit - v_7) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_5, 2) === 0 ? false : true)) {
 					break lab11;
@@ -4867,48 +5008,51 @@ break;
 				lab14 = false;
 				v_8 = (($this.limit - $this.cursor) | 0);
 				lab15 = true;
-			while (lab15 === true) {
-                lab15 = false;
-                if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-                    break;
-                }
-                $this.bra = $this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                    return false;
-                }
-                break lab14;
-            }
+			lab15:
+				while (lab15 === true) {
+					lab15 = false;
+					if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+						break lab15;
+					}
+					$this.bra = $this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+						return false;
+					}
+					break lab14;
+				}
 				$this.cursor = (($this.limit - v_8) | 0);
 				lab16 = true;
-			while (lab16 === true) {
-                lab16 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                $this.bra = $this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                    return false;
-                }
-                v_9 = (($this.limit - $this.cursor) | 0);
-                lab17 = true;
-            while (lab17 === true) {
-lab17 = false;
-$this.ket = $this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-$this.cursor = (($this.limit - v_9) | 0);
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_9) | 0);
-break;
-}
-}
-                break lab14;
-            }
+			lab16:
+				while (lab16 === true) {
+					lab16 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab16;
+					}
+					$this.bra = $this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+						return false;
+					}
+					v_9 = (($this.limit - $this.cursor) | 0);
+					lab17 = true;
+				lab17:
+					while (lab17 === true) {
+						lab17 = false;
+						$this.ket = $this.cursor;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							$this.cursor = (($this.limit - v_9) | 0);
+							break lab17;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+							$this.cursor = (($this.limit - v_9) | 0);
+							break lab17;
+						}
+					}
+					break lab14;
+				}
 				$this.cursor = (($this.limit - v_8) | 0);
 				if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
 					break lab11;
@@ -4928,13 +5072,14 @@ break;
 				lab19 = false;
 				v_10 = (($this.limit - $this.cursor) | 0);
 				lab20 = true;
-			while (lab20 === true) {
-                lab20 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_9, 2) === 0 ? false : true)) {
-                    break;
-                }
-                break lab19;
-            }
+			lab20:
+				while (lab20 === true) {
+					lab20 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_9, 2) === 0 ? false : true)) {
+						break lab20;
+					}
+					break lab19;
+				}
 				$this.cursor = (($this.limit - v_10) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_2, 4) === 0 ? false : true)) {
 					break lab18;
@@ -4946,35 +5091,37 @@ break;
 				lab21 = false;
 				v_11 = (($this.limit - $this.cursor) | 0);
 				lab22 = true;
-			while (lab22 === true) {
-                lab22 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                $this.bra = $this.cursor;
-                if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                    return false;
-                }
-                v_12 = (($this.limit - $this.cursor) | 0);
-                lab23 = true;
-            while (lab23 === true) {
-lab23 = false;
-$this.ket = $this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-$this.cursor = (($this.limit - v_12) | 0);
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_12) | 0);
-break;
-}
-}
-                break lab21;
-            }
+			lab22:
+				while (lab22 === true) {
+					lab22 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab22;
+					}
+					$this.bra = $this.cursor;
+					if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+						return false;
+					}
+					v_12 = (($this.limit - $this.cursor) | 0);
+					lab23 = true;
+				lab23:
+					while (lab23 === true) {
+						lab23 = false;
+						$this.ket = $this.cursor;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							$this.cursor = (($this.limit - v_12) | 0);
+							break lab23;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+							$this.cursor = (($this.limit - v_12) | 0);
+							break lab23;
+						}
+					}
+					break lab21;
+				}
 				$this.cursor = (($this.limit - v_11) | 0);
 				if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
 					break lab18;
@@ -4984,88 +5131,93 @@ break;
 		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab24 = true;
-	while (lab24 === true) {
-        lab24 = false;
-        $this.ket = $this.cursor;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_8, 4) === 0 ? false : true)) {
-            break;
-        }
-        $this.bra = $this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-        v_13 = (($this.limit - $this.cursor) | 0);
-        lab25 = true;
-    lab25:
-        while (lab25 === true) {
-            lab25 = false;
-            $this.ket = $this.cursor;
-            lab26 = true;
-        lab26:
-            while (lab26 === true) {
-                lab26 = false;
-                v_14 = (($this.limit - $this.cursor) | 0);
-                lab27 = true;
-            while (lab27 === true) {
-lab27 = false;
-if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-v_15 = (($this.limit - $this.cursor) | 0);
-lab28 = true;
-while (lab28 === true) {
-lab28 = false;
-$this.ket = $this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-$this.cursor = (($this.limit - v_15) | 0);
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_15) | 0);
-break;
-}
-}
-break lab26;
-}
-                $this.cursor = (($this.limit - v_14) | 0);
-                lab29 = true;
-            while (lab29 === true) {
-lab29 = false;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-break;
-}
-$this.bra = $this.cursor;
-if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-return false;
-}
-v_16 = (($this.limit - $this.cursor) | 0);
-lab30 = true;
-while (lab30 === true) {
-lab30 = false;
-if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-$this.cursor = (($this.limit - v_16) | 0);
-break;
-}
-}
-break lab26;
-}
-                $this.cursor = (($this.limit - v_14) | 0);
-                if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-                    $this.cursor = (($this.limit - v_13) | 0);
-                    break lab25;
-                }
-            }
-        }
-        break lab0;
-    }
+	lab24:
+		while (lab24 === true) {
+			lab24 = false;
+			$this.ket = $this.cursor;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_8, 4) === 0 ? false : true)) {
+				break lab24;
+			}
+			$this.bra = $this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+			v_13 = (($this.limit - $this.cursor) | 0);
+			lab25 = true;
+		lab25:
+			while (lab25 === true) {
+				lab25 = false;
+				$this.ket = $this.cursor;
+				lab26 = true;
+			lab26:
+				while (lab26 === true) {
+					lab26 = false;
+					v_14 = (($this.limit - $this.cursor) | 0);
+					lab27 = true;
+				lab27:
+					while (lab27 === true) {
+						lab27 = false;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
+							break lab27;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						v_15 = (($this.limit - $this.cursor) | 0);
+						lab28 = true;
+					lab28:
+						while (lab28 === true) {
+							lab28 = false;
+							$this.ket = $this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								$this.cursor = (($this.limit - v_15) | 0);
+								break lab28;
+							}
+							$this.bra = $this.cursor;
+							if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+								return false;
+							}
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+								$this.cursor = (($this.limit - v_15) | 0);
+								break lab28;
+							}
+						}
+						break lab26;
+					}
+					$this.cursor = (($this.limit - v_14) | 0);
+					lab29 = true;
+				lab29:
+					while (lab29 === true) {
+						lab29 = false;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							break lab29;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						v_16 = (($this.limit - $this.cursor) | 0);
+						lab30 = true;
+					lab30:
+						while (lab30 === true) {
+							lab30 = false;
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+								$this.cursor = (($this.limit - v_16) | 0);
+								break lab30;
+							}
+						}
+						break lab26;
+					}
+					$this.cursor = (($this.limit - v_14) | 0);
+					if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+						$this.cursor = (($this.limit - v_13) | 0);
+						break lab25;
+					}
+				}
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab31 = true;
 	lab31:
@@ -5078,13 +5230,14 @@ break lab26;
 				lab32 = false;
 				v_17 = (($this.limit - $this.cursor) | 0);
 				lab33 = true;
-			while (lab33 === true) {
-                lab33 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                break lab32;
-            }
+			lab33:
+				while (lab33 === true) {
+					lab33 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_3, 4) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_n_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab33;
+					}
+					break lab32;
+				}
 				$this.cursor = (($this.limit - v_17) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_10, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
 					break lab31;
@@ -5105,21 +5258,22 @@ break lab26;
 					lab35 = false;
 					v_19 = (($this.limit - $this.cursor) | 0);
 					lab36 = true;
-				while (lab36 === true) {
-                    lab36 = false;
-                    $this.ket = $this.cursor;
-                    if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-                        break;
-                    }
-                    $this.bra = $this.cursor;
-                    if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                        return false;
-                    }
-                    if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-                        break;
-                    }
-                    break lab35;
-                }
+				lab36:
+					while (lab36 === true) {
+						lab36 = false;
+						$this.ket = $this.cursor;
+						if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+							break lab36;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+							break lab36;
+						}
+						break lab35;
+					}
 					$this.cursor = (($this.limit - v_19) | 0);
 					lab37 = true;
 				lab37:
@@ -5132,13 +5286,14 @@ break lab26;
 							lab38 = false;
 							v_20 = (($this.limit - $this.cursor) | 0);
 							lab39 = true;
-						while (lab39 === true) {
-                            lab39 = false;
-                            if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
-                                break;
-                            }
-                            break lab38;
-                        }
+						lab39:
+							while (lab39 === true) {
+								lab39 = false;
+								if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
+									break lab39;
+								}
+								break lab38;
+							}
 							$this.cursor = (($this.limit - v_20) | 0);
 							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
 								break lab37;
@@ -5150,22 +5305,23 @@ break lab26;
 						}
 						v_21 = (($this.limit - $this.cursor) | 0);
 						lab40 = true;
-					while (lab40 === true) {
-                        lab40 = false;
-                        $this.ket = $this.cursor;
-                        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-                            $this.cursor = (($this.limit - v_21) | 0);
-                            break;
-                        }
-                        $this.bra = $this.cursor;
-                        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                            return false;
-                        }
-                        if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-                            $this.cursor = (($this.limit - v_21) | 0);
-                            break;
-                        }
-                    }
+					lab40:
+						while (lab40 === true) {
+							lab40 = false;
+							$this.ket = $this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								$this.cursor = (($this.limit - v_21) | 0);
+								break lab40;
+							}
+							$this.bra = $this.cursor;
+							if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+								return false;
+							}
+							if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+								$this.cursor = (($this.limit - v_21) | 0);
+								break lab40;
+							}
+						}
 						break lab35;
 					}
 					$this.cursor = (($this.limit - v_19) | 0);
@@ -5179,27 +5335,29 @@ break lab26;
 		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab41 = true;
-	while (lab41 === true) {
-        lab41 = false;
-        $this.ket = $this.cursor;
-        if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
-            break;
-        }
-        $this.bra = $this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-        break lab0;
-    }
+	lab41:
+		while (lab41 === true) {
+			lab41 = false;
+			$this.ket = $this.cursor;
+			if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_1, 2) === 0 ? false : true)) {
+				break lab41;
+			}
+			$this.bra = $this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab42 = true;
-	while (lab42 === true) {
-        lab42 = false;
-        if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-            break;
-        }
-        break lab0;
-    }
+	lab42:
+		while (lab42 === true) {
+			lab42 = false;
+			if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+				break lab42;
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		lab43 = true;
 	lab43:
@@ -5212,22 +5370,24 @@ break lab26;
 				lab44 = false;
 				v_22 = (($this.limit - $this.cursor) | 0);
 				lab45 = true;
-			while (lab45 === true) {
-                lab45 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_6, 4) === 0 ? false : true)) {
-                    break;
-                }
-                break lab44;
-            }
+			lab45:
+				while (lab45 === true) {
+					lab45 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_6, 4) === 0 ? false : true)) {
+						break lab45;
+					}
+					break lab44;
+				}
 				$this.cursor = (($this.limit - v_22) | 0);
 				lab46 = true;
-			while (lab46 === true) {
-                lab46 = false;
-                if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
-                    break;
-                }
-                break lab44;
-            }
+			lab46:
+				while (lab46 === true) {
+					lab46 = false;
+					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
+						break lab46;
+					}
+					break lab44;
+				}
 				$this.cursor = (($this.limit - v_22) | 0);
 				if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_4, 2) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_y_consonant$LTurkishStemmer$($this) ? false : true)) {
 					break lab43;
@@ -5249,27 +5409,29 @@ break lab26;
 					lab48 = false;
 					v_24 = (($this.limit - $this.cursor) | 0);
 					lab49 = true;
-				while (lab49 === true) {
-                    lab49 = false;
-                    if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
-                        break;
-                    }
-                    $this.bra = $this.cursor;
-                    if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-                        return false;
-                    }
-                    v_25 = (($this.limit - $this.cursor) | 0);
-                    lab50 = true;
-                while (lab50 === true) {
-lab50 = false;
-$this.ket = $this.cursor;
-if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-$this.cursor = (($this.limit - v_25) | 0);
-break;
-}
-}
-                    break lab48;
-                }
+				lab49:
+					while (lab49 === true) {
+						lab49 = false;
+						if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
+							break lab49;
+						}
+						$this.bra = $this.cursor;
+						if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+							return false;
+						}
+						v_25 = (($this.limit - $this.cursor) | 0);
+						lab50 = true;
+					lab50:
+						while (lab50 === true) {
+							lab50 = false;
+							$this.ket = $this.cursor;
+							if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+								$this.cursor = (($this.limit - v_25) | 0);
+								break lab50;
+							}
+						}
+						break lab48;
+					}
 					$this.cursor = (($this.limit - v_24) | 0);
 					if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
 						$this.cursor = (($this.limit - v_23) | 0);
@@ -5283,7 +5445,7 @@ break;
 				$this.ket = $this.cursor;
 				if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
 					$this.cursor = (($this.limit - v_23) | 0);
-					break;
+					break lab47;
 				}
 			}
 			break lab0;
@@ -5296,13 +5458,14 @@ break;
 			lab51 = false;
 			v_26 = (($this.limit - $this.cursor) | 0);
 			lab52 = true;
-		while (lab52 === true) {
-            lab52 = false;
-            if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
-                break;
-            }
-            break lab51;
-        }
+		lab52:
+			while (lab52 === true) {
+				lab52 = false;
+				if (! (BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_0, 10) === 0 ? false : ! TurkishStemmer$r_mark_suffix_with_optional_U_vowel$LTurkishStemmer$($this) ? false : true)) {
+					break lab52;
+				}
+				break lab51;
+			}
 			$this.cursor = (($this.limit - v_26) | 0);
 			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : ! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_U, 105, 305) ? false : ! TurkishStemmer$r_mark_suffix_with_optional_s_consonant$LTurkishStemmer$($this) ? false : true)) {
 				return false;
@@ -5314,25 +5477,26 @@ break;
 		}
 		v_27 = (($this.limit - $this.cursor) | 0);
 		lab53 = true;
-	while (lab53 === true) {
-        lab53 = false;
-        $this.ket = $this.cursor;
-        if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
-            $this.cursor = (($this.limit - v_27) | 0);
-            break;
-        }
-        $this.bra = $this.cursor;
-        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
-            return false;
-        }
-        if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
-            $this.cursor = (($this.limit - v_27) | 0);
-            break;
-        }
-    }
+	lab53:
+		while (lab53 === true) {
+			lab53 = false;
+			$this.ket = $this.cursor;
+			if (! (! TurkishStemmer$r_check_vowel_harmony$LTurkishStemmer$($this) ? false : BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, TurkishStemmer.a_16, 2) === 0 ? false : true)) {
+				$this.cursor = (($this.limit - v_27) | 0);
+				break lab53;
+			}
+			$this.bra = $this.cursor;
+			if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "")) {
+				return false;
+			}
+			if (! TurkishStemmer$r_stem_suffix_chain_before_ki$LTurkishStemmer$($this)) {
+				$this.cursor = (($this.limit - v_27) | 0);
+				break lab53;
+			}
+		}
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_stem_noun_suffixes$LTurkishStemmer$ = TurkishStemmer$r_stem_noun_suffixes$LTurkishStemmer$;
 
@@ -5406,7 +5570,7 @@ function TurkishStemmer$r_post_process_last_consonants$LTurkishStemmer$($this) {
 		break;
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_post_process_last_consonants$LTurkishStemmer$ = TurkishStemmer$r_post_process_last_consonants$LTurkishStemmer$;
 
@@ -5471,13 +5635,14 @@ lab0:
 		lab0 = false;
 		v_2 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "d")) {
-            break;
-        }
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "d")) {
+				break lab1;
+			}
+			break lab0;
+		}
 		this.cursor = ((this.limit - v_2) | 0);
 		if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "g")) {
 			return false;
@@ -5498,14 +5663,15 @@ lab2:
 			while (true) {
 				v_5 = ((this.limit - this.cursor) | 0);
 				lab5 = true;
-			while (lab5 === true) {
-                lab5 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_5) | 0);
-                break golab4;
-            }
+			lab5:
+				while (lab5 === true) {
+					lab5 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+						break lab5;
+					}
+					this.cursor = ((this.limit - v_5) | 0);
+					break golab4;
+				}
 				cursor$0 = this.cursor = ((this.limit - v_5) | 0);
 				if (cursor$0 <= this.limit_backward) {
 					break lab3;
@@ -5518,13 +5684,14 @@ lab2:
 				lab6 = false;
 				v_6 = ((this.limit - this.cursor) | 0);
 				lab7 = true;
-			while (lab7 === true) {
-                lab7 = false;
-                if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "a")) {
-                    break;
-                }
-                break lab6;
-            }
+			lab7:
+				while (lab7 === true) {
+					lab7 = false;
+					if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "a")) {
+						break lab7;
+					}
+					break lab6;
+				}
 				this.cursor = ((this.limit - v_6) | 0);
 				if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "\u0131")) {
 					break lab3;
@@ -5553,14 +5720,15 @@ lab2:
 			while (true) {
 				v_8 = ((this.limit - this.cursor) | 0);
 				lab10 = true;
-			while (lab10 === true) {
-                lab10 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_8) | 0);
-                break golab9;
-            }
+			lab10:
+				while (lab10 === true) {
+					lab10 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+						break lab10;
+					}
+					this.cursor = ((this.limit - v_8) | 0);
+					break golab9;
+				}
 				cursor$2 = this.cursor = ((this.limit - v_8) | 0);
 				if (cursor$2 <= this.limit_backward) {
 					break lab8;
@@ -5573,13 +5741,14 @@ lab2:
 				lab11 = false;
 				v_9 = ((this.limit - this.cursor) | 0);
 				lab12 = true;
-			while (lab12 === true) {
-                lab12 = false;
-                if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "e")) {
-                    break;
-                }
-                break lab11;
-            }
+			lab12:
+				while (lab12 === true) {
+					lab12 = false;
+					if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "e")) {
+						break lab12;
+					}
+					break lab11;
+				}
 				this.cursor = ((this.limit - v_9) | 0);
 				if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "i")) {
 					break lab8;
@@ -5608,14 +5777,15 @@ lab2:
 			while (true) {
 				v_11 = ((this.limit - this.cursor) | 0);
 				lab15 = true;
-			while (lab15 === true) {
-                lab15 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-                    break;
-                }
-                this.cursor = ((this.limit - v_11) | 0);
-                break golab14;
-            }
+			lab15:
+				while (lab15 === true) {
+					lab15 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+						break lab15;
+					}
+					this.cursor = ((this.limit - v_11) | 0);
+					break golab14;
+				}
 				cursor$4 = this.cursor = ((this.limit - v_11) | 0);
 				if (cursor$4 <= this.limit_backward) {
 					break lab13;
@@ -5628,13 +5798,14 @@ lab2:
 				lab16 = false;
 				v_12 = ((this.limit - this.cursor) | 0);
 				lab17 = true;
-			while (lab17 === true) {
-                lab17 = false;
-                if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "o")) {
-                    break;
-                }
-                break lab16;
-            }
+			lab17:
+				while (lab17 === true) {
+					lab17 = false;
+					if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "o")) {
+						break lab17;
+					}
+					break lab16;
+				}
 				this.cursor = ((this.limit - v_12) | 0);
 				if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "u")) {
 					break lab13;
@@ -5659,14 +5830,15 @@ lab2:
 		while (true) {
 			v_14 = ((this.limit - this.cursor) | 0);
 			lab19 = true;
-		while (lab19 === true) {
-            lab19 = false;
-            if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-                break;
-            }
-            this.cursor = ((this.limit - v_14) | 0);
-            break golab18;
-        }
+		lab19:
+			while (lab19 === true) {
+				lab19 = false;
+				if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+					break lab19;
+				}
+				this.cursor = ((this.limit - v_14) | 0);
+				break golab18;
+			}
 			cursor$6 = this.cursor = ((this.limit - v_14) | 0);
 			if (cursor$6 <= this.limit_backward) {
 				return false;
@@ -5679,13 +5851,14 @@ lab2:
 			lab20 = false;
 			v_15 = ((this.limit - this.cursor) | 0);
 			lab21 = true;
-		while (lab21 === true) {
-            lab21 = false;
-            if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "\u00F6")) {
-                break;
-            }
-            break lab20;
-        }
+		lab21:
+			while (lab21 === true) {
+				lab21 = false;
+				if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "\u00F6")) {
+					break lab21;
+				}
+				break lab20;
+			}
 			this.cursor = ((this.limit - v_15) | 0);
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "\u00FC")) {
 				return false;
@@ -5769,13 +5942,14 @@ lab0:
 		lab0 = false;
 		v_2 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "d")) {
-            break;
-        }
-        break lab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "d")) {
+				break lab1;
+			}
+			break lab0;
+		}
 		$this.cursor = (($this.limit - v_2) | 0);
 		if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "g")) {
 			return false;
@@ -5796,14 +5970,15 @@ lab2:
 			while (true) {
 				v_5 = (($this.limit - $this.cursor) | 0);
 				lab5 = true;
-			while (lab5 === true) {
-                lab5 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_5) | 0);
-                break golab4;
-            }
+			lab5:
+				while (lab5 === true) {
+					lab5 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+						break lab5;
+					}
+					$this.cursor = (($this.limit - v_5) | 0);
+					break golab4;
+				}
 				cursor$0 = $this.cursor = (($this.limit - v_5) | 0);
 				if (cursor$0 <= $this.limit_backward) {
 					break lab3;
@@ -5816,13 +5991,14 @@ lab2:
 				lab6 = false;
 				v_6 = (($this.limit - $this.cursor) | 0);
 				lab7 = true;
-			while (lab7 === true) {
-                lab7 = false;
-                if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "a")) {
-                    break;
-                }
-                break lab6;
-            }
+			lab7:
+				while (lab7 === true) {
+					lab7 = false;
+					if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "a")) {
+						break lab7;
+					}
+					break lab6;
+				}
 				$this.cursor = (($this.limit - v_6) | 0);
 				if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "\u0131")) {
 					break lab3;
@@ -5851,14 +6027,15 @@ lab2:
 			while (true) {
 				v_8 = (($this.limit - $this.cursor) | 0);
 				lab10 = true;
-			while (lab10 === true) {
-                lab10 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_8) | 0);
-                break golab9;
-            }
+			lab10:
+				while (lab10 === true) {
+					lab10 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+						break lab10;
+					}
+					$this.cursor = (($this.limit - v_8) | 0);
+					break golab9;
+				}
 				cursor$2 = $this.cursor = (($this.limit - v_8) | 0);
 				if (cursor$2 <= $this.limit_backward) {
 					break lab8;
@@ -5871,13 +6048,14 @@ lab2:
 				lab11 = false;
 				v_9 = (($this.limit - $this.cursor) | 0);
 				lab12 = true;
-			while (lab12 === true) {
-                lab12 = false;
-                if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "e")) {
-                    break;
-                }
-                break lab11;
-            }
+			lab12:
+				while (lab12 === true) {
+					lab12 = false;
+					if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "e")) {
+						break lab12;
+					}
+					break lab11;
+				}
 				$this.cursor = (($this.limit - v_9) | 0);
 				if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "i")) {
 					break lab8;
@@ -5906,14 +6084,15 @@ lab2:
 			while (true) {
 				v_11 = (($this.limit - $this.cursor) | 0);
 				lab15 = true;
-			while (lab15 === true) {
-                lab15 = false;
-                if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-                    break;
-                }
-                $this.cursor = (($this.limit - v_11) | 0);
-                break golab14;
-            }
+			lab15:
+				while (lab15 === true) {
+					lab15 = false;
+					if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+						break lab15;
+					}
+					$this.cursor = (($this.limit - v_11) | 0);
+					break golab14;
+				}
 				cursor$4 = $this.cursor = (($this.limit - v_11) | 0);
 				if (cursor$4 <= $this.limit_backward) {
 					break lab13;
@@ -5926,13 +6105,14 @@ lab2:
 				lab16 = false;
 				v_12 = (($this.limit - $this.cursor) | 0);
 				lab17 = true;
-			while (lab17 === true) {
-                lab17 = false;
-                if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "o")) {
-                    break;
-                }
-                break lab16;
-            }
+			lab17:
+				while (lab17 === true) {
+					lab17 = false;
+					if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "o")) {
+						break lab17;
+					}
+					break lab16;
+				}
 				$this.cursor = (($this.limit - v_12) | 0);
 				if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "u")) {
 					break lab13;
@@ -5957,14 +6137,15 @@ lab2:
 		while (true) {
 			v_14 = (($this.limit - $this.cursor) | 0);
 			lab19 = true;
-		while (lab19 === true) {
-            lab19 = false;
-            if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-                break;
-            }
-            $this.cursor = (($this.limit - v_14) | 0);
-            break golab18;
-        }
+		lab19:
+			while (lab19 === true) {
+				lab19 = false;
+				if (! BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+					break lab19;
+				}
+				$this.cursor = (($this.limit - v_14) | 0);
+				break golab18;
+			}
 			cursor$6 = $this.cursor = (($this.limit - v_14) | 0);
 			if (cursor$6 <= $this.limit_backward) {
 				return false;
@@ -5977,13 +6158,14 @@ lab2:
 			lab20 = false;
 			v_15 = (($this.limit - $this.cursor) | 0);
 			lab21 = true;
-		while (lab21 === true) {
-            lab21 = false;
-            if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "\u00F6")) {
-                break;
-            }
-            break lab20;
-        }
+		lab21:
+			while (lab21 === true) {
+				lab21 = false;
+				if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "\u00F6")) {
+					break lab21;
+				}
+				break lab20;
+			}
 			$this.cursor = (($this.limit - v_15) | 0);
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "\u00FC")) {
 				return false;
@@ -6002,7 +6184,7 @@ lab2:
 		$this.cursor = c;
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_append_U_to_stems_ending_with_d_or_g$LTurkishStemmer$ = TurkishStemmer$r_append_U_to_stems_ending_with_d_or_g$LTurkishStemmer$;
 
@@ -6025,13 +6207,14 @@ replab0:
 		golab2:
 			while (true) {
 				lab3 = true;
-			while (lab3 === true) {
-                lab3 = false;
-                if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
-                    break;
-                }
-                break golab2;
-            }
+			lab3:
+				while (lab3 === true) {
+					lab3 = false;
+					if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, TurkishStemmer.g_vowel, 97, 305)) {
+						break lab3;
+					}
+					break golab2;
+				}
 				if (this.cursor >= this.limit) {
 					break lab1;
 				}
@@ -6041,7 +6224,7 @@ replab0:
 			continue replab0;
 		}
 		this.cursor = v_3;
-		break;
+		break replab0;
 	}
 	if (v_2 > 0) {
 		return false;
@@ -6071,13 +6254,14 @@ replab0:
 		golab2:
 			while (true) {
 				lab3 = true;
-			while (lab3 === true) {
-                lab3 = false;
-                if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
-                    break;
-                }
-                break golab2;
-            }
+			lab3:
+				while (lab3 === true) {
+					lab3 = false;
+					if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, TurkishStemmer.g_vowel, 97, 305)) {
+						break lab3;
+					}
+					break golab2;
+				}
 				if ($this.cursor >= $this.limit) {
 					break lab1;
 				}
@@ -6087,14 +6271,14 @@ replab0:
 			continue replab0;
 		}
 		$this.cursor = v_3;
-		break;
+		break replab0;
 	}
 	if (v_2 > 0) {
 		return false;
 	}
 	$this.cursor = v_1;
 	return true;
-}
+};
 
 TurkishStemmer.r_more_than_one_syllable_word$LTurkishStemmer$ = TurkishStemmer$r_more_than_one_syllable_word$LTurkishStemmer$;
 
@@ -6123,13 +6307,14 @@ lab0:
 		golab2:
 			while (true) {
 				lab3 = true;
-			while (lab3 === true) {
-                lab3 = false;
-                if (! BaseStemmer$eq_s$LBaseStemmer$IS(this, 2, "ad")) {
-                    break;
-                }
-                break golab2;
-            }
+			lab3:
+				while (lab3 === true) {
+					lab3 = false;
+					if (! BaseStemmer$eq_s$LBaseStemmer$IS(this, 2, "ad")) {
+						break lab3;
+					}
+					break golab2;
+				}
 				if (this.cursor >= this.limit) {
 					break lab1;
 				}
@@ -6137,7 +6322,7 @@ lab0:
 			}
 			I_strlen$0 = this.I_strlen = 2;
 			if (! (I_strlen$0 === this.limit)) {
-				break;
+				break lab1;
 			}
 			this.cursor = v_2;
 			break lab0;
@@ -6147,13 +6332,14 @@ lab0:
 	golab4:
 		while (true) {
 			lab5 = true;
-		while (lab5 === true) {
-            lab5 = false;
-            if (! BaseStemmer$eq_s$LBaseStemmer$IS(this, 5, "soyad")) {
-                break;
-            }
-            break golab4;
-        }
+		lab5:
+			while (lab5 === true) {
+				lab5 = false;
+				if (! BaseStemmer$eq_s$LBaseStemmer$IS(this, 5, "soyad")) {
+					break lab5;
+				}
+				break golab4;
+			}
 			if (this.cursor >= this.limit) {
 				return false;
 			}
@@ -6195,13 +6381,14 @@ lab0:
 		golab2:
 			while (true) {
 				lab3 = true;
-			while (lab3 === true) {
-                lab3 = false;
-                if (! BaseStemmer$eq_s$LBaseStemmer$IS($this, 2, "ad")) {
-                    break;
-                }
-                break golab2;
-            }
+			lab3:
+				while (lab3 === true) {
+					lab3 = false;
+					if (! BaseStemmer$eq_s$LBaseStemmer$IS($this, 2, "ad")) {
+						break lab3;
+					}
+					break golab2;
+				}
 				if ($this.cursor >= $this.limit) {
 					break lab1;
 				}
@@ -6209,7 +6396,7 @@ lab0:
 			}
 			I_strlen$0 = $this.I_strlen = 2;
 			if (! (I_strlen$0 === $this.limit)) {
-				break;
+				break lab1;
 			}
 			$this.cursor = v_2;
 			break lab0;
@@ -6219,13 +6406,14 @@ lab0:
 	golab4:
 		while (true) {
 			lab5 = true;
-		while (lab5 === true) {
-            lab5 = false;
-            if (! BaseStemmer$eq_s$LBaseStemmer$IS($this, 5, "soyad")) {
-                break;
-            }
-            break golab4;
-        }
+		lab5:
+			while (lab5 === true) {
+				lab5 = false;
+				if (! BaseStemmer$eq_s$LBaseStemmer$IS($this, 5, "soyad")) {
+					break lab5;
+				}
+				break golab4;
+			}
 			if ($this.cursor >= $this.limit) {
 				return false;
 			}
@@ -6238,7 +6426,7 @@ lab0:
 		$this.cursor = v_4;
 	}
 	return true;
-}
+};
 
 TurkishStemmer.r_is_reserved_word$LTurkishStemmer$ = TurkishStemmer$r_is_reserved_word$LTurkishStemmer$;
 
@@ -6253,32 +6441,35 @@ TurkishStemmer.prototype.r_postlude$ = function () {
 	var cursor$1;
 	v_1 = this.cursor;
 	lab0 = true;
-while (lab0 === true) {
-    lab0 = false;
-    if (! TurkishStemmer$r_is_reserved_word$LTurkishStemmer$(this)) {
-        break;
-    }
-    return false;
-}
+lab0:
+	while (lab0 === true) {
+		lab0 = false;
+		if (! TurkishStemmer$r_is_reserved_word$LTurkishStemmer$(this)) {
+			break lab0;
+		}
+		return false;
+	}
 	cursor$0 = this.cursor = v_1;
 	this.limit_backward = cursor$0;
 	cursor$1 = this.cursor = limit$0 = this.limit;
 	v_2 = ((limit$0 - cursor$1) | 0);
 	lab1 = true;
-while (lab1 === true) {
-    lab1 = false;
-    if (! TurkishStemmer$r_append_U_to_stems_ending_with_d_or_g$LTurkishStemmer$(this)) {
-        break;
-    }
-}
+lab1:
+	while (lab1 === true) {
+		lab1 = false;
+		if (! TurkishStemmer$r_append_U_to_stems_ending_with_d_or_g$LTurkishStemmer$(this)) {
+			break lab1;
+		}
+	}
 	this.cursor = ((this.limit - v_2) | 0);
 	lab2 = true;
-while (lab2 === true) {
-    lab2 = false;
-    if (! TurkishStemmer$r_post_process_last_consonants$LTurkishStemmer$(this)) {
-        break;
-    }
-}
+lab2:
+	while (lab2 === true) {
+		lab2 = false;
+		if (! TurkishStemmer$r_post_process_last_consonants$LTurkishStemmer$(this)) {
+			break lab2;
+		}
+	}
 	this.cursor = this.limit_backward;
 	return true;
 };
@@ -6296,35 +6487,38 @@ function TurkishStemmer$r_postlude$LTurkishStemmer$($this) {
 	var cursor$1;
 	v_1 = $this.cursor;
 	lab0 = true;
-while (lab0 === true) {
-    lab0 = false;
-    if (! TurkishStemmer$r_is_reserved_word$LTurkishStemmer$($this)) {
-        break;
-    }
-    return false;
-}
+lab0:
+	while (lab0 === true) {
+		lab0 = false;
+		if (! TurkishStemmer$r_is_reserved_word$LTurkishStemmer$($this)) {
+			break lab0;
+		}
+		return false;
+	}
 	cursor$0 = $this.cursor = v_1;
 	$this.limit_backward = cursor$0;
 	cursor$1 = $this.cursor = limit$0 = $this.limit;
 	v_2 = ((limit$0 - cursor$1) | 0);
 	lab1 = true;
-while (lab1 === true) {
-    lab1 = false;
-    if (! TurkishStemmer$r_append_U_to_stems_ending_with_d_or_g$LTurkishStemmer$($this)) {
-        break;
-    }
-}
+lab1:
+	while (lab1 === true) {
+		lab1 = false;
+		if (! TurkishStemmer$r_append_U_to_stems_ending_with_d_or_g$LTurkishStemmer$($this)) {
+			break lab1;
+		}
+	}
 	$this.cursor = (($this.limit - v_2) | 0);
 	lab2 = true;
-while (lab2 === true) {
-    lab2 = false;
-    if (! TurkishStemmer$r_post_process_last_consonants$LTurkishStemmer$($this)) {
-        break;
-    }
-}
+lab2:
+	while (lab2 === true) {
+		lab2 = false;
+		if (! TurkishStemmer$r_post_process_last_consonants$LTurkishStemmer$($this)) {
+			break lab2;
+		}
+	}
 	$this.cursor = $this.limit_backward;
 	return true;
-}
+};
 
 TurkishStemmer.r_postlude$LTurkishStemmer$ = TurkishStemmer$r_postlude$LTurkishStemmer$;
 
@@ -6341,23 +6535,25 @@ TurkishStemmer.prototype.stem$ = function () {
 	cursor$0 = this.cursor = limit$0 = this.limit;
 	v_1 = ((limit$0 - cursor$0) | 0);
 	lab0 = true;
-while (lab0 === true) {
-    lab0 = false;
-    if (! TurkishStemmer$r_stem_nominal_verb_suffixes$LTurkishStemmer$(this)) {
-        break;
-    }
-}
+lab0:
+	while (lab0 === true) {
+		lab0 = false;
+		if (! TurkishStemmer$r_stem_nominal_verb_suffixes$LTurkishStemmer$(this)) {
+			break lab0;
+		}
+	}
 	this.cursor = ((this.limit - v_1) | 0);
 	if (! this.B_continue_stemming_noun_suffixes) {
 		return false;
 	}
 	lab1 = true;
-while (lab1 === true) {
-    lab1 = false;
-    if (! TurkishStemmer$r_stem_noun_suffixes$LTurkishStemmer$(this)) {
-        break;
-    }
-}
+lab1:
+	while (lab1 === true) {
+		lab1 = false;
+		if (! TurkishStemmer$r_stem_noun_suffixes$LTurkishStemmer$(this)) {
+			break lab1;
+		}
+	}
 	this.cursor = this.limit_backward;
 	return (! TurkishStemmer$r_postlude$LTurkishStemmer$(this) ? false : true);
 };
@@ -6372,7 +6568,7 @@ TurkishStemmer.prototype.equals = TurkishStemmer.prototype.equals$X;
 
 function TurkishStemmer$equals$LTurkishStemmer$X($this, o) {
 	return o instanceof TurkishStemmer;
-}
+};
 
 TurkishStemmer.equals$LTurkishStemmer$X = TurkishStemmer$equals$LTurkishStemmer$X;
 
@@ -6406,7 +6602,7 @@ function TurkishStemmer$hashCode$LTurkishStemmer$($this) {
 		hash = hash & hash;
 	}
 	return (hash | 0);
-}
+};
 
 TurkishStemmer.hashCode$LTurkishStemmer$ = TurkishStemmer$hashCode$LTurkishStemmer$;
 

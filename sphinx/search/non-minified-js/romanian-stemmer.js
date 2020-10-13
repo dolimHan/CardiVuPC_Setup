@@ -196,7 +196,7 @@ function Among(s, substring_i, result) {
 	this.result = result;
 	this.method = null;
 	this.instance = null;
-}
+};
 
 function Among$0(s, substring_i, result, method, instance) {
 	this.s_size = s.length;
@@ -205,11 +205,11 @@ function Among$0(s, substring_i, result, method, instance) {
 	this.result = result;
 	this.method = method;
 	this.instance = instance;
-}
+};
 
 $__jsx_extend([Among, Among$0], Object);
 function Stemmer() {
-}
+};
 
 $__jsx_extend([Stemmer], Object);
 function BaseStemmer() {
@@ -223,7 +223,7 @@ function BaseStemmer() {
 	this.limit_backward = 0;
 	this.bra = cursor$0;
 	this.ket = limit$0;
-}
+};
 
 $__jsx_extend([BaseStemmer], Stemmer);
 BaseStemmer.prototype.setCurrent$S = function (value) {
@@ -249,7 +249,7 @@ function BaseStemmer$setCurrent$LBaseStemmer$S($this, value) {
 	$this.limit_backward = 0;
 	$this.bra = cursor$0;
 	$this.ket = limit$0;
-}
+};
 
 BaseStemmer.setCurrent$LBaseStemmer$S = BaseStemmer$setCurrent$LBaseStemmer$S;
 
@@ -260,7 +260,7 @@ BaseStemmer.prototype.getCurrent$ = function () {
 
 function BaseStemmer$getCurrent$LBaseStemmer$($this) {
 	return $this.current;
-}
+};
 
 BaseStemmer.getCurrent$LBaseStemmer$ = BaseStemmer$getCurrent$LBaseStemmer$;
 
@@ -281,7 +281,7 @@ function BaseStemmer$copy_from$LBaseStemmer$LBaseStemmer$($this, other) {
 	$this.limit_backward = other.limit_backward;
 	$this.bra = other.bra;
 	$this.ket = other.ket;
-}
+};
 
 BaseStemmer.copy_from$LBaseStemmer$LBaseStemmer$ = BaseStemmer$copy_from$LBaseStemmer$LBaseStemmer$;
 
@@ -320,7 +320,7 @@ function BaseStemmer$in_grouping$LBaseStemmer$AIII($this, s, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_grouping$LBaseStemmer$AIII = BaseStemmer$in_grouping$LBaseStemmer$AIII;
 
@@ -359,7 +359,7 @@ function BaseStemmer$in_grouping_b$LBaseStemmer$AIII($this, s, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_grouping_b$LBaseStemmer$AIII = BaseStemmer$in_grouping_b$LBaseStemmer$AIII;
 
@@ -400,7 +400,7 @@ function BaseStemmer$out_grouping$LBaseStemmer$AIII($this, s, min, max) {
 		return true;
 	}
 	return false;
-}
+};
 
 BaseStemmer.out_grouping$LBaseStemmer$AIII = BaseStemmer$out_grouping$LBaseStemmer$AIII;
 
@@ -441,7 +441,7 @@ function BaseStemmer$out_grouping_b$LBaseStemmer$AIII($this, s, min, max) {
 		return true;
 	}
 	return false;
-}
+};
 
 BaseStemmer.out_grouping_b$LBaseStemmer$AIII = BaseStemmer$out_grouping_b$LBaseStemmer$AIII;
 
@@ -472,7 +472,7 @@ function BaseStemmer$in_range$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_range$LBaseStemmer$II = BaseStemmer$in_range$LBaseStemmer$II;
 
@@ -503,7 +503,7 @@ function BaseStemmer$in_range_b$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.in_range_b$LBaseStemmer$II = BaseStemmer$in_range_b$LBaseStemmer$II;
 
@@ -534,7 +534,7 @@ function BaseStemmer$out_range$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t + 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.out_range$LBaseStemmer$II = BaseStemmer$out_range$LBaseStemmer$II;
 
@@ -565,7 +565,7 @@ function BaseStemmer$out_range_b$LBaseStemmer$II($this, min, max) {
 	}
 	($__jsx_postinc_t = $this.cursor, $this.cursor = ($__jsx_postinc_t - 1) | 0, $__jsx_postinc_t);
 	return true;
-}
+};
 
 BaseStemmer.out_range_b$LBaseStemmer$II = BaseStemmer$out_range_b$LBaseStemmer$II;
 
@@ -592,7 +592,7 @@ function BaseStemmer$eq_s$LBaseStemmer$IS($this, s_size, s) {
 	}
 	$this.cursor = ($this.cursor + s_size) | 0;
 	return true;
-}
+};
 
 BaseStemmer.eq_s$LBaseStemmer$IS = BaseStemmer$eq_s$LBaseStemmer$IS;
 
@@ -619,7 +619,7 @@ function BaseStemmer$eq_s_b$LBaseStemmer$IS($this, s_size, s) {
 	}
 	$this.cursor = ($this.cursor - s_size) | 0;
 	return true;
-}
+};
 
 BaseStemmer.eq_s_b$LBaseStemmer$IS = BaseStemmer$eq_s_b$LBaseStemmer$IS;
 
@@ -630,7 +630,7 @@ BaseStemmer.prototype.eq_v$S = function (s) {
 
 function BaseStemmer$eq_v$LBaseStemmer$S($this, s) {
 	return BaseStemmer$eq_s$LBaseStemmer$IS($this, s.length, s);
-}
+};
 
 BaseStemmer.eq_v$LBaseStemmer$S = BaseStemmer$eq_v$LBaseStemmer$S;
 
@@ -641,7 +641,7 @@ BaseStemmer.prototype.eq_v_b$S = function (s) {
 
 function BaseStemmer$eq_v_b$LBaseStemmer$S($this, s) {
 	return BaseStemmer$eq_s_b$LBaseStemmer$IS($this, s.length, s);
-}
+};
 
 BaseStemmer.eq_v_b$LBaseStemmer$S = BaseStemmer$eq_v_b$LBaseStemmer$S;
 
@@ -800,7 +800,7 @@ function BaseStemmer$find_among$LBaseStemmer$ALAmong$I($this, v, v_size) {
 		}
 	}
 	return -1;
-}
+};
 
 BaseStemmer.find_among$LBaseStemmer$ALAmong$I = BaseStemmer$find_among$LBaseStemmer$ALAmong$I;
 
@@ -959,7 +959,7 @@ function BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, v, v_size) {
 		}
 	}
 	return -1;
-}
+};
 
 BaseStemmer.find_among_b$LBaseStemmer$ALAmong$I = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I;
 
@@ -988,7 +988,7 @@ function BaseStemmer$replace_s$LBaseStemmer$IIS($this, c_bra, c_ket, s) {
 		$this.cursor = c_bra;
 	}
 	return (adjustment | 0);
-}
+};
 
 BaseStemmer.replace_s$LBaseStemmer$IIS = BaseStemmer$replace_s$LBaseStemmer$IIS;
 
@@ -1005,7 +1005,7 @@ function BaseStemmer$slice_check$LBaseStemmer$($this) {
 	var ket$0;
 	var limit$0;
 	return ((bra$0 = $this.bra) < 0 || bra$0 > (ket$0 = $this.ket) || ket$0 > (limit$0 = $this.limit) || limit$0 > $this.current.length ? false : true);
-}
+};
 
 BaseStemmer.slice_check$LBaseStemmer$ = BaseStemmer$slice_check$LBaseStemmer$;
 
@@ -1034,7 +1034,7 @@ function BaseStemmer$slice_from$LBaseStemmer$S($this, s) {
 		result = true;
 	}
 	return result;
-}
+};
 
 BaseStemmer.slice_from$LBaseStemmer$S = BaseStemmer$slice_from$LBaseStemmer$S;
 
@@ -1045,7 +1045,7 @@ BaseStemmer.prototype.slice_del$ = function () {
 
 function BaseStemmer$slice_del$LBaseStemmer$($this) {
 	return BaseStemmer$slice_from$LBaseStemmer$S($this, "");
-}
+};
 
 BaseStemmer.slice_del$LBaseStemmer$ = BaseStemmer$slice_del$LBaseStemmer$;
 
@@ -1070,7 +1070,7 @@ function BaseStemmer$insert$LBaseStemmer$IIS($this, c_bra, c_ket, s) {
 	if (c_bra <= $this.ket) {
 		$this.ket = ($this.ket + adjustment) | 0;
 	}
-}
+};
 
 BaseStemmer.insert$LBaseStemmer$IIS = BaseStemmer$insert$LBaseStemmer$IIS;
 
@@ -1097,7 +1097,7 @@ function BaseStemmer$slice_to$LBaseStemmer$S($this, s) {
 		result = $this.current.slice($this.bra, $this.ket);
 	}
 	return result;
-}
+};
 
 BaseStemmer.slice_to$LBaseStemmer$S = BaseStemmer$slice_to$LBaseStemmer$S;
 
@@ -1108,7 +1108,7 @@ BaseStemmer.prototype.assign_to$S = function (s) {
 
 function BaseStemmer$assign_to$LBaseStemmer$S($this, s) {
 	return $this.current.slice(0, $this.limit);
-}
+};
 
 BaseStemmer.assign_to$LBaseStemmer$S = BaseStemmer$assign_to$LBaseStemmer$S;
 
@@ -1175,7 +1175,7 @@ function RomanianStemmer() {
 	this.I_p2 = 0;
 	this.I_p1 = 0;
 	this.I_pV = 0;
-}
+};
 
 $__jsx_extend([RomanianStemmer], BaseStemmer);
 RomanianStemmer.prototype.copy_from$LRomanianStemmer$ = function (other) {
@@ -1213,7 +1213,7 @@ replab0:
 				while (lab3 === true) {
 					lab3 = false;
 					if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-						break;
+						break lab3;
 					}
 					this.bra = this.cursor;
 					lab4 = true;
@@ -1222,20 +1222,21 @@ replab0:
 						lab4 = false;
 						v_3 = this.cursor;
 						lab5 = true;
-					while (lab5 === true) {
-                        lab5 = false;
-                        if (! BaseStemmer$eq_s$LBaseStemmer$IS(this, 1, "u")) {
-                            break;
-                        }
-                        this.ket = this.cursor;
-                        if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                            break;
-                        }
-                        if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "U")) {
-                            return false;
-                        }
-                        break lab4;
-                    }
+					lab5:
+						while (lab5 === true) {
+							lab5 = false;
+							if (! BaseStemmer$eq_s$LBaseStemmer$IS(this, 1, "u")) {
+								break lab5;
+							}
+							this.ket = this.cursor;
+							if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+								break lab5;
+							}
+							if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "U")) {
+								return false;
+							}
+							break lab4;
+						}
 						this.cursor = v_3;
 						if (! BaseStemmer$eq_s$LBaseStemmer$IS(this, 1, "i")) {
 							break lab3;
@@ -1260,7 +1261,7 @@ replab0:
 			continue replab0;
 		}
 		this.cursor = v_1;
-		break;
+		break replab0;
 	}
 	return true;
 };
@@ -1292,7 +1293,7 @@ replab0:
 				while (lab3 === true) {
 					lab3 = false;
 					if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-						break;
+						break lab3;
 					}
 					$this.bra = $this.cursor;
 					lab4 = true;
@@ -1301,20 +1302,21 @@ replab0:
 						lab4 = false;
 						v_3 = $this.cursor;
 						lab5 = true;
-					while (lab5 === true) {
-                        lab5 = false;
-                        if (! BaseStemmer$eq_s$LBaseStemmer$IS($this, 1, "u")) {
-                            break;
-                        }
-                        $this.ket = $this.cursor;
-                        if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                            break;
-                        }
-                        if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "U")) {
-                            return false;
-                        }
-                        break lab4;
-                    }
+					lab5:
+						while (lab5 === true) {
+							lab5 = false;
+							if (! BaseStemmer$eq_s$LBaseStemmer$IS($this, 1, "u")) {
+								break lab5;
+							}
+							$this.ket = $this.cursor;
+							if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+								break lab5;
+							}
+							if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "U")) {
+								return false;
+							}
+							break lab4;
+						}
 						$this.cursor = v_3;
 						if (! BaseStemmer$eq_s$LBaseStemmer$IS($this, 1, "i")) {
 							break lab3;
@@ -1339,10 +1341,10 @@ replab0:
 			continue replab0;
 		}
 		$this.cursor = v_1;
-		break;
+		break replab0;
 	}
 	return true;
-}
+};
 
 RomanianStemmer.r_prelude$LRomanianStemmer$ = RomanianStemmer$r_prelude$LRomanianStemmer$;
 
@@ -1388,7 +1390,7 @@ lab0:
 			while (lab2 === true) {
 				lab2 = false;
 				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-					break;
+					break lab2;
 				}
 				lab3 = true;
 			lab3:
@@ -1400,18 +1402,19 @@ lab0:
 					while (lab4 === true) {
 						lab4 = false;
 						if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-							break;
+							break lab4;
 						}
 					golab5:
 						while (true) {
 							lab6 = true;
-						while (lab6 === true) {
-                            lab6 = false;
-                            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                                break;
-                            }
-                            break golab5;
-                        }
+						lab6:
+							while (lab6 === true) {
+								lab6 = false;
+								if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+									break lab6;
+								}
+								break golab5;
+							}
 							if (this.cursor >= this.limit) {
 								break lab4;
 							}
@@ -1426,13 +1429,14 @@ lab0:
 				golab7:
 					while (true) {
 						lab8 = true;
-					while (lab8 === true) {
-                        lab8 = false;
-                        if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                            break;
-                        }
-                        break golab7;
-                    }
+					lab8:
+						while (lab8 === true) {
+							lab8 = false;
+							if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+								break lab8;
+							}
+							break golab7;
+						}
 						if (this.cursor >= this.limit) {
 							break lab2;
 						}
@@ -1455,18 +1459,19 @@ lab0:
 				while (lab10 === true) {
 					lab10 = false;
 					if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-						break;
+						break lab10;
 					}
 				golab11:
 					while (true) {
 						lab12 = true;
-					while (lab12 === true) {
-                        lab12 = false;
-                        if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                            break;
-                        }
-                        break golab11;
-                    }
+					lab12:
+						while (lab12 === true) {
+							lab12 = false;
+							if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+								break lab12;
+							}
+							break golab11;
+						}
 						if (this.cursor >= this.limit) {
 							break lab10;
 						}
@@ -1495,13 +1500,14 @@ lab13:
 	golab14:
 		while (true) {
 			lab15 = true;
-		while (lab15 === true) {
-            lab15 = false;
-            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break golab14;
-        }
+		lab15:
+			while (lab15 === true) {
+				lab15 = false;
+				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+					break lab15;
+				}
+				break golab14;
+			}
 			if (this.cursor >= this.limit) {
 				break lab13;
 			}
@@ -1510,13 +1516,14 @@ lab13:
 	golab16:
 		while (true) {
 			lab17 = true;
-		while (lab17 === true) {
-            lab17 = false;
-            if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break golab16;
-        }
+		lab17:
+			while (lab17 === true) {
+				lab17 = false;
+				if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+					break lab17;
+				}
+				break golab16;
+			}
 			if (this.cursor >= this.limit) {
 				break lab13;
 			}
@@ -1526,13 +1533,14 @@ lab13:
 	golab18:
 		while (true) {
 			lab19 = true;
-		while (lab19 === true) {
-            lab19 = false;
-            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break golab18;
-        }
+		lab19:
+			while (lab19 === true) {
+				lab19 = false;
+				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+					break lab19;
+				}
+				break golab18;
+			}
 			if (this.cursor >= this.limit) {
 				break lab13;
 			}
@@ -1541,13 +1549,14 @@ lab13:
 	golab20:
 		while (true) {
 			lab21 = true;
-		while (lab21 === true) {
-            lab21 = false;
-            if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break golab20;
-        }
+		lab21:
+			while (lab21 === true) {
+				lab21 = false;
+				if (! BaseStemmer$out_grouping$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+					break lab21;
+				}
+				break golab20;
+			}
 			if (this.cursor >= this.limit) {
 				break lab13;
 			}
@@ -1603,7 +1612,7 @@ lab0:
 			while (lab2 === true) {
 				lab2 = false;
 				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-					break;
+					break lab2;
 				}
 				lab3 = true;
 			lab3:
@@ -1615,18 +1624,19 @@ lab0:
 					while (lab4 === true) {
 						lab4 = false;
 						if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-							break;
+							break lab4;
 						}
 					golab5:
 						while (true) {
 							lab6 = true;
-						while (lab6 === true) {
-                            lab6 = false;
-                            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                                break;
-                            }
-                            break golab5;
-                        }
+						lab6:
+							while (lab6 === true) {
+								lab6 = false;
+								if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+									break lab6;
+								}
+								break golab5;
+							}
 							if ($this.cursor >= $this.limit) {
 								break lab4;
 							}
@@ -1641,13 +1651,14 @@ lab0:
 				golab7:
 					while (true) {
 						lab8 = true;
-					while (lab8 === true) {
-                        lab8 = false;
-                        if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                            break;
-                        }
-                        break golab7;
-                    }
+					lab8:
+						while (lab8 === true) {
+							lab8 = false;
+							if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+								break lab8;
+							}
+							break golab7;
+						}
 						if ($this.cursor >= $this.limit) {
 							break lab2;
 						}
@@ -1670,18 +1681,19 @@ lab0:
 				while (lab10 === true) {
 					lab10 = false;
 					if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-						break;
+						break lab10;
 					}
 				golab11:
 					while (true) {
 						lab12 = true;
-					while (lab12 === true) {
-                        lab12 = false;
-                        if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                            break;
-                        }
-                        break golab11;
-                    }
+					lab12:
+						while (lab12 === true) {
+							lab12 = false;
+							if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+								break lab12;
+							}
+							break golab11;
+						}
 						if ($this.cursor >= $this.limit) {
 							break lab10;
 						}
@@ -1710,13 +1722,14 @@ lab13:
 	golab14:
 		while (true) {
 			lab15 = true;
-		while (lab15 === true) {
-            lab15 = false;
-            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break golab14;
-        }
+		lab15:
+			while (lab15 === true) {
+				lab15 = false;
+				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+					break lab15;
+				}
+				break golab14;
+			}
 			if ($this.cursor >= $this.limit) {
 				break lab13;
 			}
@@ -1725,13 +1738,14 @@ lab13:
 	golab16:
 		while (true) {
 			lab17 = true;
-		while (lab17 === true) {
-            lab17 = false;
-            if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break golab16;
-        }
+		lab17:
+			while (lab17 === true) {
+				lab17 = false;
+				if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+					break lab17;
+				}
+				break golab16;
+			}
 			if ($this.cursor >= $this.limit) {
 				break lab13;
 			}
@@ -1741,13 +1755,14 @@ lab13:
 	golab18:
 		while (true) {
 			lab19 = true;
-		while (lab19 === true) {
-            lab19 = false;
-            if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break golab18;
-        }
+		lab19:
+			while (lab19 === true) {
+				lab19 = false;
+				if (! BaseStemmer$in_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+					break lab19;
+				}
+				break golab18;
+			}
 			if ($this.cursor >= $this.limit) {
 				break lab13;
 			}
@@ -1756,13 +1771,14 @@ lab13:
 	golab20:
 		while (true) {
 			lab21 = true;
-		while (lab21 === true) {
-            lab21 = false;
-            if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break golab20;
-        }
+		lab21:
+			while (lab21 === true) {
+				lab21 = false;
+				if (! BaseStemmer$out_grouping$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+					break lab21;
+				}
+				break golab20;
+			}
 			if ($this.cursor >= $this.limit) {
 				break lab13;
 			}
@@ -1772,7 +1788,7 @@ lab13:
 	}
 	$this.cursor = v_8;
 	return true;
-}
+};
 
 RomanianStemmer.r_mark_regions$LRomanianStemmer$ = RomanianStemmer$r_mark_regions$LRomanianStemmer$;
 
@@ -1791,7 +1807,7 @@ replab0:
 			this.bra = this.cursor;
 			among_var = BaseStemmer$find_among$LBaseStemmer$ALAmong$I(this, RomanianStemmer.a_0, 3);
 			if (among_var === 0) {
-				break;
+				break lab1;
 			}
 			this.ket = this.cursor;
 			switch (among_var) {
@@ -1817,7 +1833,7 @@ replab0:
 			continue replab0;
 		}
 		this.cursor = v_1;
-		break;
+		break replab0;
 	}
 	return true;
 };
@@ -1839,7 +1855,7 @@ replab0:
 			$this.bra = $this.cursor;
 			among_var = BaseStemmer$find_among$LBaseStemmer$ALAmong$I($this, RomanianStemmer.a_0, 3);
 			if (among_var === 0) {
-				break;
+				break lab1;
 			}
 			$this.ket = $this.cursor;
 			switch (among_var) {
@@ -1865,10 +1881,10 @@ replab0:
 			continue replab0;
 		}
 		$this.cursor = v_1;
-		break;
+		break replab0;
 	}
 	return true;
-}
+};
 
 RomanianStemmer.r_postlude$LRomanianStemmer$ = RomanianStemmer$r_postlude$LRomanianStemmer$;
 
@@ -1880,7 +1896,7 @@ RomanianStemmer.prototype.r_RV = RomanianStemmer.prototype.r_RV$;
 
 function RomanianStemmer$r_RV$LRomanianStemmer$($this) {
 	return (! ($this.I_pV <= $this.cursor) ? false : true);
-}
+};
 
 RomanianStemmer.r_RV$LRomanianStemmer$ = RomanianStemmer$r_RV$LRomanianStemmer$;
 
@@ -1892,7 +1908,7 @@ RomanianStemmer.prototype.r_R1 = RomanianStemmer.prototype.r_R1$;
 
 function RomanianStemmer$r_R1$LRomanianStemmer$($this) {
 	return (! ($this.I_p1 <= $this.cursor) ? false : true);
-}
+};
 
 RomanianStemmer.r_R1$LRomanianStemmer$ = RomanianStemmer$r_R1$LRomanianStemmer$;
 
@@ -1904,7 +1920,7 @@ RomanianStemmer.prototype.r_R2 = RomanianStemmer.prototype.r_R2$;
 
 function RomanianStemmer$r_R2$LRomanianStemmer$($this) {
 	return (! ($this.I_p2 <= $this.cursor) ? false : true);
-}
+};
 
 RomanianStemmer.r_R2$LRomanianStemmer$ = RomanianStemmer$r_R2$LRomanianStemmer$;
 
@@ -1948,13 +1964,14 @@ RomanianStemmer.prototype.r_step_0$ = function () {
 	case 5:
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab0 = true;
-	while (lab0 === true) {
-        lab0 = false;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 2, "ab")) {
-            break;
-        }
-        return false;
-    }
+	lab0:
+		while (lab0 === true) {
+			lab0 = false;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 2, "ab")) {
+				break lab0;
+			}
+			return false;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
 		if (! BaseStemmer$slice_from$LBaseStemmer$S(this, "i")) {
 			return false;
@@ -2016,13 +2033,14 @@ function RomanianStemmer$r_step_0$LRomanianStemmer$($this) {
 	case 5:
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab0 = true;
-	while (lab0 === true) {
-        lab0 = false;
-        if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 2, "ab")) {
-            break;
-        }
-        return false;
-    }
+	lab0:
+		while (lab0 === true) {
+			lab0 = false;
+			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 2, "ab")) {
+				break lab0;
+			}
+			return false;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
 		if (! BaseStemmer$slice_from$LBaseStemmer$S($this, "i")) {
 			return false;
@@ -2040,7 +2058,7 @@ function RomanianStemmer$r_step_0$LRomanianStemmer$($this) {
 		break;
 	}
 	return true;
-}
+};
 
 RomanianStemmer.r_step_0$LRomanianStemmer$ = RomanianStemmer$r_step_0$LRomanianStemmer$;
 
@@ -2152,7 +2170,7 @@ function RomanianStemmer$r_combo_suffix$LRomanianStemmer$($this) {
 	$this.B_standard_suffix_removed = true;
 	$this.cursor = (($this.limit - v_1) | 0);
 	return true;
-}
+};
 
 RomanianStemmer.r_combo_suffix$LRomanianStemmer$ = RomanianStemmer$r_combo_suffix$LRomanianStemmer$;
 
@@ -2166,15 +2184,16 @@ replab0:
 	while (true) {
 		v_1 = ((this.limit - this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! RomanianStemmer$r_combo_suffix$LRomanianStemmer$(this)) {
-            break;
-        }
-        continue replab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! RomanianStemmer$r_combo_suffix$LRomanianStemmer$(this)) {
+				break lab1;
+			}
+			continue replab0;
+		}
 		this.cursor = ((this.limit - v_1) | 0);
-		break;
+		break replab0;
 	}
 	this.ket = this.cursor;
 	among_var = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I(this, RomanianStemmer.a_3, 62);
@@ -2224,15 +2243,16 @@ replab0:
 	while (true) {
 		v_1 = (($this.limit - $this.cursor) | 0);
 		lab1 = true;
-	while (lab1 === true) {
-        lab1 = false;
-        if (! RomanianStemmer$r_combo_suffix$LRomanianStemmer$($this)) {
-            break;
-        }
-        continue replab0;
-    }
+	lab1:
+		while (lab1 === true) {
+			lab1 = false;
+			if (! RomanianStemmer$r_combo_suffix$LRomanianStemmer$($this)) {
+				break lab1;
+			}
+			continue replab0;
+		}
 		$this.cursor = (($this.limit - v_1) | 0);
-		break;
+		break replab0;
 	}
 	$this.ket = $this.cursor;
 	among_var = BaseStemmer$find_among_b$LBaseStemmer$ALAmong$I($this, RomanianStemmer.a_3, 62);
@@ -2268,7 +2288,7 @@ replab0:
 	}
 	$this.B_standard_suffix_removed = true;
 	return true;
-}
+};
 
 RomanianStemmer.r_standard_suffix$LRomanianStemmer$ = RomanianStemmer$r_standard_suffix$LRomanianStemmer$;
 
@@ -2308,13 +2328,14 @@ RomanianStemmer.prototype.r_verb_suffix$ = function () {
 			lab0 = false;
 			v_3 = ((this.limit - this.cursor) | 0);
 			lab1 = true;
-		while (lab1 === true) {
-            lab1 = false;
-            if (! BaseStemmer$out_grouping_b$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break lab0;
-        }
+		lab1:
+			while (lab1 === true) {
+				lab1 = false;
+				if (! BaseStemmer$out_grouping_b$LBaseStemmer$AIII(this, RomanianStemmer.g_v, 97, 259)) {
+					break lab1;
+				}
+				break lab0;
+			}
 			this.cursor = ((this.limit - v_3) | 0);
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS(this, 1, "u")) {
 				this.limit_backward = v_2;
@@ -2373,13 +2394,14 @@ function RomanianStemmer$r_verb_suffix$LRomanianStemmer$($this) {
 			lab0 = false;
 			v_3 = (($this.limit - $this.cursor) | 0);
 			lab1 = true;
-		while (lab1 === true) {
-            lab1 = false;
-            if (! BaseStemmer$out_grouping_b$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
-                break;
-            }
-            break lab0;
-        }
+		lab1:
+			while (lab1 === true) {
+				lab1 = false;
+				if (! BaseStemmer$out_grouping_b$LBaseStemmer$AIII($this, RomanianStemmer.g_v, 97, 259)) {
+					break lab1;
+				}
+				break lab0;
+			}
 			$this.cursor = (($this.limit - v_3) | 0);
 			if (! BaseStemmer$eq_s_b$LBaseStemmer$IS($this, 1, "u")) {
 				$this.limit_backward = v_2;
@@ -2398,7 +2420,7 @@ function RomanianStemmer$r_verb_suffix$LRomanianStemmer$($this) {
 	}
 	$this.limit_backward = v_2;
 	return true;
-}
+};
 
 RomanianStemmer.r_verb_suffix$LRomanianStemmer$ = RomanianStemmer$r_verb_suffix$LRomanianStemmer$;
 
@@ -2450,7 +2472,7 @@ function RomanianStemmer$r_vowel_suffix$LRomanianStemmer$($this) {
 		break;
 	}
 	return true;
-}
+};
 
 RomanianStemmer.r_vowel_suffix$LRomanianStemmer$ = RomanianStemmer$r_vowel_suffix$LRomanianStemmer$;
 
@@ -2482,41 +2504,45 @@ RomanianStemmer.prototype.stem$ = function () {
 	var cursor$5;
 	v_1 = this.cursor;
 	lab0 = true;
-while (lab0 === true) {
-    lab0 = false;
-    if (! RomanianStemmer$r_prelude$LRomanianStemmer$(this)) {
-        break;
-    }
-}
+lab0:
+	while (lab0 === true) {
+		lab0 = false;
+		if (! RomanianStemmer$r_prelude$LRomanianStemmer$(this)) {
+			break lab0;
+		}
+	}
 	cursor$0 = this.cursor = v_1;
 	v_2 = cursor$0;
 	lab1 = true;
-while (lab1 === true) {
-    lab1 = false;
-    if (! RomanianStemmer$r_mark_regions$LRomanianStemmer$(this)) {
-        break;
-    }
-}
+lab1:
+	while (lab1 === true) {
+		lab1 = false;
+		if (! RomanianStemmer$r_mark_regions$LRomanianStemmer$(this)) {
+			break lab1;
+		}
+	}
 	cursor$1 = this.cursor = v_2;
 	this.limit_backward = cursor$1;
 	cursor$2 = this.cursor = limit$0 = this.limit;
 	v_3 = ((limit$0 - cursor$2) | 0);
 	lab2 = true;
-while (lab2 === true) {
-    lab2 = false;
-    if (! RomanianStemmer$r_step_0$LRomanianStemmer$(this)) {
-        break;
-    }
-}
+lab2:
+	while (lab2 === true) {
+		lab2 = false;
+		if (! RomanianStemmer$r_step_0$LRomanianStemmer$(this)) {
+			break lab2;
+		}
+	}
 	cursor$3 = this.cursor = (((limit$1 = this.limit) - v_3) | 0);
 	v_4 = ((limit$1 - cursor$3) | 0);
 	lab3 = true;
-while (lab3 === true) {
-    lab3 = false;
-    if (! RomanianStemmer$r_standard_suffix$LRomanianStemmer$(this)) {
-        break;
-    }
-}
+lab3:
+	while (lab3 === true) {
+		lab3 = false;
+		if (! RomanianStemmer$r_standard_suffix$LRomanianStemmer$(this)) {
+			break lab3;
+		}
+	}
 	cursor$4 = this.cursor = (((limit$2 = this.limit) - v_4) | 0);
 	v_5 = ((limit$2 - cursor$4) | 0);
 	lab4 = true;
@@ -2529,13 +2555,14 @@ lab4:
 			lab5 = false;
 			v_6 = ((this.limit - this.cursor) | 0);
 			lab6 = true;
-		while (lab6 === true) {
-            lab6 = false;
-            if (! this.B_standard_suffix_removed) {
-                break;
-            }
-            break lab5;
-        }
+		lab6:
+			while (lab6 === true) {
+				lab6 = false;
+				if (! this.B_standard_suffix_removed) {
+					break lab6;
+				}
+				break lab5;
+			}
 			this.cursor = ((this.limit - v_6) | 0);
 			if (! RomanianStemmer$r_verb_suffix$LRomanianStemmer$(this)) {
 				break lab4;
@@ -2544,21 +2571,23 @@ lab4:
 	}
 	this.cursor = ((this.limit - v_5) | 0);
 	lab7 = true;
-while (lab7 === true) {
-    lab7 = false;
-    if (! RomanianStemmer$r_vowel_suffix$LRomanianStemmer$(this)) {
-        break;
-    }
-}
+lab7:
+	while (lab7 === true) {
+		lab7 = false;
+		if (! RomanianStemmer$r_vowel_suffix$LRomanianStemmer$(this)) {
+			break lab7;
+		}
+	}
 	cursor$5 = this.cursor = this.limit_backward;
 	v_8 = cursor$5;
 	lab8 = true;
-while (lab8 === true) {
-    lab8 = false;
-    if (! RomanianStemmer$r_postlude$LRomanianStemmer$(this)) {
-        break;
-    }
-}
+lab8:
+	while (lab8 === true) {
+		lab8 = false;
+		if (! RomanianStemmer$r_postlude$LRomanianStemmer$(this)) {
+			break lab8;
+		}
+	}
 	this.cursor = v_8;
 	return true;
 };
@@ -2573,7 +2602,7 @@ RomanianStemmer.prototype.equals = RomanianStemmer.prototype.equals$X;
 
 function RomanianStemmer$equals$LRomanianStemmer$X($this, o) {
 	return o instanceof RomanianStemmer;
-}
+};
 
 RomanianStemmer.equals$LRomanianStemmer$X = RomanianStemmer$equals$LRomanianStemmer$X;
 
@@ -2607,7 +2636,7 @@ function RomanianStemmer$hashCode$LRomanianStemmer$($this) {
 		hash = hash & hash;
 	}
 	return (hash | 0);
-}
+};
 
 RomanianStemmer.hashCode$LRomanianStemmer$ = RomanianStemmer$hashCode$LRomanianStemmer$;
 

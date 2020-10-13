@@ -1031,7 +1031,7 @@ define([
             this.trusted = true;
             this.unscroll_area();
             this.expand();
-
+            return;
         }
     };
 

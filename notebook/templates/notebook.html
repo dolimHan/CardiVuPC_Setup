@@ -366,7 +366,7 @@ data-notebook-path="{{notebook_path | urlencode}}"
 {% block script %}
 {{super()}}
 <script type="text/javascript">
-    sys_info = {{sys_info|safe}}
+    sys_info = {{sys_info|safe}};
 </script>
 
 <script src="{{ static_url("components/text-encoding/lib/encoding.js") }}" charset="utf-8"></script>

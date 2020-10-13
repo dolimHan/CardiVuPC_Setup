@@ -44,7 +44,7 @@ var define, requireModule, require, requirejs;
         var part = parts[i];
 
         if (part === '..') { parentBase.pop(); }
-        else if (part === '.') {  }
+        else if (part === '.') { continue; }
         else { parentBase.push(part); }
       }
 
@@ -343,7 +343,7 @@ define("promise/promise",
       }
 
       if (handleThenable(promise, value)) {
-
+        return;
       } else if (hasCallback && succeeded) {
         resolve(promise, value);
       } else if (failed) {

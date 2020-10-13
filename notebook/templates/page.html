@@ -23,9 +23,9 @@
     <script>
       require.config({
           {% if version_hash %}
-          "v={{version_hash}}",
+          urlArgs: "v={{version_hash}}",
           {% endif %}
-          '{{static_url("", include_version=False)}}',
+          baseUrl: '{{static_url("", include_version=False)}}',
           paths: {
             'auth/js/main': 'auth/js/main.min',
             custom : '{{ base_url }}custom',
@@ -45,38 +45,38 @@
             termjs: 'components/xterm.js/xterm',
             typeahead: 'components/jquery-typeahead/dist/jquery.typeahead.min',
           },
-          { // for backward compatibility
+          map: { // for backward compatibility
               "*": {
                   "jqueryui": "jquery-ui",
               }
           },
-          {
-            {
-              ["jquery"],
+          shim: {
+            typeahead: {
+              deps: ["jquery"],
               exports: "typeahead"
             },
-            {
-              '_'
+            underscore: {
+              exports: '_'
             },
-            {
-              ["underscore", "jquery"],
+            backbone: {
+              deps: ["underscore", "jquery"],
               exports: "Backbone"
             },
-            {
-              ["jquery"],
+            bootstrap: {
+              deps: ["jquery"],
               exports: "bootstrap"
             },
-            {
-              ["bootstrap"],
+            bootstraptour: {
+              deps: ["bootstrap"],
               exports: "Tour"
             },
             "jquery-ui": {
-              ["jquery"],
+              deps: ["jquery"],
               exports: "$"
             }
           },
-          30,
-      })
+          waitSeconds: 30,
+      });
 
       require.config({
           map: {
@@ -98,7 +98,7 @@
           }
       })
 
-    document.nbjs_translations = {{ nbjs_translations|safe }}
+    document.nbjs_translations = {{ nbjs_translations|safe }};
     document.documentElement.lang = navigator.language.toLowerCase();
     </script>
 
