@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="img">
+    <file>common/icon.png</file>
+    <file>common/Login_dropDown.png</file>
+    <file>common/Login_header.png</file>
+    <file>common/kakao.png</file>
+    <file>common/twitter.png</file>
+    <file>common/naver.png</file>
+    <file>common/google.png</file>
+  </qresource>
+</RCC>
