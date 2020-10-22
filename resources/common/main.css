@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-body{
+
+body {
     font-family: "Noto Sans KR", sans-serif;
     /* margin: 0px; */
 }
-header{
+
+header {
     background-color: #78d4c5;
     padding-top: 1px;
 }
-#title{
+
+#title {
     background-color: white;
     margin: 7px 0px 0px 8px;
     text-align: center;
-    padding: 15px 0px 0px 0px;
-    font-size: 28px;
+    padding: 10px 0px 5px 0px;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: -0.5px;
     /* width: fit-content; */
     width: 48%;
 }
-.profile-container{
+
+.profile-container {
     width: 95%;
     margin: 0px auto;
     display: -webkit-box;
@@ -26,139 +30,148 @@ header{
     justify-content: space-between;
 
 }
-.divider-line{
+
+.divider-line {
     height: 2px;
     width: 95%;
     margin: 0px auto;
     background-color: #78d4c5;
-    
+
 }
+
 th {
     width: 25%;
     font-weight: normal;
     font-size: 12px;
     letter-spacing: -0.3px;
 }
-td{
+
+td {
     font-weight: bolder;
     font-size: 14px;
     letter-spacing: -0.3px;
 }
-.table-hyphen td{
+
+.table-hyphen td {
     /* font-size: 0px; */
     /* height: 1px; */
     /* background-color: yellowgreen; */
     line-height: 1px;
     color: darkgray;
     font-weight: bolder;
-    font-size:8px;
-    
-    
+    font-size: 8px;
+
+
 }
-table{
+
+table {
     height: 60px;
     width: 48%;
     margin: auto 0px;
     border-spacing: 0px;
     /* background-color: thistle; */
 }
-.logo{
+
+.logo {
     height: 30px;
-    padding:10px;
-    margin-left:200px;
+    padding: 10px;
+    margin-left: 200px;
 }
-section{
+
+section {
     width: 95%;
-    /* background-color: lavender;s */
-    margin: 10px auto 10px auto;
-    
+    /*background-color: lavender;*/
+    margin: 5px auto 5px auto;
 }
-.sub-title{
+
+.sub-title {
     color: #24b9a1;
     font-weight: bold;
     font-size: 17px;
-    align-self:baseline;
+    align-self: baseline;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.sub-title2{
+.sub-title2 {
     color: #24b9a1;
     font-size: 14px;
     margin-left: 15px;
-    align-self:baseline;
-    margin-bottom: 10px;
+    align-self: baseline;
+    margin-bottom: 5px;
 }
 
-.row{
+.row {
     display: -webkit-box;
     display: flex;
 }
 
-.sub-width{
+.sub-width {
     margin: 0px auto;
     padding: 0px;
     width: 94%;
 }
 
-.explain{
+.explain {
     font-size: 13px;
     padding-left: 10px;
     /* border: darkgreen 1px solid; */
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
-.v-hyphen{
+
+.v-hyphen {
     background-color: #24b9a1;
     width: 5px;
     /* border: darkgreen 1px solid; */
 
 }
-.highlight-text{
+
+.highlight-text {
     color: #24b9a1;
     font-weight: bold;
 }
 
-.annot{
+.annot {
     font-size: 12px;
     color: darkgray;
     width: 93%;
     margin: 30px auto 0 auto;
 }
 
-#period{
+#period {
     /* margin-left: 10px; */
     /* padding-left: 10px; */
     /* background-color: darkviolet; */
 }
 
-#hrv-chart{
+#hrv-chart {
     margin: 0px auto;
     width: 98%;
-    height: 600px;
+    height: 380px;
     /* border: olive 1px dashed; */
 }
-#bpm-chart{
-    margin: 0px auto;
-    width: 98%;
-    height: 250px;
-}
 
-#stress-chart{
+#bpm-chart {
     margin: 0px auto;
     width: 98%;
     height: 200px;
+}
+
+#stress-chart {
+    margin: 0px auto;
+    width: 98%;
+    height: 130px;
     /* border: olive 1px dashed; */
 }
 
-.chart > img{
-    width:99%;
+.chart > img {
+    width: 98%;
 }
 
-.stress-section{
-    margin-bottom: 30px;
+.stress-section {
+    margin-bottom: 10px;
 }
-
 
 
 /*.js-plotly-plot .plotly, .js-plotly-plot .plotly div {

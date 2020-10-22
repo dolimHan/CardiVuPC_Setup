@@ -528,6 +528,3 @@ class ResultStr:
     camera = "Camera is not connected.    "
     completeSave = "Completed creating PDF file"
     completeFail = "Failed creating PDF file"
-
-
-
